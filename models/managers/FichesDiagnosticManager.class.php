@@ -56,7 +56,7 @@ class FichesDiagnosticManager extends Model
                 $fiche['publicite_facebook'],
                 $fiche['page_instagram'],
                 $fiche['abonnes_instagram'],
-                $fiche['publicte_instagram'],
+                $fiche['publicite_instagram'],
                 $fiche['niveau_windows'],
                 $fiche['niveau_mail'],
                 $fiche['niveau_word'],
@@ -73,7 +73,7 @@ class FichesDiagnosticManager extends Model
                 $fiche['bilan_comptable'],
                 $fiche['cabinet_comptable'],
                 $fiche['logiciel_comptable'],
-                $fiche['anglais'],
+                $fiche['niveau_anglais'],
                 $fiche['niveau_espagnol'],
                 $fiche['niveau_italien'],
                 $fiche['niveau_allemand'],
@@ -86,6 +86,7 @@ class FichesDiagnosticManager extends Model
     }
 
     public function enregistrerFicheDiagnosticDB(
+        $id_entreprise,
         $communication,
         $web,
         $bureautique,
@@ -116,7 +117,7 @@ class FichesDiagnosticManager extends Model
         $publicite_facebook,
         $page_instagram,
         $abonnes_instagram,
-        $publicte_instagram,
+        $publicite_instagram,
         $niveau_windows,
         $niveau_mail,
         $niveau_word,
@@ -137,7 +138,6 @@ class FichesDiagnosticManager extends Model
         $niveau_espagnol,
         $niveau_italien,
         $niveau_allemand,
-        $id_entreprise,
         $date_creation,
         $date_maj
     ) {
@@ -173,7 +173,7 @@ class FichesDiagnosticManager extends Model
                 'publicite_facebook' => $publicite_facebook,
                 'page_instagram' => $page_instagram,
                 'abonnes_instagram' => $abonnes_instagram,
-                'publicte_instagram' => $publicte_instagram,
+                'publicite_instagram' => $publicite_instagram,
                 'niveau_windows' => $niveau_windows,
                 'niveau_mail' => $niveau_mail,
                 'niveau_word' => $niveau_word,
@@ -200,7 +200,7 @@ class FichesDiagnosticManager extends Model
             ];
 
             $req = $this->getBDD()->prepare(
-                "INSERT INTO fg_formateur 
+                "INSERT INTO fg_fiche_diagnostic 
                 (communication,
                 web,
                 bureautique,
@@ -231,7 +231,7 @@ class FichesDiagnosticManager extends Model
                 publicite_facebook,
                 page_instagram,
                 abonnes_instagram,
-                publicte_instagram,
+                publicite_instagram,
                 niveau_windows,
                 niveau_mail,
                 niveau_word,
@@ -286,7 +286,7 @@ class FichesDiagnosticManager extends Model
             :publicite_facebook,
             :page_instagram,
             :abonnes_instagram,
-            :publicte_instagram,
+            :publicite_instagram,
             :niveau_windows,
             :niveau_mail,
             :niveau_word,

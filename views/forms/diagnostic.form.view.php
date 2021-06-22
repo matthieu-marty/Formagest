@@ -4,7 +4,7 @@ ob_start()
 
 <h3>Fiche diagnostic</h3>
 
-<form action="<?= URL ?>fiches-diagnostic/save" method="post" enctype="multipart/form-data" class="mt-2" autocomplete="off">
+<form action="<?= URL ?>fiche-diagnostic/save/<?= $id ?>" method="post" enctype="multipart/form-data" class="mt-2" autocomplete="off">
 
     <h4>Projet de formation</h4>
     <div class="grid gap-1 mb-2">
@@ -37,8 +37,8 @@ ob_start()
             </select>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6">
-            <label for="comptabilité">Comptabilité</label>
-            <select name="comptabilité" id="comptabilité" class="form">
+            <label for="comptabilite">Comptabilité</label>
+            <select name="comptabilite" id="comptabilite" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -83,8 +83,8 @@ ob_start()
             <textarea id="connaissances" name="connaissances" class="form" rows="3"></textarea>
         </div>
         <div class="col-12">
-            <label for="aptitudes_profesionnelles">Améliorer ses aptitudes professionnelles : Animer une réunion, encadrer une équipe, développer son état d'esprit...</label>
-            <textarea id="aptitudes_profesionnelles" name="aptitudes_profesionnelles" class="form" rows="3"></textarea>
+            <label for="aptitudes">Améliorer ses aptitudes professionnelles : Animer une réunion, encadrer une équipe, développer son état d'esprit...</label>
+            <textarea id="aptitudes" name="aptitudes" class="form" rows="3"></textarea>
         </div>
     </div>
     <h4>Diagnostic de l'entreprise</h4>
@@ -97,8 +97,8 @@ ob_start()
 
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-3 col-sm-6">
-            <label for="etude_marche">Etude de marché</label>
-            <select name="etude_marche" id="etude_marche" class="form">
+            <label for="etude_de_marche">Etude de marché</label>
+            <select name="etude_de_marche" id="etude_de_marche" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -175,7 +175,7 @@ ob_start()
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6">
             <label for="sms">SMS</label>
-            <select name="smst" id="sms" class="form">
+            <select name="sms" id="sms" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -196,8 +196,8 @@ ob_start()
             <input type="text" name="abonnes_facebook" id="abonnes_facebook" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="pub_facebook"><img src="https://img.icons8.com/fluent/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</label>
-            <select name="pub_facebook" id="pub_facebook" class="form">
+            <label for="publicite_facebook"><img src="https://img.icons8.com/fluent/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</label>
+            <select name="publicite_facebook" id="publicite_facebook" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -212,8 +212,8 @@ ob_start()
             <input type="text" name="abonnes_instagram" id="abonnes_instagram" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="pub_instagram"><img src="https://img.icons8.com/fluent/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</label>
-            <select name="pub_facebook" id="pub_facebook" class="form">
+            <label for="publicite_instagram"><img src="https://img.icons8.com/fluent/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</label>
+            <select name="publicite_instagram" id="publicite_instagram" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -223,20 +223,20 @@ ob_start()
     <h4>Informatique & Bureautique</h4>
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="windows">Windows</label>
-            <input type="number" value="0" min="0" max="10" name="windows" id="windows" class="form">
+            <label for="niveau_windows">Windows</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_windows" id="niveau_windows" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="mail">Mail</label>
-            <input type="number" value="0" min="0" max="10" name="mail" id="mail" class="form">
+            <label for="niveau_mail">Mail</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_mail" id="niveau_mail" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="word">Word</label>
-            <input type="number" value="0" min="0" max="10" name="word" id="word" class="form">
+            <label for="niveau_word">Word</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_word" id="niveau_word" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="excel">Excel</label>
-            <input type="number" value="0" min="0" max="10" name="excel" id="excel" class="form">
+            <label for="niveau_excel">Excel</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_excel" id="niveau_excel" class="form">
         </div>
     </div>
     <h4>Site web & Référencement</h4>
@@ -249,12 +249,12 @@ ob_start()
             </select>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-12">
-            <label for="date_site_web">Date création</label>
-            <input class="form" type="date" name="date_site_web" id="date_site_web" value="">
+            <label for="date_creation_site_web">Date création</label>
+            <input class="form" type="date" name="date_creation_site_web" id="date_creation_site_web" value="">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
             <label for="e_commerce">Ecommerce</label>
-            <select name="site_web" id="e_commerce" class="form">
+            <select name="e_commerce" id="e_commerce" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
             </select>
@@ -328,20 +328,20 @@ ob_start()
     <h4>Langues étrangères</h4>
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="anglais"><img src="https://img.icons8.com/fluent/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</label>
-            <input type="number" value="0" min="0" max="10" name="anglais" id="anglais" class="form">
+            <label for="niveau_anglais"><img src="https://img.icons8.com/fluent/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_anglais" id="niveau_anglais" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="espagnol"><img src="https://img.icons8.com/fluent/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</label>
-            <input type="number" value="0" min="0" max="10" name="espagnol" id="espagnol" class="form">
+            <label for="niveau_espagnol"><img src="https://img.icons8.com/fluent/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_espagnol" id="niveau_espagnol" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="italien"><img src="https://img.icons8.com/color/26/000000/italy-circular.png" style="vertical-align:top;" /> Italien</label>
-            <input type="number" value="0" min="0" max="10" name="italien" id="italien" class="form">
+            <label for="niveau_italien"><img src="https://img.icons8.com/color/26/000000/italy-circular.png" style="vertical-align:top;" /> Italien</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_italien" id="niveau_italien" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="allemand"><img src="https://img.icons8.com/fluent/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</label>
-            <input type="number" value="0" min="0" max="10" name="allemand" id="allemand" class="form">
+            <label for="niveau_allemand"><img src="https://img.icons8.com/fluent/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</label>
+            <input type="number" value="0" min="0" max="10" name="niveau_allemand" id="niveau_allemand" class="form">
         </div>
 
     </div>

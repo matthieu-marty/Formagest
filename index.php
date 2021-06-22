@@ -36,8 +36,10 @@ if (empty($_GET['page'])) {
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "create" : $fiches_diagnostic_controller->creerFicheDiagnostic($url[2]); break;
+                    case "save"   : $fiches_diagnostic_controller->enregistrerFicheDiagnostic($url[2]); break;
                 }
             }
+        break;
         
         /**
          * ORGANISMES DE FORMATION
@@ -98,7 +100,7 @@ if (empty($_GET['page'])) {
         /**
          * AUTRES
          */
-        case "fiche-diagnostic" : require_once "views/forms/diagnostic.form.view.php"; break;
+        
         case "fiche-montage" : require_once "views/forms/montage.form.view.php"; break;
         case "accueil": require_once "views/accueil.view.php";break;
         case "erreur" : require_once "views/erreur.view.php"; break;

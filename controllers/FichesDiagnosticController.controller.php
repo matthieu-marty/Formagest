@@ -55,7 +55,7 @@ class FichesDiagnosticController
             $_POST['publicite_facebook'],
             $_POST['page_instagram'],
             $_POST['abonnes_instagram'],
-            $_POST['publicte_instagram'],
+            $_POST['publicite_instagram'],
             $_POST['niveau_windows'],
             $_POST['niveau_mail'],
             $_POST['niveau_word'],
@@ -72,17 +72,25 @@ class FichesDiagnosticController
             $_POST['bilan_comptable'],
             $_POST['cabinet_comptable'],
             $_POST['logiciel_comptable'],
-            $_POST['anglais'],
+            $_POST['niveau_anglais'],
             $_POST['niveau_espagnol'],
             $_POST['niveau_italien'],
             $_POST['niveau_allemand'],
             $_POST['date_creation'],
-            $_POST['date_maj']
+            $_POST['date_creation']
         );
         if ($res === true) {
             header('location:' . URL . 'entreprises/read/' . $id_entreprise);
-        } else {
+        } /* else {
             header('location:' . URL . 'erreur');
-        }
+        } */
+        echo '<pre>';
+        var_dump($_POST);
+        echo '</pre>';
+
+
     }
+
+
+
 }
