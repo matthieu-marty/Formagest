@@ -347,12 +347,13 @@ tr:nth-child(even) {
 
 .table-container {
   max-height: 75vh;
-  overflow-y: scroll;
+  overflow: scroll;
   border: 1px solid var(--border);
+  max-width:100vw;
 }
-/* .table-container::-webkit-scrollbar  {
+.table-container::-webkit-scrollbar  {
   display: none;
-} */
+} 
 .table-container thead {
   position: sticky;
   top:0;

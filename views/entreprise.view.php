@@ -11,7 +11,7 @@ ob_start()
 
         <div class="bg-white rounded border mb-1">
             <div class="p-2">
-                <h3 class="text-center"><?= $entreprise->getEnseigne(); ?></h3>
+                <h4 class="text-center"><?= $entreprise->getEnseigne(); ?></h4>
                 <table class="table-details">
                     <tbody>
                         <tr>

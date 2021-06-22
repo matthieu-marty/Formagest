@@ -12,7 +12,6 @@ ob_start()
 
         <div class="bg-white border rounded mb-1">
             <div class="p-1">
-                <img src="https://img.icons8.com/cotton/80/000000/company.png" class="d-block mx-auto mt-1" />
                 <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
             </div>
             <div class="p-2">
@@ -100,7 +99,7 @@ ob_start()
             <?php if (!empty($formateurs)) : ?>
                 <?php foreach ($formateurs as $formateur) : ?>
                     <div class="col-lg-6 col-md-6 col-sm-12 bg-white border rounded p-2">
-                        <h3><img src="https://img.icons8.com/ios-glyphs/36/000000/user-male-circle.png" style="vertical-align:top;" /> <?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h3>
+                        <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
                         <div>
                             <table class="table-details">
                                 <tbody>
