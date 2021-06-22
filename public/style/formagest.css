@@ -514,21 +514,31 @@ table.table-details tbody tr th:first-child {
 * @date: 11/06/2021
 *************************
 */
-.mobile-template, .desktop-template {
+body {
   background-color:var(--light-grey);
-}
-.mobile-template {
-  display: none;
   min-height: 100vh;
 }
+.mobile {
+  background-color:#1d2327;
+  position:sticky; 
+  top:0;
+  display: none;
+
+}
 @media (max-width: 1025px) {
-  .desktop-template {
+  .sidebar, .topbar {
       display: none;
   }
-  .mobile-template {
+  .mobile {
       display: block;
   }
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
+
+
 
 
 
