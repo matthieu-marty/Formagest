@@ -76,7 +76,7 @@ ob_start()
             </table>
         </div>
         <h5>Fiches diagnostics</h5>
-        <p class="text-border"><a href="#">Ajouter</a></p>
+        <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <div class="bg-white grid p-2 rounded border mb-1 col-12">
             <table class="col-12 table-details">
                 <tbody>

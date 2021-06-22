@@ -1,17 +1,17 @@
 <?php
 require_once 'models/managers/EntrepriseManager.class.php';
-require_once 'models/managers/FicheDiagnosticManager.class.php';
+require_once 'models/managers/FichesDiagnosticManager.class.php';
 
 class FichesDiagnosticController
 {
-    private $fiche_diagnostic_manager;
+    private $fiches_diagnostic_manager;
     private $entreprise_manager;
 
     public function __construct()
     {
         $this->entreprise_manager = new EntrepriseManager;
         $this->entreprise_manager->chargementEntreprises();
-        $this->fiche_diagnostic_manager = new FichesDiagnosticManager;
+        $this->fiches_diagnostic_manager = new FichesDiagnosticManager;
         $this->fiches_diagnostic_manager->chargementFichesDiagnostic();
     }
 
