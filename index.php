@@ -7,7 +7,6 @@ if (empty($_GET['page'])) {
     $url = explode("/", filter_var($_GET['page'], FILTER_SANITIZE_URL));
 
     switch ($url[0]) {
-
         /**
          * ENTREPRISES
          */
@@ -60,7 +59,7 @@ if (empty($_GET['page'])) {
             } else { $ofs_controller->AfficherOfs();}
             break;
 
-            /**
+        /**
          * FORMATEURS
          */
         case "formateurs":
@@ -95,12 +94,9 @@ if (empty($_GET['page'])) {
             } else { $entreprise_controller->afficherEntreprises();}
             break;
 
-
-
         /**
          * AUTRES
          */
-        
         case "fiche-montage" : require_once "views/forms/montage.form.view.php"; break;
         case "accueil": require_once "views/accueil.view.php";break;
         case "erreur" : require_once "views/erreur.view.php"; break;
