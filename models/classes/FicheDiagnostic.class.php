@@ -46,7 +46,7 @@ class FicheDiagnostic
     private $solocal;
     private $programme_fidelite;
     private $calendrier_commercial;
-    private $chiffres_affaires;
+    private $chiffre_affaires;
     private $tableau_de_bords;
     private $bilan_comptable;
     private $cabinet_comptable;
@@ -104,7 +104,7 @@ class FicheDiagnostic
         $solocal,
         $programme_fidelite,
         $calendrier_commercial,
-        $chiffres_affaires,
+        $chiffre_affaires,
         $tableau_de_bords,
         $bilan_comptable,
         $cabinet_comptable,
@@ -161,7 +161,7 @@ class FicheDiagnostic
         $this->solocal = $solocal;
         $this->programme_fidelite = $programme_fidelite;
         $this->calendrier_commercial = $calendrier_commercial;
-        $this->chiffres_affaires = $chiffres_affaires;
+        $this->chiffre_affaires = $chiffre_affaires;
         $this->tableau_de_bords    = $tableau_de_bords;
         $this->bilan_comptable = $bilan_comptable;
         $this->cabinet_comptable = $cabinet_comptable;
@@ -351,9 +351,9 @@ class FicheDiagnostic
     {
         return $this->calendrier_commercial;
     }
-    public function getChiffres_affaires()
+    public function getChiffre_affaires()
     {
-        return $this->chiffres_affaires;
+        return $this->chiffre_affaires;
     }
     public function getTableau_de_bords()
     {

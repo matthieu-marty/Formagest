@@ -4,7 +4,7 @@ ob_start()
 
 <h3>Fiche diagnostic</h3>
 
-<form action="<?= URL ?>" method="post" enctype="multipart/form-data" class="mt-2" autocomplete="off">
+<form action="<?= URL ?>fiches-diagnostic/save" method="post" enctype="multipart/form-data" class="mt-2" autocomplete="off">
 
     <h4>Projet de formation</h4>
     <div class="grid gap-1 mb-2">

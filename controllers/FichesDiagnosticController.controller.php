@@ -69,7 +69,7 @@ class FichesDiagnosticController
             $_POST['solocal'],
             $_POST['programme_fidelite'],
             $_POST['calendrier_commercial'],
-            $_POST['chiffres_affaires'],
+            $_POST['chiffre_affaires'],
             $_POST['tableau_de_bords'],
             $_POST['bilan_comptable'],
             $_POST['cabinet_comptable'],
