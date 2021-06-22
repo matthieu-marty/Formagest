@@ -86,6 +86,7 @@ class FichesDiagnosticManager extends Model
     }
 
     public function enregistrerFicheDiagnosticDB(
+        $id_entreprise,
         $communication,
         $web,
         $bureautique,
@@ -133,7 +134,7 @@ class FichesDiagnosticManager extends Model
         $bilan_comptable,
         $cabinet_comptable,
         $logiciel_comptable,
-        $anglais,
+        $niveau_anglais,
         $niveau_espagnol,
         $niveau_italien,
         $niveau_allemand,
@@ -189,7 +190,7 @@ class FichesDiagnosticManager extends Model
                 'bilan_comptable' => $bilan_comptable,
                 'cabinet_comptable' => $cabinet_comptable,
                 'logiciel_comptable' => $logiciel_comptable,
-                'anglais' => $anglais,
+                'niveau_anglais' => $niveau_anglais,
                 'niveau_espagnol' => $niveau_espagnol,
                 'niveau_italien' => $niveau_italien,
                 'niveau_allemand' => $niveau_allemand,
@@ -247,7 +248,7 @@ class FichesDiagnosticManager extends Model
                 bilan_comptable,
                 cabinet_comptable,
                 logiciel_comptable,
-                anglais,
+                niveau_anglais,
                 niveau_espagnol,
                 niveau_italien,
                 niveau_allemand,
@@ -302,7 +303,7 @@ class FichesDiagnosticManager extends Model
             :bilan_comptable,
             :cabinet_comptable,
             :logiciel_comptable,
-            :anglais,
+            :niveau_anglais,
             :niveau_espagnol,
             :niveau_italien,
             :niveau_allemand,

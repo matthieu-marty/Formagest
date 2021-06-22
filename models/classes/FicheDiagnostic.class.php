@@ -107,7 +107,7 @@ class FicheDiagnostic
         $bilan_comptable,
         $cabinet_comptable,
         $logiciel_comptable,
-        $anglais,
+        $niveau_anglais,
         $niveau_espagnol,
         $niveau_italien,
         $niveau_allemand,
@@ -163,7 +163,7 @@ class FicheDiagnostic
         $this->bilan_comptable = $bilan_comptable;
         $this->cabinet_comptable = $cabinet_comptable;
         $this->logiciel_comptable = $logiciel_comptable;
-        $this->anglais = $anglais;
+        $this->niveau_anglais = $niveau_anglais;
         $this->niveau_espagnol = $niveau_espagnol;
         $this->niveau_italien = $niveau_italien;
         $this->niveau_allemand = $niveau_allemand;
@@ -364,9 +364,9 @@ class FicheDiagnostic
     {
         return $this->logiciel_comptable;
     }
-    public function getAnglais()
+    public function getNiveauAnglais()
     {
-        return $this->anglais;
+        return $this->niveau_anglais;
     }
     public function getNiveau_espagnol()
     {
