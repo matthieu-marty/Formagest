@@ -1,7 +1,6 @@
 <?php
 ob_start()
 ?>
-
 <h3>Fiche diagnostic</h3>
 
 <form action="<?= URL ?>fiche-diagnostic/save/<?= $id ?>" method="post" enctype="multipart/form-data" class="mt-2" autocomplete="off">
@@ -348,12 +347,7 @@ ob_start()
     <div class="border-top text-right">
         <button type="submit" class="btn mt-1">Enregistrer</button>
     </div>
-
-
 </form>
-
-
-
 <?php
 $content = ob_get_clean();
 $title = "FORMAGEST | Fiche diagnostic";

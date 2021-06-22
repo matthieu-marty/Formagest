@@ -86,7 +86,6 @@ class FichesDiagnosticManager extends Model
     }
 
     public function enregistrerFicheDiagnosticDB(
-        $id_entreprise,
         $communication,
         $web,
         $bureautique,
