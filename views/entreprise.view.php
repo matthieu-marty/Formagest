@@ -75,7 +75,7 @@ ob_start()
                 </tbody>
             </table>
         </div>
-        <h5>Fiches diagnostics</h5>
+        <h5>Fiches diagnostic</h5>
         <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <?php if (!empty($fiches_diagnostic)) : ?>
             <div class="bg-white grid p-2 rounded border mb-1 col-12">
