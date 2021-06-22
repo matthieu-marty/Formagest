@@ -15,7 +15,6 @@ class FicheDiagnostic
     private $pratiques;
     private $connaissances;
     private $aptitudes;
-    private $date;
     private $etude_de_marche;
     private $clientele;
     private $type_clientele;
@@ -73,7 +72,6 @@ class FicheDiagnostic
         $pratiques,
         $connaissances,
         $aptitudes,
-        $date,
         $etude_de_marche,
         $clientele,
         $type_clientele,
@@ -130,7 +128,6 @@ class FicheDiagnostic
         $this->pratiques = $pratiques;
         $this->connaissances = $connaissances;
         $this->aptitudes = $aptitudes;
-        $this->date    = $date;
         $this->etude_de_marche = $etude_de_marche;
         $this->clientele = $clientele;
         $this->type_clientele = $type_clientele;
@@ -226,10 +223,6 @@ class FicheDiagnostic
     public function getAptitudes()
     {
         return $this->aptitudes;
-    }
-    public function getDate()
-    {
-        return $this->date;
     }
     public function getEtude_de_marche()
     {

@@ -38,7 +38,6 @@ class FichesDiagnosticManager extends Model
                 $fiche['pratiques'],
                 $fiche['connaissances'],
                 $fiche['aptitudes'],
-                $fiche['date'],
                 $fiche['etude_de_marche'],
                 $fiche['clientele'],
                 $fiche['type_clientele'],
@@ -87,7 +86,6 @@ class FichesDiagnosticManager extends Model
     }
 
     public function enregistrerFicheDiagnosticDB(
-        $id,
         $communication,
         $web,
         $bureautique,
@@ -100,7 +98,6 @@ class FichesDiagnosticManager extends Model
         $pratiques,
         $connaissances,
         $aptitudes,
-        $date,
         $etude_de_marche,
         $clientele,
         $type_clientele,
@@ -145,9 +142,7 @@ class FichesDiagnosticManager extends Model
         $date_maj
     ) {
         if (!empty($date_creation) && !empty($id_entreprise)) {
-
             $data = [
-                'id' => $id,
                 'communication' => $communication,
                 'web' => $web,
                 'bureautique' => $bureautique,
@@ -160,7 +155,6 @@ class FichesDiagnosticManager extends Model
                 'pratiques' => $pratiques,
                 'connaissances' => $connaissances,
                 'aptitudes' => $aptitudes,
-                'date' => $date,
                 'etude_de_marche' => $etude_de_marche,
                 'clientele' => $clientele,
                 'type_clientele' => $type_clientele,
@@ -207,8 +201,7 @@ class FichesDiagnosticManager extends Model
 
             $req = $this->getBDD()->prepare(
                 "INSERT INTO fg_formateur 
-                (id,
-                communication,
+                (communication,
                 web,
                 bureautique,
                 marketing,
@@ -220,7 +213,6 @@ class FichesDiagnosticManager extends Model
                 pratiques,
                 connaissances,
                 aptitudes,
-                date,
                 etude_de_marche,
                 clientele,
                 type_clientele,
@@ -264,8 +256,7 @@ class FichesDiagnosticManager extends Model
                 date_creation,
                 date_maj)
             VALUES 
-            (:id,
-            :communication,
+            (:communication,
             :web,
             :bureautique,
             :marketing,
@@ -277,7 +268,6 @@ class FichesDiagnosticManager extends Model
             :pratiques,
             :connaissances,
             :aptitudes,
-            :date,
             :etude_de_marche,
             :clientele,
             :type_clientele,

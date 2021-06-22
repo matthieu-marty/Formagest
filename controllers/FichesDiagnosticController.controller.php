@@ -25,7 +25,6 @@ class FichesDiagnosticController
     {
         $res = $this->fiches_diagnostic_manager->enregistrerFicheDiagnosticDB(
             $id_entreprise,
-            $_POST['id'],
             $_POST['communication'],
             $_POST['web'],
             $_POST['bureautique'],
@@ -38,7 +37,6 @@ class FichesDiagnosticController
             $_POST['pratiques'],
             $_POST['connaissances'],
             $_POST['aptitudes'],
-            $_POST['date'],
             $_POST['etude_de_marche'],
             $_POST['clientele'],
             $_POST['type_clientele'],
