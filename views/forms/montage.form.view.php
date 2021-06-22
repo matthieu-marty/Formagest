@@ -160,6 +160,6 @@ ob_start()
 
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Fiche Montage";
+$title = "FORMAGEST | Fiche montage";
 require_once 'views/templates/default.php';
 ?>
