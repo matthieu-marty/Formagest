@@ -7,10 +7,10 @@ ob_start()
 <div class="grid gap-1">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
-        <p class="text-border"><a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="red">Supprimer</a></p>
+        <p class="text-border"><a href="<?= URL ?>entreprises">Retour</a> | <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="red">Supprimer</a></p>
 
         <div class="bg-white rounded border mb-1">
-            <div class="p-2">
+            <div class="p-1">
                 <h4 class="text-center"><?= $entreprise->getEnseigne(); ?></h4>
                 <table class="table-details">
                     <tbody>
@@ -49,8 +49,8 @@ ob_start()
         </div>
 
         <h5>Coordonnées</h5>
-        <div class="bg-white grid p-2 rounded border mb-1 col-12">
-            <table class="col-12 table-details">
+        <div class="bg-white p-1 rounded border mb-1">
+            <table class="table-details">
                 <tbody>
                     <tr>
                         <th>Téléphone</th>
@@ -78,7 +78,7 @@ ob_start()
         <h5>Fiches diagnostic</h5>
         <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <?php if (!empty($fiches_diagnostic)) : ?>
-            <div class="bg-white grid p-2 rounded border mb-1 col-12">
+            <div class="bg-white grid p-1 rounded border mb-1 col-12">
                 <table class="col-12 table-details">
                     <tbody>
                         <?php foreach ($fiches_diagnostic as $fiche) : ?>
@@ -104,7 +104,7 @@ ob_start()
 
             <?php if (!empty($effectifs_entreprise)) : ?>
                 <?php foreach ($effectifs_entreprise as $effectif) : ?>
-                    <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded border p-2">
+                    <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded border p-1">
                         <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
 
                         <table class="table-details">

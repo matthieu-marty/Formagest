@@ -8,13 +8,13 @@ ob_start()
 <div class="grid gap-1">
     <div class="col-lg-4 col-md-12 col-sm-12">
         <h5>Organisme</h5>
-        <p class="text-border"><a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="red">Supprimer</a></p>
+        <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="red">Supprimer</a></p>
 
         <div class="bg-white border rounded mb-1">
             <div class="p-1">
                 <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
             </div>
-            <div class="p-2">
+            <div class="p-1">
                 <table class="table-details">
                     <tbody>
                         <tr>
@@ -59,34 +59,31 @@ ob_start()
         </div>
 
         <h5>Coordonnées</h5>
-        <div class="bg-white grid p-2 rounded border mb-1">
-            <div class="col-12">
-                <table class="table-details">
-                    <tbody>
-                        <tr>
-                            <th>Téléphone</th>
-                            <th><a href="tel:<?= $of->getTelephone(); ?>"><?= $of->getTelephone(); ?></a></th>
-                        </tr>
-                        <tr>
-                            <th>Mail</th>
-                            <th><a href="mailto:<?= $of->getMail(); ?>"><?= $of->getMail(); ?></a></th>
-                        </tr>
-                        <tr>
-                            <th>Adresse</th>
-                            <th><?= $of->getAdresse(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Code postal</th>
-                            <th><?= $of->getCode_Postal(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Ville</th>
-                            <th><?= $of->getVille(); ?></th>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
+        <div class="bg-white p-1 rounded border mb-1">
+            <table class="table-details">
+                <tbody>
+                    <tr>
+                        <th>Téléphone</th>
+                        <th><a href="tel:<?= $of->getTelephone(); ?>"><?= $of->getTelephone(); ?></a></th>
+                    </tr>
+                    <tr>
+                        <th>Mail</th>
+                        <th><a href="mailto:<?= $of->getMail(); ?>"><?= $of->getMail(); ?></a></th>
+                    </tr>
+                    <tr>
+                        <th>Adresse</th>
+                        <th><?= $of->getAdresse(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Code postal</th>
+                        <th><?= $of->getCode_Postal(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Ville</th>
+                        <th><?= $of->getVille(); ?></th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- Formateurs -->
