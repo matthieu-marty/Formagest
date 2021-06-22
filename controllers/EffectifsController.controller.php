@@ -44,12 +44,11 @@ class EffectifsController
     }
 
     public function supprimerEffectif($id_effectif)
-
-    {   
+    {
         $res = $this->effectif_manager->supprimerEffectifDB($id_effectif);
         if ($res === true) {
-            $effectif= $this->effectif_manager->getEffectifById($id_effectif);
-            header('location:' . URL . 'entreprises/read/'.$effectif->getId_Entreprise());
+            $effectif = $this->effectif_manager->getEffectifById($id_effectif);
+            header('location:' . URL . 'entreprises/read/' . $effectif->getId_Entreprise());
         } else {
             header('location:' . URL . 'erreur');
         }
@@ -83,8 +82,8 @@ class EffectifsController
             $_POST['mail']
         );
         if ($res === true) {
-            $effectif= $this->effectif_manager->getEffectifById($id_effectif);
-            header('location:' . URL . 'entreprises/read/'.$effectif->getId_Entreprise());
+            $effectif = $this->effectif_manager->getEffectifById($id_effectif);
+            header('location:' . URL . 'entreprises/read/' . $effectif->getId_Entreprise());
         } else {
             var_dump($_POST);
         }

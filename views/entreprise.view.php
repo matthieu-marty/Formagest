@@ -77,26 +77,22 @@ ob_start()
         </div>
         <h5>Fiches diagnostics</h5>
         <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
-        <div class="bg-white grid p-2 rounded border mb-1 col-12">
-            <table class="col-12 table-details">
-                <tbody>
-
-                    <tr>
-                        <th>2021-01-02</th>
-                        <th><a href="#">Voir fiche</a></th>
-                    </tr>
-                    <tr>
-                        <th>2021-01-02</th>
-                        <th><a href="#">Voir fiche</a></th>
-                    </tr>
-                    <tr>
-                        <th>2021-01-02</th>
-                        <th><a href="#">Voir fiche</a></th>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
+        <?php if (!empty($fiches_diagnostic)) : ?>
+            <div class="bg-white grid p-2 rounded border mb-1 col-12">
+                <table class="col-12 table-details">
+                    <tbody>
+                        <?php foreach ($fiches_diagnostic as $fiche) : ?>
+                            <tr>
+                                <th>Date</th>
+                                <th><a href="#"><?= $fiche->getDate_creation() ?></a></th>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php else : ?>
+            <p class="p-2 rounded border-dashed text-grey col-12 text-center text-bold">Section vide</p>
+        <?php endif; ?>
 
     </div>
     <!-- EFFECTIFS -->

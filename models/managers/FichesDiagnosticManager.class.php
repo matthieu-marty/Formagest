@@ -316,4 +316,15 @@ class FichesDiagnosticManager extends Model
             return $res;
         }
     }
+
+    public function getFichesDiagnosticByEntreprise($id_entreprise)
+    {
+        $fiches_diagnostic = [];
+        foreach ($this->fiches_diagnostic as $fiche) {
+            if ($fiche->getId_Entreprise() === $id_entreprise) {
+                $fiches_diagnostic[] = $fiche;
+            }
+        }
+        return $fiches_diagnostic;
+    }
 }
