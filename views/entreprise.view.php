@@ -155,7 +155,7 @@ ob_start()
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="text-border text-right mb-0 mt-1"><a href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')" class="red">Supprimer</a></p>
+                        <p class="text-border text-right mt-1"><a href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')" class="red">Supprimer</a></p>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>

@@ -152,11 +152,8 @@ a.red {
   flex-direction:row;
 }
 
-/************************
-* GRID SYSTEM
-*
-* @date: 24/04/2021
-*************************
+/*
+* GRID
 */
 .grid {
   display: grid;
@@ -293,11 +290,8 @@ a.red {
 }
 
 
-/************************
+/*
 * FORMS
-*
-* @date: 26/04/2021
-*************************
 */
 .form {
   width: 100%;
@@ -318,11 +312,8 @@ label {
 }
 
 
-/************************
+/*
 * TABLES
-*
-* @date: 23/04/2021
-*************************
 */
 table {
   width: 100%;
@@ -375,11 +366,8 @@ table.table-details tbody tr th:first-child {
 
 
 
-/************************
+/*
 * DESKTOP LAYOUT
-* 
-* @date: 29/04/2021
-*************************
 */
 
 .dashboard-grid {
@@ -453,14 +441,9 @@ table.table-details tbody tr th:first-child {
   color: white;
 }
 
-/************************
+/*
 * MOBILE LAYOUT
-* 
-* @date: 09/06/2021
-*************************
 */
-
-
 
 .menu-icon .iconify {
   vertical-align: middle;
@@ -507,15 +490,8 @@ table.table-details tbody tr th:first-child {
   vertical-align: top;
 }
 
-
-
-
-
-/************************
+/*
 * TEMPLATE SIZING
-* 
-* @date: 11/06/2021
-*************************
 */
 body {
   background-color:var(--light-grey);

@@ -95,7 +95,7 @@ ob_start()
 
             <?php if (!empty($formateurs)) : ?>
                 <?php foreach ($formateurs as $formateur) : ?>
-                    <div class="col-lg-6 col-md-6 col-sm-12 bg-white border rounded p-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12 bg-white border rounded p-1">
                         <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
                         <div>
                             <table class="table-details">
@@ -154,7 +154,7 @@ ob_start()
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-border text-right mb-0 mt-1"><a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>">Modifier</a> | <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="red">Supprimer</a></p>
+                            <p class="text-border text-right mt-1"><a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>">Modifier</a> | <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="red">Supprimer</a></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
