@@ -82,10 +82,7 @@ class FichesDiagnosticController
         if ($res === true) {
             header('location:' . URL . 'entreprises/read/' . $id_entreprise);
         } else {
-            echo '<pre>';
-            var_dump($_POST);
-            echo '</pre>';
-            // header('location:' . URL . 'erreur');
+            header('location:' . URL . 'erreur');
         }
     }
 }

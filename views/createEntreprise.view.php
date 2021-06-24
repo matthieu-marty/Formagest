@@ -70,8 +70,8 @@ ob_start()
             <input class="form" type="text" name="mail" id="mail">
         </div>
     </div>
-    <div class="text-right">
-        <button type="submit" class="btn">Enregistrer</button>
+    <div class="border-top text-right">
+        <button type="submit" class="btn mt-1">Enregistrer</button>
     </div>
 
 </form>

@@ -339,7 +339,7 @@ tr:nth-child(even) {
 .table-container {
   overflow: scroll;
   border: 1px solid var(--border);
-  max-width: calc(100vw - 2rem);
+  max-width: calc(100vw - 1rem);
 }
 .table-container::-webkit-scrollbar  {
   display: none;
@@ -362,6 +362,9 @@ table.table-details tbody tr th:first-child {
 }
 .table-details {
   overflow: hidden;
+}
+.table-details th {
+  padding: 0.25rem;
 }
 
 
