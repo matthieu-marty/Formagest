@@ -4,7 +4,7 @@ ob_start()
 
 <h3>Mettre à jour <?= $of->getNom_Commercial() ?></h3>
 
-<form action="<?= URL ?>organismes-de-formation/update/<?= $of->getId() ?>" method="post" enctype="multipart/form-data">
+<form action="<?= URL ?>organismes-de-formation/update/<?= $of->getId() ?>" method="post" enctype="multipart/form-data" autocomplete="off">
 
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-4 col-sm-6">

@@ -187,15 +187,15 @@ ob_start()
     <h4>Réseaux sociaux</h4>
     <div class="grid gap-1 mb-2">
         <div class="col-lg-6 col-md-8 col-sm-12">
-            <label for="page_facebook"><img src="https://img.icons8.com/fluent/26/000000/facebook-new.png" style="vertical-align:top;" /> Page facebook</label>
+            <label for="page_facebook"><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Page facebook</label>
             <input type="text" name="page_facebook" id="page_facebook" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="abonnes_facebook"><img src="https://img.icons8.com/fluent/26/000000/facebook-new.png" style="vertical-align:top;" /> Abonnés</label>
+            <label for="abonnes_facebook"><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Abonnés</label>
             <input type="text" name="abonnes_facebook" id="abonnes_facebook" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="publicite_facebook"><img src="https://img.icons8.com/fluent/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</label>
+            <label for="publicite_facebook"><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</label>
             <select name="publicite_facebook" id="publicite_facebook" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
@@ -203,15 +203,15 @@ ob_start()
         </div>
 
         <div class="col-lg-6 col-md-8 col-sm-12">
-            <label for="page_instagram"><img src="https://img.icons8.com/fluent/26/000000/instagram-new.png" style="vertical-align:top;" /> Page Instagram</label>
+            <label for="page_instagram"><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Page Instagram</label>
             <input type="text" name="page_instagram" id="page_instagram" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="abonnes_instagram"><img src="https://img.icons8.com/fluent/26/000000/instagram-new.png" style="vertical-align:top;" /> Abonnés</label>
+            <label for="abonnes_instagram"><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Abonnés</label>
             <input type="text" name="abonnes_instagram" id="abonnes_instagram" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="publicite_instagram"><img src="https://img.icons8.com/fluent/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</label>
+            <label for="publicite_instagram"><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</label>
             <select name="publicite_instagram" id="publicite_instagram" class="form">
                 <option value="Non">Non</option>
                 <option value="Oui">Oui</option>
@@ -327,11 +327,11 @@ ob_start()
     <h4>Langues étrangères</h4>
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="niveau_anglais"><img src="https://img.icons8.com/fluent/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</label>
+            <label for="niveau_anglais"><img src="https://img.icons8.com/color/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</label>
             <input type="number" value="0" min="0" max="10" name="niveau_anglais" id="niveau_anglais" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="niveau_espagnol"><img src="https://img.icons8.com/fluent/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</label>
+            <label for="niveau_espagnol"><img src="https://img.icons8.com/color/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</label>
             <input type="number" value="0" min="0" max="10" name="niveau_espagnol" id="niveau_espagnol" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
@@ -339,7 +339,7 @@ ob_start()
             <input type="number" value="0" min="0" max="10" name="niveau_italien" id="niveau_italien" class="form">
         </div>
         <div class="col-lg-2 col-md-2 col-sm-6">
-            <label for="niveau_allemand"><img src="https://img.icons8.com/fluent/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</label>
+            <label for="niveau_allemand"><img src="https://img.icons8.com/color/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</label>
             <input type="number" value="0" min="0" max="10" name="niveau_allemand" id="niveau_allemand" class="form">
         </div>
 
