@@ -6,7 +6,7 @@ ob_start();
 
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
-        <input class="form" type="text" name="search" id="search">
+        <input class="form" type="text" name="search" id="search" autocomplete="off">
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12">
         <a class="btn" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
