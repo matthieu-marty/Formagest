@@ -9,11 +9,11 @@ ob_start();
         <input class="form" type="text" name="search" id="search" autocomplete="off">
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12">
-        <a class="btn" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
+        <a class="btn-form" onclick="recherche()">Rechercher</a>
     </div>
 </div>
 <?php if (!empty($entreprises)) : ?>
-    <div class="table-container rounded">
+    <div class="table-container">
         <table>
             <thead>
                 <tr>

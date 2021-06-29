@@ -85,7 +85,7 @@ ob_start()
         </div>
     </div>
     <div class="border-top text-right">
-        <button type="submit" class="btn mt-1">Enregistrer</button>
+        <button type="submit" class="btn btn-primary-action mt-1">Enregistrer</button>
     </div>
 
 </form>

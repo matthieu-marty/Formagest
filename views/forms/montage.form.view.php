@@ -150,7 +150,7 @@ ob_start()
     </div>
 
     <div class="border-top text-right">
-        <button type="submit" class="btn btn-blue mt-1">Enregistrer</button>
+        <button type="submit" class="btn btn-primary-action btn-primary-action-blue mt-1">Enregistrer</button>
     </div>
 
 

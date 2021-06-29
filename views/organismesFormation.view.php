@@ -9,7 +9,7 @@ ob_start();
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12">
-        <a class="btn" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
+        <a class="btn-form" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
     </div>
     <!-- Recherche enseigne -->
     <script type="text/javascript">
@@ -21,7 +21,7 @@ ob_start();
     </script>
 </div>
 <?php if (!empty($ofs)) : ?>
-    <div class="table-container rounded">
+    <div class="table-container">
         <table>
             <thead>
                 <tr>

@@ -5,16 +5,16 @@ ob_start()
 <h3><?= $of->getNom_Commercial(); ?></h3>
 
 <!-- FICHE ORGNISME FORMATION -->
-<div class="grid gap-1">
+<div class="grid gap-2 ">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
         <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="red">Supprimer</a></p>
 
-        <div class="bg-white border rounded mb-1">
-            <div class="p-1">
+        <div class="card mb-1">
+            
                 <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
-            </div>
-            <div class="p-1">
+            
+            
                 <table class="table-details">
                     <tbody>
                         <tr>
@@ -55,11 +55,11 @@ ob_start()
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            
         </div>
 
         <h5>Coordonnées</h5>
-        <div class="bg-white p-1 rounded border mb-1">
+        <div class="card mb-1">
             <table class="table-details">
                 <tbody>
                     <tr>
@@ -95,7 +95,7 @@ ob_start()
 
             <?php if (!empty($formateurs)) : ?>
                 <?php foreach ($formateurs as $formateur) : ?>
-                    <div class="col-lg-6 col-md-12 col-sm-12 bg-white border rounded p-1">
+                    <div class="col-lg-6 col-md-12 col-sm-12 card">
                         <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
                         <div>
                             <table class="table-details">
@@ -159,7 +159,7 @@ ob_start()
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>
-                <p class="p-2 border-rounded dashed text-grey col-12 text-center text-bold">Section vide</p>
+                <p class="p-2 border dashed text-grey col-12 text-center text-bold">Section vide</p>
             <?php endif; ?>
 
         </div>

@@ -17,7 +17,7 @@ ob_start()
         <textarea class="form form-blue" rows="10" name="Prenom" id="Prenom">Décrivez ici le problème rencontré...</textarea>
     </div>
     <div class="col-12 text-right border-top">
-        <a href="#" class="btn mt-1">Envoyer un ticket</a>
+        <a href="#" class="btn btn-primary-action mt-1">Envoyer un ticket</a>
     </div>
 
 

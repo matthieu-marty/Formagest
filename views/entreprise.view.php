@@ -4,13 +4,13 @@ ob_start()
 <h3><?= $entreprise->getEnseigne(); ?></h3>
 
 <!-- FICHE ENTREPRISE -->
-<div class="grid gap-1">
+<div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
-        <p class="text-border"><a href="<?= URL ?>entreprises">Retour</a> | <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="red">Supprimer</a></p>
+        <p class="text-border"><a class="action-link" href="<?= URL ?>entreprises">Retour</a> | <a class="action-link" href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a class="action-link" href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')">Supprimer</a></p>
 
-        <div class="bg-white rounded border mb-1">
-            <div class="p-1">
+        <div class="card mb-1">
+            <div class="">
                 <h4 class="text-center"><?= $entreprise->getEnseigne(); ?></h4>
                 <table class="table-details">
                     <tbody>
@@ -49,7 +49,7 @@ ob_start()
         </div>
 
         <h5>Coordonnées</h5>
-        <div class="bg-white p-1 rounded border mb-1">
+        <div class="card mb-1">
             <table class="table-details">
                 <tbody>
                     <tr>
@@ -76,9 +76,9 @@ ob_start()
             </table>
         </div>
         <h5>Fiches diagnostic</h5>
-        <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <p class="text-border"><a class="action-link" href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <?php if (!empty($fiches_diagnostic)) : ?>
-            <div class="bg-white grid p-1 rounded border mb-1 col-12">
+            <div class="card grid mb-1 col-12">
                 <table class="col-12 table-details">
                     <tbody>
                         <?php foreach ($fiches_diagnostic as $fiche) : ?>
@@ -91,20 +91,20 @@ ob_start()
                 </table>
             </div>
         <?php else : ?>
-            <p class="p-2 rounded border-dashed text-grey col-12 text-center text-bold">Section vide</p>
+            <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
         <?php endif; ?>
 
     </div>
     <!-- EFFECTIFS -->
     <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Effectifs</h5>
-        <p class="text-border"><a href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <p class="text-border"><a class="action-link" class="action-link" href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
 
-        <div class="grid gap-1">
+        <div class="grid gap-2">
 
             <?php if (!empty($effectifs_entreprise)) : ?>
                 <?php foreach ($effectifs_entreprise as $effectif) : ?>
-                    <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded border p-1">
+                    <div class="col-lg-6 col-md-12 col-sm-12 card">
                         <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
 
                         <table class="table-details">
@@ -155,11 +155,11 @@ ob_start()
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="text-border text-right mt-1"><a href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')" class="red">Supprimer</a></p>
+                        <p class="text-border text-right mt-1"><a class="action-link" href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a class="action-link" href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')">Supprimer</a></p>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>
-                <p class="p-2 rounded border-dashed text-grey col-12 text-center text-bold">Section vide</p>
+                <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
             <?php endif; ?>
 
         </div>
