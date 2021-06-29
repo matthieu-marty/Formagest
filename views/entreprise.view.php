@@ -7,7 +7,7 @@ ob_start()
 <div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
-        <p class="text-border"><a class="action-link" href="<?= URL ?>entreprises">Retour</a> | <a class="action-link" href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a class="action-link" href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')">Supprimer</a></p>
+        <p class="text-border"><a  href="<?= URL ?>entreprises">Retour</a> | <a  href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a  href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')">Supprimer</a></p>
 
         <div class="card mb-1">
             <div class="">
@@ -76,7 +76,7 @@ ob_start()
             </table>
         </div>
         <h5>Fiches diagnostic</h5>
-        <p class="text-border"><a class="action-link" href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <p class="text-border"><a  href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <?php if (!empty($fiches_diagnostic)) : ?>
             <div class="card grid mb-1 col-12">
                 <table class="col-12 table-details">
@@ -98,7 +98,7 @@ ob_start()
     <!-- EFFECTIFS -->
     <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Effectifs</h5>
-        <p class="text-border"><a class="action-link" class="action-link" href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <p class="text-border"><a   href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
 
         <div class="grid gap-2">
 
@@ -155,7 +155,7 @@ ob_start()
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="text-border text-right mt-1"><a class="action-link" href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a class="action-link" href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')">Supprimer</a></p>
+                        <p class="text-border text-right mt-1"><a  href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a  href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')">Supprimer</a></p>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>

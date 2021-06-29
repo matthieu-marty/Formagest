@@ -89,9 +89,6 @@ a {
   text-decoration: none;
 }
 a:hover {text-decoration: underline;}
-.action-link {color: var(--border)}
-.action-link:hover {color:var(--blue); text-decoration: none;}
-
 /*
 * PADDING
 */
