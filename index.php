@@ -68,7 +68,7 @@ if (empty($_GET['page'])) {
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "delete": $formateurs_controller->supprimerFormateur($url[2]); break;//OK
-                    case "edit"  : $formaterus_controller->modifierFormateur($url[2]); break;
+                    case "edit"  : $formateurs_controller->modifierFormateur($url[2]); break;
                     case "create": $formateurs_controller->creerFormateur($url[2]); break; //OK
                     case "save"  : $formateurs_controller->enregistrerFormateur($url[2]); break;//OK
                 }

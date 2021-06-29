@@ -98,7 +98,7 @@ a.red {
 
 .border-bottom {border-bottom: 1px solid var(--border);}
 .border-top {border-top: 1px solid var(--border);}
-.shadow {box-shadow: 0 0.5rem 0.5rem #d1d4fd;}
+.shadow {box-shadow: 0 0 1.5rem #ececec;}
 
 
 .btn {

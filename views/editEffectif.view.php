@@ -27,7 +27,7 @@ ob_start()
             <label for="nom_naissance">Nom naissance</label>
             <input class="form" type="text" name="nom_naissance" id="nom_naissance" value="<?= $effectif->getNom_Naissance() ?>">
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <label for="genre">Genre</label>
             <select name="genre" id="genre" class="form">
                 <option value="<?= $effectif->getGenre() ?>"><?= $effectif->getGenre() ?></option>
@@ -35,7 +35,7 @@ ob_start()
                 <option value="Femme">Femme</option>
             </select>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <label for="date_naissance">Date de naissance</label>
             <input class="form" type="date" name="date_naissance" id="date_naissance" value="<?= $effectif->getDate_Naissance() ?>">
         </div>

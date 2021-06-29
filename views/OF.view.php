@@ -6,7 +6,7 @@ ob_start()
 
 <!-- FICHE ORGNISME FORMATION -->
 <div class="grid gap-1">
-    <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
         <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="red">Supprimer</a></p>
 
@@ -87,15 +87,15 @@ ob_start()
         </div>
     </div>
     <!-- Formateurs -->
-    <div class="col-lg-8 col-md-12 col-sm-12">
+    <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Formateurs</h5>
-        <p class="text-border rounded"><a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>">Ajouter</a></p>
+        <p class="text-border"><a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>">Ajouter</a></p>
 
         <div class="grid gap-1">
 
             <?php if (!empty($formateurs)) : ?>
                 <?php foreach ($formateurs as $formateur) : ?>
-                    <div class="col-lg-6 col-md-6 col-sm-12 bg-white border rounded p-1">
+                    <div class="col-lg-6 col-md-12 col-sm-12 bg-white border rounded p-1">
                         <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
                         <div>
                             <table class="table-details">
