@@ -7,7 +7,7 @@ ob_start()
 <div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
-        <p class="text-border"><a  href="<?= URL ?>entreprises">Retour</a> | <a  href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a  href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')">Supprimer</a></p>
+        <p class="text-border"><a  href="<?= URL ?>entreprises">Retour</a> | <a  href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a  href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="text-red">Supprimer</a></p>
 
         <div class="card mb-1">
             <div class="">
@@ -155,7 +155,7 @@ ob_start()
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="text-border text-right mt-1"><a  href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a  href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')">Supprimer</a></p>
+                        <p class="text-border text-right mt-1 mb-0"><a  href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a  href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')" class="text-red">Supprimer</a></p>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>

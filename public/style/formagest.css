@@ -111,7 +111,7 @@ a:hover {text-decoration: underline;}
 .mt-2{margin-top: 2rem;}
 .mx-auto {margin-left:auto; margin-right: auto;}
 .d-block {display: block;}
-.rounded {border-radius: 1.5rem;}
+.rounded {border-radius: 0.3rem;}/*1.5rem*/
 .shadow {box-shadow: 0  0 12px var(--shadow);}
 
 /*
@@ -121,7 +121,7 @@ a:hover {text-decoration: underline;}
   background-color: white;
   padding: 1.75rem;
   box-shadow: 0 0 12px var(--shadow);
-  border-radius: 1.5rem;
+  border-radius: 0.3rem;
 }
 
 .btn {
@@ -130,14 +130,13 @@ a:hover {text-decoration: underline;}
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  line-height: 1rem;
-  padding: 1rem 2.5rem;
+  line-height: 1.7rem;
+  padding: 0.4rem 0.75rem;
   font-size: 1rem;
-  border-radius: 0.75rem;
-  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  border: none;
   cursor: pointer;
   font-weight: 500;
-  margin:0.25rem;
 }
 .btn:hover {text-decoration:none;}
 
@@ -310,7 +309,7 @@ a:hover {text-decoration: underline;}
   background: white;
   box-shadow: 0  0 12px var(--shadow);
 }
-.btn-form {
+/* .btn-form {
   font: var(--sans-serif);
   display: inline-block;
   color: white;
@@ -326,7 +325,7 @@ a:hover {text-decoration: underline;}
   cursor: pointer;
   font-weight: 500;
 }
-.btn-form:hover {text-decoration: none; box-shadow: 0px 0px 6px var(--primary);}
+.btn-form:hover {text-decoration: none; box-shadow: 0px 0px 6px var(--primary);} */
 label {
   font-weight: 500;
 }

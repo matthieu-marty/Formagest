@@ -8,7 +8,7 @@ ob_start()
 <div class="grid gap-2 ">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
-        <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="red">Supprimer</a></p>
+        <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="text-red">Supprimer</a></p>
 
         <div class="card mb-1">
             
@@ -154,7 +154,7 @@ ob_start()
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-border text-right mt-1"><a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>">Modifier</a> | <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="red">Supprimer</a></p>
+                            <p class="text-border text-right mt-1 mb-0"><a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>">Modifier</a> | <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="text-red">Supprimer</a></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
