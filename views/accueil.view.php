@@ -15,6 +15,5 @@ ob_start()
 <?php
 $content = ob_get_clean();
 $title = "FORMAGEST | Accueil";
-$date = getDate();
 require_once 'views/templates/default.php';
 ?>

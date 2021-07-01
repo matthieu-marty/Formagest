@@ -26,7 +26,7 @@ class OFsController
     {
         $formateurs = $this->formateur_manager->getFormateursByOf($id_of);
         $of = $this->of_manager->getOfById($id_of);
-        require_once 'views/OF.view.php';
+        require_once 'views/organismeDeFormation.view.php';
     }
 
     public function afficherRechercheOf($string)
@@ -48,7 +48,7 @@ class OFsController
 
     public function creerOf()
     {
-        require_once 'views/createOf.view.php';
+        require_once 'views/createorganismeDeFormation.view.php';
     }
 
     public function enregistrerOf()
@@ -84,7 +84,7 @@ class OFsController
     public function modifierOf($id_of)
     {
         $of = $this->of_manager->getOfById($id_of);
-        require_once 'views/editOF.view.php';
+        require_once 'views/editorganismeDeFormation.view.php';
     }
 
     public function actualiserOf($id_of)
@@ -112,6 +112,4 @@ class OFsController
             header('location:' . URL . 'erreur');
         }
     }
-
-    
 }

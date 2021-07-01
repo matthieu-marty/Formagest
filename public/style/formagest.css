@@ -350,7 +350,19 @@ tr:nth-child(even) {
   background-color: #F6F7F7;
   border-radius: 0.3rem!important;
 }
-
+.table-lg {
+  overflow-y: scroll;
+  font-size: 0.8rem;
+}
+.table-lg thead {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background-color: rgb(var(--primary));
+  color: white;
+} 
+.table-lg thead th {
+  font-weight: 500;
+}
 
 .table-container {
   overflow: scroll;
