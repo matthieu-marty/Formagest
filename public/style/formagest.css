@@ -348,11 +348,31 @@ td {
 
 tr:nth-child(even) {
   background-color: #F6F7F7;
-  border-radius: 0.3rem!important;
 }
-.table-lg {
-  overflow-y: scroll;
-  font-size: 0.8rem;
+.table-lg{
+  table-layout: fixed;
+  overflow-x: scroll;
+  border-collapse: collapse;
+}
+.table-lg td, .table-lg th {
+  border:1px solid var(--border);
+}
+.table-lg th {
+  overflow-x: auto;
+  padding: 0.25rem;
+}
+.table-lg tr:hover th{
+  background-color: rgb(var(--primary));
+  color:white;
+}
+.table-lg th.sm {
+  width:150px;
+}
+.table-lg th.md {
+  width:300px;
+}
+.table-lg th.lg {
+  width:500px;
 }
 .table-lg thead {
   text-align: left;
