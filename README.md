@@ -1,4 +1,4 @@
 # Formagest
 Solution de gestion pour centre de formation professionelle
 
-> © copyright Matthieu MARTY 2021 Tous droits réservés
+> © 2021 Matthieu MARTY | Tous droits réservés
