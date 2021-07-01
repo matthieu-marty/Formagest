@@ -4,71 +4,37 @@ ob_start()
 
 <h3>Dossiers de formation</h3>
 
-<p class="text-border"><a href="<?= URL ?>entreprises/create">Montage</a> | <a href="<?= URL ?>entreprises/create">Tableau de suivi</a></p>
+<div class="grid gap-2">
 
-<div class="grid gap-1 mb-1">
-    <div class="col-lg-2 col-md-6 col-sm-12">
-        <input class="form" type="text" name="search" id="search" autocomplete="off">
+    <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
+        <h3>Dossiers en cours</h3>
+        <div class="flex-row mb-2">
+            <img src="https://img.icons8.com/color-glass/100/000000/training.png" class="d-block" />
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">65</span>
+        </div>
+        <a href="#" class="btn btn-primary-action">Tableau de suivi</a>
     </div>
-    <div class="col-lg-8 col-md-6 col-sm-12">
-        <a class="btn btn-primary-action" onclick="recherche()">Rechercher</a>
+    <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
+        <h3>Dossiers cloturés</h3>
+        <div class="flex-row mb-2">
+            <img src="https://img.icons8.com/color-glass/100/000000/package.png" />
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">65</span>
+        </div>
+
+        <a href="#" class="btn btn-primary-action">Plus d'infos</a>
     </div>
+    <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
+        <h3>Monter un dossier</h3>
+        <img src="https://img.icons8.com/color-glass/100/000000/add-list.png" class="d-block mb-2" />
+        <a href="#" class="btn btn-primary-action">Monter un dossier</a>
+    </div>
+    <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
+        <h3>Planning de formation</h3>
+        <img src="https://img.icons8.com/color-glass/100/000000/tear-off-calendar.png" class="d-block mb-2" />
+        <a href="#" class="btn btn-primary-action">Planning de formation</a>
+    </div>
+
 </div>
-<!-- ?php if (!empty($entreprises)) : ?> -->
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th>Stagiaire</th>
-                <th>Entreprise</th>
-                <th>Programme</th>
-                <th>Date début</th>
-                <th>Date fin</th>
-                <th>Organisme</th>
-                <th>Date modificcation</th>
-                <th>Date création</th>
-            </tr>
-        </thead>
-
-        <tbody>
-
-            <tr>
-                <td>Stagiaire</td>
-                <td>Entreprise</td>
-                <td>Programme</td>
-                <td>00-00-0000</td>
-                <td>00-00-0000</td>
-                <td>OF</td>
-                <td>00-00-0000</td>
-                <td>00-00-0000</td>
-            </tr>
-
-        </tbody>
-
-    </table>
-</div>
-<!-- ?php else : ?> -->
-<!-- <p class="p-2 text-grey border-dashed text-center text-bold">Aucun résultats</p> -->
-<!-- ?php endif; ?> -->
-
-
-<!-- Recherche enseigne -->
-<script type="text/javascript">
-    function recherche() {
-        var search = document.getElementById("search").value;
-        if (search !== null) {
-            var url = "<?= URL ?>dossiers-de-formation/search/";
-            document.location.href = url + search;
-        }
-    }
-</script>
-
-
-
-
-
-
-
 
 <?php
 $content = ob_get_clean();

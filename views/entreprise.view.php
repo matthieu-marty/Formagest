@@ -102,6 +102,7 @@ ob_start()
             <?php if (!empty($effectifs_entreprise)) : ?>
                 <?php foreach ($effectifs_entreprise as $effectif) : ?>
                     <div class="col-lg-6 col-md-12 col-sm-12 card">
+
                         <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
 
                         <table class="table-details">
