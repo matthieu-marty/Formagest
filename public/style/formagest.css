@@ -14,7 +14,17 @@
  /*
  * COLORS
  */
-  --primary: #1479FF;
+  --primary: 20, 121, 255; /* #1479ff */
+  /*
+  * blue : 20, 121, 255;
+  * red : 255, 20, 20;
+  * green : 20, 255, 59;
+  * yellow : 
+  * orange : 255, 157, 0;
+  * black : 0, 0, 0;
+  * pink : 255, 20, 200;
+  * purple : 181, 20, 255;
+  */
   --blue: #1479FF;
   --green: #14ff3b;
   --red: #ff1414;
@@ -32,7 +42,7 @@
 
   --border: #C3C4C7;
   --shadow: #b3b1db60;
-  --body-background: #f4f8fd;
+  --body-background: rgba(var(--primary), 0.05);/*#f4f8fd*/
   --menu-background: #FFFFFF;
   /* --menu-background: #1D2327; */
   /* border : #c3c4c7*/
@@ -143,14 +153,14 @@ a:hover {text-decoration: underline;}
 
 .btn-primary-action {
   color: #FFFFFF;
-  background-color: var(--primary);
+  background-color: rgb(var(--primary));
 }
 .btn-primary-action:hover {
-  box-shadow: 0px 0px 6px var(--primary);
+  box-shadow: 0px 0px 6px rgb(var(--primary));
 }
 
 .btn-secondary-action {
-  color: var(--primary);
+  color: rgb(var(--primary));
   background-color: #ececec;
 }
 .btn-secondary-action:hover {
@@ -309,29 +319,12 @@ a:hover {text-decoration: underline;}
   background: white;
   box-shadow: 0  0 12px var(--shadow);
 }
-/* .btn-form {
-  font: var(--sans-serif);
-  display: inline-block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: baseline;
-  background-color: var(--blue);
-  line-height: 1.7rem;
-  padding: 0.4rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.3rem;
-  border:none;
-  cursor: pointer;
-  font-weight: 500;
-}
-.btn-form:hover {text-decoration: none; box-shadow: 0px 0px 6px var(--primary);} */
 label {
   font-weight: 500;
 }
 .form:focus {
-  border: 2px solid var(--blue);
-  box-shadow: 0  0 3px var(--blue);
+  border: 2px solid rgb(var(--primary));
+  box-shadow: 0  0 3px rgb(var(--primary));
 }
 
 
@@ -371,10 +364,9 @@ tr:nth-child(even) {
 .table-container thead {
   position: sticky;
   top:0;
-  z-index: 1!important; 
   text-align: left;
   padding: 0.5rem 1rem;
-  background-color: var(--blue);
+  background-color: rgb(var(--primary));
   color: white;
 }
 .table-container thead th {
@@ -424,7 +416,7 @@ table.table-details tbody tr th:first-child {
   font-weight: 500;
 }
 .sidebar-link:hover {
-  color: var(--blue);
+  color: rgb(var(--primary));
   text-decoration: none;
 }
 
@@ -438,7 +430,7 @@ table.table-details tbody tr th:first-child {
 
 .topbar {
   color: white;
-  background-color: var(--blue);
+  background-color: rgb(var(--primary));
   display:flex;
   flex-direction:row;
   position:sticky; 
