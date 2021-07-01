@@ -10,7 +10,7 @@ ob_start()
         <p class="text-border"><a href="<?= URL ?>entreprises">Retour</a> | <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="text-red">Supprimer</a></p>
 
         <div class="card mb-1">
-            <h4 class="text-center"><?= $entreprise->getEnseigne(); ?></h4>
+            <h4><?= $entreprise->getEnseigne(); ?></h4>
             <table class="table-details">
                 <tbody>
                     <tr>
@@ -80,7 +80,7 @@ ob_start()
                     <tbody>
                         <?php foreach ($fiches_diagnostic as $fiche) : ?>
                             <tr>
-                                <th>Date</th>
+                                <th style="width:50px;"><img src="https://img.icons8.com/color-glass/40/000000/document-1.png"/></th>
                                 <th><a href="#"><?= $fiche->getDate_creation() ?></a></th>
                             </tr>
                         <?php endforeach; ?>

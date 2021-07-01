@@ -12,7 +12,7 @@ ob_start()
 
         <div class="card mb-1">
 
-            <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
+            <h4><?= $of->getNom_Commercial(); ?></h4>
             <table class="table-details">
                 <tbody>
                     <tr>
