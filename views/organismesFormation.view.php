@@ -9,7 +9,7 @@ ob_start();
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12">
-        <a class="btn-form" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
+        <a class="btn btn-primary-action" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
     </div>
     <!-- Recherche enseigne -->
     <script type="text/javascript">

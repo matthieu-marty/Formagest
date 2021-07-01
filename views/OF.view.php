@@ -11,51 +11,49 @@ ob_start()
         <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="text-red">Supprimer</a></p>
 
         <div class="card mb-1">
-            
-                <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
-            
-            
-                <table class="table-details">
-                    <tbody>
-                        <tr>
-                            <th>Nom commercial</th>
-                            <th><?= $of->getNom_Commercial(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Siret</th>
-                            <th><?= $of->getSiret(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Code APE</th>
-                            <th><?= $of->getCode_Ape(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Numéro déclaration</th>
-                            <th><?= $of->getNumero_Declaration(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Discipline</th>
-                            <th><?= $of->getDiscipline(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Numéro Qualiopi</th>
-                            <th><?= $of->getNumero_Qualiopi(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>TVA</th>
-                            <th><?= $of->getTva(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>Date modification</th>
-                            <th><?= $of->getDate_Maj(); ?></th>
-                        </tr>
-                        <tr>
-                            <th>date création</th>
-                            <th><?= $of->getDate_Creation(); ?></th>
-                        </tr>
-                    </tbody>
-                </table>
-            
+
+            <h4 class="text-center"><?= $of->getNom_Commercial(); ?></h4>
+            <table class="table-details">
+                <tbody>
+                    <tr>
+                        <th>Nom commercial</th>
+                        <th><?= $of->getNom_Commercial(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Siret</th>
+                        <th><?= $of->getSiret(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Code APE</th>
+                        <th><?= $of->getCode_Ape(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Numéro déclaration</th>
+                        <th><?= $of->getNumero_Declaration(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Discipline</th>
+                        <th><?= $of->getDiscipline(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Numéro Qualiopi</th>
+                        <th><?= $of->getNumero_Qualiopi(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>TVA</th>
+                        <th><?= $of->getTva(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>Date modification</th>
+                        <th><?= $of->getDate_Maj(); ?></th>
+                    </tr>
+                    <tr>
+                        <th>date création</th>
+                        <th><?= $of->getDate_Creation(); ?></th>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
 
         <h5>Coordonnées</h5>

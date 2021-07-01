@@ -98,6 +98,7 @@ if (empty($_GET['page'])) {
          * AUTRES
          */
         case "fiche-montage" : require_once "views/forms/montage.form.view.php"; break;
+        case "dossiers-de-formation" : require_once "views/dossiers-de-formation.view.php"; break;
         case "accueil": require_once "views/accueil.view.php";break;
         case "erreur" : require_once "views/erreur.view.php"; break;
         case "rapport": require_once "views/rapport.view.php"; break;

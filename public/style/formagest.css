@@ -16,10 +16,10 @@
  */
   --primary: #1479FF;
   --blue: #1479FF;
-  --green: #34C759;
-  --red: #FF3B30;
-  --orange: #FF9500;
-  --yellow : #FFCC00;
+  --green: #14ff3b;
+  --red: #ff1414;
+  --orange: #ff9d00;
+  --yellow : #fffb00;
   --grey: #808080;
   --black: #1D2327;
   --white : #FFFFFF;
@@ -32,6 +32,7 @@
 
   --border: #C3C4C7;
   --shadow: #b3b1db60;
+  --body-background: #f4f8fd;
   --menu-background: #FFFFFF;
   /* --menu-background: #1D2327; */
   /* border : #c3c4c7*/
@@ -44,7 +45,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color:var(--text-color);
-  background-color:#f4f8fd;
+  background-color:var(--body-background);
   min-height: 100vh;
 }
 
@@ -164,7 +165,7 @@ a:hover {text-decoration: underline;}
 .bg-orange {background-color: var(--orange);}
 .bg-grey {background-color: var(--grey)}
 .bg-white {background-color:var(--white);}
-
+.bg-yellow {background-color: var(--yellow)}
 
 /*
 * FLEXBOX
@@ -228,7 +229,7 @@ a:hover {text-decoration: underline;}
   .col-sm-10 {grid-column-end: span 10;}
   .col-sm-11 {grid-column-end: span 11;}
   .col-sm-12 {grid-column-end: span 12;}
-  .btn, .btn-form {width: 100%;}
+  .btn {width: 100%;}
   .table-container {max-height: 60vh;}
 
 }
@@ -249,7 +250,6 @@ a:hover {text-decoration: underline;}
   .col-md-10 {grid-column-end: span 10;}
   .col-md-11 {grid-column-end: span 11;}
   .col-md-12 {grid-column-end: span 12;}
-
 
   .table-container {max-height: 60vh;}
 
@@ -408,8 +408,9 @@ table.table-details tbody tr th:first-child {
   flex-direction: column;
   background-color: var(--menu-background);
   height: calc(100vh - 35px);
-  position:sticky; 
+  position:sticky;
   top:35px;
+  padding-top: 2rem;
   box-shadow: 0  0 12px var(--shadow);
 }
 
@@ -418,14 +419,12 @@ table.table-details tbody tr th:first-child {
   padding-top: 0.25rem;
   padding-bottom:0.25rem;
   padding-left: 0.25rem;
-  border-left: 5px solid transparent;
-  font-size: 1.2rem;
-  color: #a0a5a9;
-  font-weight: 400;
+  font-size: 1.1rem;
+  color: #b3b1db;
+  font-weight: 500;
 }
 .sidebar-link:hover {
   color: var(--blue);
-  border-left: 5px solid var(--blue);
   text-decoration: none;
 }
 
@@ -435,6 +434,7 @@ table.table-details tbody tr th:first-child {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
+
 
 .topbar {
   color: white;

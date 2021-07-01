@@ -32,10 +32,10 @@
     <div class="dashboard-grid">
 
         <!-- SIDEBAR-->
-        <div class="sidebar pt-2">
+        <div class="sidebar">
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span> Tableau suivi</a>
-            <a class="sidebar-link" href="<?= URL ?>montage"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Montage</a>
+            <a class="sidebar-link" href="<?= URL ?>dossiers-de-formation"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Dossiers</a>
             <a class="sidebar-link" href="<?= URL ?>entreprises"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Entreprises</a>
             <a class="sidebar-link" href="<?= URL ?>organismes-de-formation"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Organismes</a>
             <a class="sidebar-link" href="<?= URL ?>opcas"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> OPCAs</a>
@@ -56,7 +56,7 @@
                 <div class="flex-col">
                     <a class="mobile-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>
                     <a class="mobile-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span> Tableau suivi</a>
-                    <a class="mobile-link" href="<?= URL ?>montage"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Montage</a>
+                    <a class="mobile-link" href="<?= URL ?>dossiers-de-formation"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Dossiers</a>
                     <a class="mobile-link" href="<?= URL ?>entreprises"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Entreprises</a>
                     <a class="mobile-link" href="<?= URL ?>organismes-de-formation"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Organismes</a>
                     <a class="mobile-link" href="<?= URL ?>opcas"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> OPCAs</a>
