@@ -2,9 +2,9 @@
 ob_start()
 ?>
 
-<h3 class="mb-2">Dossiers de formation</h3>
+<h3>Dossiers de formation</h3>
 
-<p class="text-border"><a href="<?= URL ?>entreprises/create">Montage</a></p>
+<p class="text-border"><a href="<?= URL ?>entreprises/create">Montage</a> | <a href="<?= URL ?>entreprises/create">Tableau de suivi</a></p>
 
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
@@ -35,7 +35,7 @@ ob_start()
             <tr>
                 <td>Stagiaire</td>
                 <td>Entreprise</td>
-                <td>Programme></td>
+                <td>Programme</td>
                 <td>00-00-0000</td>
                 <td>00-00-0000</td>
                 <td>OF</td>

@@ -45,13 +45,13 @@
         <div class="mobile">
             <label class="menu-icon" for="display-menu"><span class="iconify" data-icon="fluent:line-horizontal-3-20-filled" data-inline="false"></span></label>
             <input type="checkbox" id="display-menu" name="display-menu">
-            <a href="#" style="text-decoration:none; font-weight:bold; color:white; margin-left: 1rem; font-size:1.5rem;line-height:2rem; vertical-align:middle;">Formagest</a>
+            <a href="#" style="text-decoration:none; font-weight:bold; color:var(--blue); margin-left: 1rem; font-size:1.5rem;line-height:2rem; vertical-align:middle;">Formagest</a>
             <div class="mobile-menu">
-                <div class="div text-center" style="border-top: 1px solid #a0a5a9;border-bottom: 1px solid #a0a5a9; padding-bottom: 0.5rem;padding-top: 0.5rem;">
-                    <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:alert-24-filled" data-inline="false"></a>
-                    <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:person-circle-20-filled" data-inline="false"></span></a></a>
-                    <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:settings-28-filled" data-inline="false"></span></a>
-                    <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:door-16-filled" data-inline="false"></span></a>
+                <div class="text-center" style="border-top: 1px solid var(--border);border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;padding-top: 0.5rem;">
+                    <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:alert-24-filled" data-inline="false"></a>
+                    <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:person-circle-20-filled" data-inline="false"></span></a></a>
+                    <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:settings-28-filled" data-inline="false"></span></a>
+                    <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:door-16-filled" data-inline="false"></span></a>
                 </div>
                 <div class="flex-col">
                     <a class="mobile-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>

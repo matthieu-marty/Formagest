@@ -443,7 +443,7 @@ table.table-details tbody tr th:first-child {
   flex-direction:row;
   position:sticky; 
   top:0;
-  
+  box-shadow: 0px 0px 12px var(--shadow);
 }
 .topbar img {
   padding-right: 0.5rem; 
@@ -487,16 +487,13 @@ table.table-details tbody tr th:first-child {
   padding-top: 0.7rem;
   padding-bottom:0.7rem;
   padding-left: 0.25rem;
-  border-left: 5px solid transparent;
   font-size: 1.5rem;
-  color: #a0a5a9;
+  color: #b3b1db;
   line-height:1.8rem;
 }
 .mobile-link:hover {
-  color: white;
-  border-left: 5px solid var(--blue);
+  color: var(--blue);
   text-decoration: none;
-  background-color: #2b343a;
 }
 
 
@@ -523,11 +520,11 @@ table.table-details tbody tr th:first-child {
 * TEMPLATE SIZING
 */
 .mobile {
-  background-color:#1d2327;
+  background-color:#FFFFFF;
   position:sticky; 
   top:0;
   display: none;
-
+  box-shadow: 0  0 12px var(--shadow);
 }
 @media (max-width: 1025px) {
   .sidebar, .topbar {
