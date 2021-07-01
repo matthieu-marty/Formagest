@@ -5,16 +5,16 @@ ob_start()
     <thead>
         <tr>
             <th class="sm">Client</th>
-            <th class="md">REF</th>
+            <th class="sm">REF</th>
             <th class="sm">A.Pedago.</th>
-            <th class="sm">OF</th>
-            <th class="sm">Formateur</th>
+            <th class="xs">OF</th>
+            <th class="xs">Form.</th>
             <th class="md">Entreprise</th>
             <th class="md">Stagiaires</th>
-            <th class="sm">NB St.</th>
+            <th class="xs">NB St.</th>
             <th class="lg">Programme</th>
-            <th class="sm">NB H.</th>
-            <th class="sm">CA TT</th>
+            <th class="xs">NB H.</th>
+            <th class="xs">CA TT</th>
             <th class="sm">Debut</th>
             <th class="sm">Fin</th>
             <th class="md">OPCA</th>

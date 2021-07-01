@@ -357,6 +357,10 @@ tr:nth-child(even) {
 .table-lg td, .table-lg th {
   border:1px solid var(--border);
 }
+.table-lg thead {
+  position: sticky;
+  top: 0;
+}
 .table-lg th {
   overflow-x: auto;
   padding: 0.25rem;
@@ -365,6 +369,9 @@ tr:nth-child(even) {
   background-color: rgb(var(--primary));
   color:white;
 }
+.table-lg th.xs {
+  width:70px;
+}
 .table-lg th.sm {
   width:150px;
 }
@@ -372,7 +379,7 @@ tr:nth-child(even) {
   width:300px;
 }
 .table-lg th.lg {
-  width:500px;
+  width:600px;
 }
 .table-lg thead {
   text-align: left;
