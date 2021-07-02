@@ -103,20 +103,23 @@ if (empty($_GET['page'])) {
              */
         case "formateurs":
             require_once "controllers/FormateurController.controller.php";
-            $formateurs_controller = new FormateurController;
+            $formateur_controller = new FormateurController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "delete":
-                        $formateurs_controller->supprimerFormateur($url[2]);
+                        $formateur_controller->supprimerFormateur($url[2]);
                         break; //OK
                     case "edit":
-                        $formateurs_controller->modifierFormateur($url[2]);
+                        $formateur_controller->modifierFormateur($url[2]);
+                        break;
+                    case "update" :
+                        $formateur_controller->actualiserFormateur($url[2]);
                         break;
                     case "create":
-                        $formateurs_controller->creerFormateur($url[2]);
+                        $formateur_controller->creerFormateur($url[2]);
                         break; //OK
                     case "save":
-                        $formateurs_controller->enregistrerFormateur($url[2]);
+                        $formateur_controller->enregistrerFormateur($url[2]);
                         break; //OK
                 }
             } else {

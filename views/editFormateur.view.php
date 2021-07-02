@@ -5,7 +5,7 @@ ob_start()
 <h3>Mettre à jour <?= $formateur->getPrenom() . ' ' . $formateur->getNom() ?></h3>
 
 
-<form action="<?= URL ?>formateurs/save/<?= $id ?>" method="post" enctype="multipart/form-data" autocomplete="off">
+<form action="<?= URL ?>formateurs/update/<?= $formateur->getId() ?>" method="post" enctype="multipart/form-data" autocomplete="off">
 
     <div class="grid gap-1 mb-2">
         <div class="col-lg-2 col-md-4 col-sm-6">

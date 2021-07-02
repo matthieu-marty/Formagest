@@ -85,7 +85,7 @@ class EffectifController
             $effectif = $this->effectif_manager->getEffectifById($id_effectif);
             header('location:' . URL . 'entreprises/read/' . $effectif->getId_Entreprise());
         } else {
-            var_dump($_POST);
+            header('location:' . URL . 'erreur');
         }
     }
 }

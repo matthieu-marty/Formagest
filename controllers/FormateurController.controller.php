@@ -63,4 +63,29 @@ class FormateurController
         $formateur = $this->formateur_manager->getFormateurById($id_formateur);
         require_once 'views/editFormateur.view.php';
     }
+
+    public function actualiserFormateur($id_formateur)
+    {
+        $res = $this->formateur_manager->actualiserFormateurDB(
+            $id_formateur,
+            $_POST['nom'],
+            $_POST['prenom'],
+            $_POST['discipline'],
+            $_POST['adresse'],
+            $_POST['code_postal'],
+            $_POST['ville'],
+            $_POST['telephone'],
+            $_POST['mail'],
+            $_POST['code_naf'],
+            $_POST['numero_qualiopi'],
+            $_POST['tva'],
+            $_POST['date_creation']
+        );
+        if ($res === true) {
+            $formateur = $this->formateur_manager->getFormateurById($id_formateur);
+            header('location:' . URL . 'organismes-de-formation/read/' . $formateur->getId_Organisme_Formation());
+        } else {
+            header('location:' . URL . 'erreur');
+        }
+    }
 }
