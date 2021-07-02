@@ -57,7 +57,7 @@ if (empty($_GET['page'])) {
                         $fiches_diagnostic_controller->enregistrerFicheDiagnostic($url[2]);
                         break;
                     case "read":
-                        $fiches_diagnostic_controller->affcherFicheDiagnostic($url[2]);
+                        $fiches_diagnostic_controller->afficherFicheDiagnostic($url[2]);
                         break;
                 }
             }

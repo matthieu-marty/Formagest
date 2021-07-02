@@ -1,13 +1,13 @@
 <?php
 require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/EffectifManager.class.php';
-require_once 'models/managers/FichesDiagnosticManager.class.php';
+require_once 'models/managers/FicheDiagnosticManager.class.php';
 
 class EntrepriseController
 {
     private $entreprise_manager;
     private $effectif_manager;
-    private $fiches_diagnostic_manager;
+    private $fiche_diagnostic_manager;
 
     public function __construct()
     {
@@ -15,8 +15,8 @@ class EntrepriseController
         $this->entreprise_manager->chargementEntreprises();
         $this->effectif_manager = new EffectifManager;
         $this->effectif_manager->chargementEffectifs();
-        $this->fiches_diagnostic_manager = new FichesDiagnosticManager;
-        $this->fiches_diagnostic_manager->chargementFichesDiagnostic();
+        $this->fiche_diagnostic_manager = new FicheDiagnosticManager;
+        $this->fiche_diagnostic_manager->chargementFichesDiagnostic();
     }
 
     public function afficherEntreprises()
@@ -29,7 +29,7 @@ class EntrepriseController
     {
         $effectifs_entreprise = $this->effectif_manager->getEffectifsByEntreprise($id_entreprise);
         $entreprise = $this->entreprise_manager->getEntrepriseById($id_entreprise);
-        $fiches_diagnostic = $this->fiches_diagnostic_manager->getFichesDiagnosticByEntreprise($id_entreprise);
+        $fiches_diagnostic = $this->fiche_diagnostic_manager->getFichesDiagnosticByEntreprise($id_entreprise);
         require_once 'views/entreprise.view.php';
     }
 

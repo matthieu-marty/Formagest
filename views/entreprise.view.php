@@ -81,7 +81,7 @@ ob_start()
                         <?php foreach ($fiches_diagnostic as $fiche) : ?>
                             <tr>
                                 <th style="width:50px;"><img src="https://img.icons8.com/color-glass/40/000000/document-1.png"/></th>
-                                <th><a href="#"><?= $fiche->getDate_creation() ?></a></th>
+                                <th><a href="<?= URL ?>fiche-diagnostic/read/<?= $fiche->getId(); ?>"><?= $fiche->getDate_creation() ?></a></th>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

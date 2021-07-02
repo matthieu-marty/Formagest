@@ -2,7 +2,7 @@
 require_once 'models/classes/Model.class.php';
 require_once 'models/classes/FicheDiagnostic.class.php';
 
-class FichesDiagnosticManager extends Model
+class FicheDiagnosticManager extends Model
 {
     private $fiches_diagnostic;
 
@@ -326,5 +326,15 @@ class FichesDiagnosticManager extends Model
             }
         }
         return $fiches_diagnostic;
+    }
+
+    public function getFicheDiagnosticById($id_fiche_diagnostic)
+    {
+        foreach ($this->fiches_diagnostic as $fiche) {
+            if ($fiche->getId() === $id_fiche_diagnostic) {
+                return $fiche;
+                break;
+            }
+        }
     }
 }

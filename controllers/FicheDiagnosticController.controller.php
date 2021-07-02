@@ -1,18 +1,18 @@
 <?php
 require_once 'models/managers/EntrepriseManager.class.php';
-require_once 'models/managers/FichesDiagnosticManager.class.php';
+require_once 'models/managers/FicheDiagnosticManager.class.php';
 
 class FicheDiagnosticController
 {
-    private $fiches_diagnostic_manager;
+    private $fiche_diagnostic_manager;
     private $entreprise_manager;
 
     public function __construct()
     {
         $this->entreprise_manager = new EntrepriseManager;
         $this->entreprise_manager->chargementEntreprises();
-        $this->fiches_diagnostic_manager = new FichesDiagnosticManager;
-        $this->fiches_diagnostic_manager->chargementFichesDiagnostic();
+        $this->fiche_diagnostic_manager = new FicheDiagnosticManager;
+        $this->fiche_diagnostic_manager->chargementFichesDiagnostic();
     }
 
     public function creerFicheDiagnostic($id_entreprise)
@@ -23,7 +23,7 @@ class FicheDiagnosticController
 
     public function enregistrerFicheDiagnostic($id_entreprise)
     {
-        $res = $this->fiches_diagnostic_manager->enregistrerFicheDiagnosticDB(
+        $res = $this->fiche_diagnostic_manager->enregistrerFicheDiagnosticDB(
             $id_entreprise,
             $_POST['communication'],
             $_POST['web'],
@@ -89,5 +89,7 @@ class FicheDiagnosticController
 
     public function afficherFicheDiagnostic($id_fiche_diagnostic)
     {
+        $fiche_diagnostic = $this->fiche_diagnostic_manager->getFicheDiagnosticById($id_fiche_diagnostic);
+        require_once "views/ficheDiagnostic.view.php";
     }
 }
