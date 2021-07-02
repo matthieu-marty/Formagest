@@ -351,7 +351,7 @@ tr:nth-child(even) {
 }
 .table-lg{
   table-layout: fixed;
-  overflow-x: scroll;
+  overflow: scroll;
   border-collapse: collapse;
 }
 .table-lg td, .table-lg th {
@@ -361,26 +361,16 @@ tr:nth-child(even) {
   position: sticky;
   top: 0;
 }
-.table-lg th {
-  overflow-x: auto;
+.table-lg tbody tr td {
+  overflow: hidden;
+  white-space: nowrap;
   padding: 0.25rem;
+  max-height: 2rem;
 }
-.table-lg tr:hover th{
-  background-color: rgb(var(--primary));
-  color:white;
+.table-lg tbody tr:hover{
+  background-color: #eeff00;
 }
-.table-lg th.xs {
-  width:70px;
-}
-.table-lg th.sm {
-  width:150px;
-}
-.table-lg th.md {
-  width:300px;
-}
-.table-lg th.lg {
-  width:600px;
-}
+
 .table-lg thead {
   text-align: left;
   padding: 0.5rem 1rem;
