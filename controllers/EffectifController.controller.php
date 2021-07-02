@@ -2,7 +2,7 @@
 require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/EffectifManager.class.php';
 
-class EffectifsController
+class EffectifController
 {
     private $effectif_manager;
 

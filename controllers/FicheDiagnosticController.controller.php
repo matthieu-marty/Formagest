@@ -2,7 +2,7 @@
 require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/FichesDiagnosticManager.class.php';
 
-class FichesDiagnosticController
+class FicheDiagnosticController
 {
     private $fiches_diagnostic_manager;
     private $entreprise_manager;
@@ -84,5 +84,10 @@ class FichesDiagnosticController
         } else {
             header('location:' . URL . 'erreur');
         }
+    }
+
+
+    public function afficherFicheDiagnostic($id_fiche_diagnostic)
+    {
     }
 }

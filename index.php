@@ -11,7 +11,7 @@ if (empty($_GET['page'])) {
          * ENTREPRISES
          */
         case "entreprises":
-            require_once "controllers/EntreprisesController.controller.php";
+            require_once "controllers/EntrepriseController.controller.php";
             $entreprise_controller = new EntrepriseController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
@@ -46,8 +46,8 @@ if (empty($_GET['page'])) {
              * FICHE DIAGNOSTIC
              */
         case "fiche-diagnostic":
-            require_once "controllers/FichesDiagnosticController.controller.php";
-            $fiches_diagnostic_controller = new FichesDiagnosticController;
+            require_once "controllers/FicheDiagnosticController.controller.php";
+            $fiches_diagnostic_controller = new FicheDiagnosticController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "create":
@@ -55,6 +55,9 @@ if (empty($_GET['page'])) {
                         break;
                     case "save":
                         $fiches_diagnostic_controller->enregistrerFicheDiagnostic($url[2]);
+                        break;
+                    case "read":
+                        $fiches_diagnostic_controller->affcherFicheDiagnostic($url[2]);
                         break;
                 }
             }
@@ -64,8 +67,8 @@ if (empty($_GET['page'])) {
              * ORGANISMES DE FORMATION
              */
         case "organismes-de-formation":
-            require_once "controllers/OFsController.controller.php";
-            $ofs_controller = new OFsController;
+            require_once "controllers/OrganismeFormationController.controller.php";
+            $ofs_controller = new OrganismeFormationController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "read":
@@ -99,8 +102,8 @@ if (empty($_GET['page'])) {
              * FORMATEURS
              */
         case "formateurs":
-            require_once "controllers/FormateursController.controller.php";
-            $formateurs_controller = new FormateursController;
+            require_once "controllers/FormateurController.controller.php";
+            $formateurs_controller = new FormateurController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "delete":
@@ -125,8 +128,8 @@ if (empty($_GET['page'])) {
              * EFFECTIFFS
              */
         case "effectifs":
-            require_once "controllers/EffectifsController.controller.php";
-            $effectifs_controller = new EffectifsController;
+            require_once "controllers/EffectifController.controller.php";
+            $effectifs_controller = new EffectifController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "delete":

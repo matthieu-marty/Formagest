@@ -2,7 +2,7 @@
 require_once 'models/managers/OFManager.class.php';
 require_once 'models/managers/FormateurManager.class.php';
 
-class OFsController
+class OrganismeFormationController
 {
     private $of_manager;
     private $formateur_manager;

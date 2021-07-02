@@ -1,7 +1,7 @@
 <?php
 require_once 'models/managers/FormateurManager.class.php';
 
-class FormateursController
+class FormateurController
 {
     private $formateur_manager;
 
@@ -12,7 +12,8 @@ class FormateursController
     }
 
     public function afficherFormateurs()
-    {   $formateurs = $this->formateur_manager->getFormateurs();
+    {
+        $formateurs = $this->formateur_manager->getFormateurs();
         require_once 'views/formateurs.view.php';
     }
 
@@ -51,11 +52,9 @@ class FormateursController
         $res = $this->formateur_manager->supprimerFormateurDB($id_formateur);
         if ($res === true) {
             $formateur = $this->formateur_manager->getFormateurById($id_formateur);
-            header('location:' . URL . 'organismes-de-formation/read/'.$formateur->getId_Organisme_Formation());
+            header('location:' . URL . 'organismes-de-formation/read/' . $formateur->getId_Organisme_Formation());
         } else {
             header('location:' . URL . 'erreur');
         }
     }
-
-
 }
