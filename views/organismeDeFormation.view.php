@@ -157,7 +157,7 @@ ob_start()
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>
-                <p class="p-2 border dashed text-grey col-12 text-center text-bold">Section vide</p>
+                <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
             <?php endif; ?>
 
         </div>
