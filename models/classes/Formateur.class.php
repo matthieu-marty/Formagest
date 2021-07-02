@@ -59,7 +59,7 @@ class Formateur
     {
         return $this->prenom;
     }
-    public function setPronom($prenom)
+    public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
     }

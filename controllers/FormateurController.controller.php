@@ -57,4 +57,10 @@ class FormateurController
             header('location:' . URL . 'erreur');
         }
     }
+
+    public function modifierFormateur($id_formateur)
+    {
+        $formateur = $this->formateur_manager->getFormateurById($id_formateur);
+        require_once 'views/editFormateur.view.php';
+    }
 }
