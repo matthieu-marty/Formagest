@@ -41,12 +41,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus) epojvnajrvôarv ari hvaeorih vaeorih àaàierhg oiazhr z 'a'oihf aozihaz'og iai'ghaz azirghza aoihg aigh azo</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -62,12 +62,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -83,12 +83,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -104,12 +104,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -125,12 +125,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -146,12 +146,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -167,12 +167,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -188,12 +188,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -209,12 +209,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -230,12 +230,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -251,12 +251,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -272,12 +272,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -293,12 +293,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -314,12 +314,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -335,12 +335,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -356,12 +356,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -377,12 +377,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -398,12 +398,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -419,12 +419,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -440,12 +440,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -461,12 +461,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -482,12 +482,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -503,12 +503,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -524,12 +524,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -545,12 +545,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -566,12 +566,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -587,12 +587,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -608,12 +608,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -629,12 +629,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -650,12 +650,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -671,12 +671,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -692,12 +692,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -713,12 +713,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -734,12 +734,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -755,12 +755,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -776,12 +776,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>
@@ -797,12 +797,12 @@ ob_start()
             <td>Initition au logiiel excel (2013 et plus)</td>
             <td>7</td>
             <td>420</td>
-            <td>03/06/2021</td>
-            <td>24/06/2021</td>
+            <td>03-06-2021</td>
+            <td>24-06-2021</td>
             <td>CPF - CPF PARTICULIER</td>
             <td>31/05/2021</td>
-            <td>03/06/2021</td>
-            <td>28/06/2021</td>
+            <td>03-06-2021</td>
+            <td>28-06-2021</td>
             <td>420 €</td>
             <td>X</td>
         </tr>

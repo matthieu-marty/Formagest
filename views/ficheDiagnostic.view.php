@@ -5,12 +5,8 @@ ob_start()
 <h3 class="mb-2">Fiche diagnostic</h3>
 
 <pre class="card">
-    <?php var_dump($fiche_diagnostic); ?>
+    <?php print_r($fiche_diagnostic); ?>
 </pre>
-
-
-
-
 
 
 
