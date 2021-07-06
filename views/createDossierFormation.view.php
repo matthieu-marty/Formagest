@@ -35,9 +35,14 @@ ob_start()
             <tbody>
                 <?php foreach ($effectifs as $effectif) : ?>
                     <tr>
-                        <td><a href="http://localhost/formagest/entreprises/read/<?= $effectif->getId(); ?>"><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></a></td>
+                        <td><a href="<?= URL ?>dossier-formation-individuelle/create/<?= $effectif->getId(); ?>"><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></a></td>
                         <td><?= $effectif->getFonction(); ?></td>
-                        <td><?php $entreprise = $entreprise_manager->getEntrepriseById($effectif->getId_Entreprise()); echo($entreprise->getEnseigne());?></td>
+                        <td>
+                            <?php
+                            $entreprise = $entreprise_manager->getEntrepriseById($effectif->getId_Entreprise());
+                            echo ($entreprise->getEnseigne());
+                            ?>
+                        </td>
                         <td><?= $effectif->getTelephone(); ?></td>
                         <td><?= $effectif->getMail(); ?></td>
                         <td><?= $effectif->getDate_Maj(); ?></td>

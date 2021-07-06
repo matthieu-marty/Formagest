@@ -8,7 +8,7 @@ ob_start()
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
         <h3>Monter un dossier</h3>
         <img src="https://img.icons8.com/color-glass/100/000000/add-list.png" class="d-block mb-2" />
-        <a href="<?= URL ?>dossier-formation-individuel" class="btn btn-primary-action">Individuel</a>
+        <a href="<?= URL ?>dossier-formation-individuelle" class="btn btn-primary-action">Individuel</a>
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">

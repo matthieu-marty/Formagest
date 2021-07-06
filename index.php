@@ -106,7 +106,7 @@ if (empty($_GET['page'])) {
             /**
              * DOSSIERS DE FORMATION
              */
-        case "dossier-formation-individuel" : 
+        case "dossier-formation-individuelle" : 
             require_once "controllers/EffectifController.controller.php";
             $effectif_controller = new EffectifController;
 
