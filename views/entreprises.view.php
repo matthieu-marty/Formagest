@@ -12,6 +12,7 @@ ob_start();
         <a class="btn btn-primary-action" onclick="recherche()">Rechercher</a>
     </div>
 </div>
+
 <?php if (!empty($entreprises)) : ?>
     <div class="table-container">
         <table>
@@ -30,7 +31,7 @@ ob_start();
             <tbody>
                 <?php foreach ($entreprises as $entreprise) : ?>
                     <tr>
-                        <td><a href="http://localhost/formagest/entreprises/read/<?= $entreprise->getId(); ?>"><?= $entreprise->getEnseigne(); ?></a></td>
+                        <td><a href="<?= URL ?>entreprises/read/<?= $entreprise->getId(); ?>"><?= $entreprise->getEnseigne(); ?></a></td>
                         <td><?= $entreprise->getActivite(); ?></td>
                         <td><?= $entreprise->getVille(); ?></td>
                         <td><?= $entreprise->getAdresse(); ?></td>

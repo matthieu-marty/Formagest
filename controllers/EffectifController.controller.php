@@ -10,6 +10,8 @@ class EffectifController
     {
         $this->effectif_manager = new EffectifManager;
         $this->effectif_manager->chargementEffectifs();
+        $this->entreprise_manager = new EntrepriseManager;
+        $this->entreprise_manager->chargementEntreprises();
     }
 
     public function enregistrerEffectif($id_entreprise)
@@ -87,5 +89,12 @@ class EffectifController
         } else {
             header('location:' . URL . 'erreur');
         }
+    }
+
+    public function afficherEffectifs()
+    {  
+        $effectifs = $this->effectif_manager->getEffectifs();
+        $entreprise_manager = $this->entreprise_manager;
+        require_once "views/createDossierFormation.view.php";
     }
 }

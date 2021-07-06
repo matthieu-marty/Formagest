@@ -48,19 +48,19 @@ if (empty($_GET['page'])) {
              */
         case "organismes-de-formation":
             require_once "controllers/OrganismeFormationController.controller.php";
-            $ofs_controller = new OrganismeFormationController;
+            $organisme_formation_controller = new OrganismeFormationController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "read": $ofs_controller->afficherOf($url[2]); break;               //OK
-                    case "delete": $ofs_controller->supprimerOf($url[2]); break;            //OK
-                    case "edit": $ofs_controller->modifierOf($url[2]); break;               //OK
-                    case "create": $ofs_controller->creerOf(); break;                       //OK
-                    case "save": $ofs_controller->enregistrerOf(); break;                   //OK
-                    case "search": $ofs_controller->afficherRechercheOf($url[2]); break;    //OK
-                    case "update": $ofs_controller->actualiserOf($url[2]); break;           //OK
+                    case "read": $organisme_formation_controller->afficherOf($url[2]); break;               //OK
+                    case "delete": $organisme_formation_controller->supprimerOf($url[2]); break;            //OK
+                    case "edit": $organisme_formation_controller->modifierOf($url[2]); break;               //OK
+                    case "create": $organisme_formation_controller->creerOf(); break;                       //OK
+                    case "save": $organisme_formation_controller->enregistrerOf(); break;                   //OK
+                    case "search": $organisme_formation_controller->afficherRechercheOf($url[2]); break;    //OK
+                    case "update": $organisme_formation_controller->actualiserOf($url[2]); break;           //OK
                 }
             } else {
-                $ofs_controller->AfficherOfs();
+                $organisme_formation_controller->AfficherOfs();
             }
             break;
 
@@ -88,14 +88,15 @@ if (empty($_GET['page'])) {
              */
         case "effectifs":
             require_once "controllers/EffectifController.controller.php";
-            $effectifs_controller = new EffectifController;
+            $effectif_controller = new EffectifController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "delete":$effectifs_controller->supprimerEffectif($url[2]);break;      //OK
-                    case "edit":$effectifs_controller->modifierEffectif($url[2]);break;         //OK
-                    case "create":$effectifs_controller->creerEffectif($url[2]);break;          //OK
-                    case "save":$effectifs_controller->enregistrerEffectif($url[2]);break;      //OK
-                    case "update":$effectifs_controller->actualiserEffectif($url[2]);break;     //OK
+                    case "delete":$effectif_controller->supprimerEffectif($url[2]);break;      //OK
+                    case "edit":$effectif_controller->modifierEffectif($url[2]);break;         //OK
+                    case "create":$effectif_controller->creerEffectif($url[2]);break;          //OK
+                    case "save":$effectif_controller->enregistrerEffectif($url[2]);break;      //OK
+                    case "update":$effectif_controller->actualiserEffectif($url[2]);break;     //OK
+                    
                 }
             } else {
                 $entreprise_controller->afficherEntreprises();
@@ -103,11 +104,30 @@ if (empty($_GET['page'])) {
             break;
 
             /**
-             * AUTRES
+             * DOSSIERS DE FORMATION
              */
+        case "dossier-formation-individuel" : 
+            require_once "controllers/EffectifController.controller.php";
+            $effectif_controller = new EffectifController;
+
+            if (!empty($url[1])) {
+                switch ($url[1]) {
+                case "search": $effectif_controller->afficherRechercheOf($url[2]); break;
+                }
+            } else {
+                $effectif_controller->afficherEffectifs(); 
+            }
+            break;
+            
+            
         case "dossiers-en-cours"    : require_once "views/dossiersEnCours.view.php"; break;
         case "fiche-montage"        : require_once "views/forms/montage.form.view.php"; break;
         case "dossiers-de-formation": require_once "views/dossiersDeFormation.view.php"; break;
+
+            /**
+             * AUTRES
+             */
+        
         case "accueil"              : require_once "views/accueil.view.php"; break;
         case "erreur"               : require_once "views/erreur.view.php"; break;
         case "rapport"              : require_once "views/rapport.view.php"; break;

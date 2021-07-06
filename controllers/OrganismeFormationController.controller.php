@@ -84,7 +84,7 @@ class OrganismeFormationController
     public function modifierOf($id_of)
     {
         $of = $this->of_manager->getOfById($id_of);
-        require_once 'views/editorganismeDeFormation.view.php';
+        require_once 'views/editOrganismeDeFormation.view.php';
     }
 
     public function actualiserOf($id_of)
