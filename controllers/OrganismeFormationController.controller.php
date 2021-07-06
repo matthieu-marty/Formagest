@@ -41,8 +41,7 @@ class OrganismeFormationController
             }
             require_once 'views/organismesFormation.view.php';
         } else {
-            $ofs = $this->of_manager->getOfs();
-            require_once 'views/organismesFormation.view.php';
+            $this->afficherOfs();
         }
     }
 

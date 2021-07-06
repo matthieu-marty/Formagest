@@ -66,7 +66,7 @@ ob_start()
     function recherche() {
         var search = document.getElementById("search").value;
         if (search !== null) {
-            var url = "<?= URL ?>dossier-de-formation/search/";
+            var url = "<?= URL ?>dossier-formation-individuelle/search/";
             document.location.href = url + search;
         }
     }

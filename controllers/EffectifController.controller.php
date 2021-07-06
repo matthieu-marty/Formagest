@@ -97,4 +97,20 @@ class EffectifController
         $entreprise_manager = $this->entreprise_manager;
         require_once "views/createDossierFormation.view.php";
     }
+
+    public function afficherRechercheEffectif($string)
+    {
+        if (!empty($string)) {
+            $fichier_effectifs = $this->effectif_manager->getEffectifs();
+            $effectifs = [];
+            foreach ($fichier_effectifs as $effectif) {
+                if (stristr($effectif->getNom(), $string) != false | stristr($effectif->getPrenom(), $string) != false | stristr($effectif->getFonction(), $string) != false) {
+                    $entreprises[] = $effectif;
+                }
+            }
+            require_once 'views/createDossierFormation.view.php';
+        } else {
+            $this->afficherEffectifs();
+        }
+    }
 }
