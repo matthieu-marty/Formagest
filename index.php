@@ -113,6 +113,7 @@ if (empty($_GET['page'])) {
             if (!empty($url[1])) {
                 switch ($url[1]) {
                 case "search": $effectif_controller->afficherRechercheEffectif($url[2]); break;
+                case "create": ;break;
                 }
             } else {
                 $effectif_controller->afficherEffectifs(); 

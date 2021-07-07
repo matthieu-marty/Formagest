@@ -123,7 +123,7 @@ ob_start()
                                         <th><?= $formateur->getVille(); ?></th>
                                     </tr>
                                     <tr>
-                                        <th>Telephone</th>
+                                        <th>Téléphone</th>
                                         <th><a href="tel:<?= $formateur->getTelephone(); ?>"><?= $formateur->getTelephone(); ?></th>
                                     </tr>
                                     <tr>

@@ -95,7 +95,7 @@ class EffectifController
     {  
         $effectifs = $this->effectif_manager->getEffectifs();
         $entreprise_manager = $this->entreprise_manager;
-        require_once "views/createDossierFormation.view.php";
+        require_once "views/createDossierFormationPart1.view.php";
     }
 
     public function afficherRechercheEffectif($string)
@@ -109,7 +109,7 @@ class EffectifController
                     $effectifs[] = $effectif;
                 }
             }
-            require_once 'views/createDossierFormation.view.php';
+            require_once 'views/createDossierFormationPart1.view.php';
         } else {
             $this->afficherEffectifs();
         }

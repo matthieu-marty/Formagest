@@ -189,6 +189,7 @@ a:hover {text-decoration: underline;}
   flex-direction:row;
 }
 
+
 /*
 * GRID
 */
@@ -558,6 +559,41 @@ table.table-details tbody tr th:first-child {
     grid-template-columns: 1fr;
   }
 }
+
+.step-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:white;
+  border-radius: 0.3rem;
+  padding: 0.75rem;
+}
+.step-card {
+  opacity: 0.5;
+}
+.step-card, .step-card-active {
+  text-align:center
+}
+.step-card span, .step-card-active span {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.step-card-active span {
+  border: 1px solid rgb(var(--primary));
+  padding: 0.25rem 1.05rem; 
+  border-radius: 50%;
+  background-color: rgb(var(--primary));
+  box-shadow: 0px 0px 6px rgb(var(--primary));
+  color: white;
+}
+.step-card-active p {
+color: rgb(var(--primary));
+}
+.step-card p, .step-card-active p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
 
 
 

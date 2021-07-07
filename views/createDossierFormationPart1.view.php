@@ -1,8 +1,27 @@
 <?php
 ob_start()
 ?>
+<div class="step-line">
+    <div class="step-card-active">
+        <span>1</span>
+        <p>Informations stagiaire</p>
+    </div>
+    <div class="step-card">
+        <span>2</span>
+        <p>Organisme de formation</p>
+    </div>
+    <div class="step-card">
+        <span>3</span>
+        <p>Programme</p>
+    </div>
+    <div class="step-card">
+        <span>4</span>
+        <p>Modalités</p>
+    </div>
+</div>
 
-<h3 class="mb-2">Créer un dossier de formation</h3>
+
+<h3 class="mt-2">Créer un dossier de formation</h3>
 
 
 <h5>Sélectionnez un stagiaire</h5>
@@ -25,7 +44,7 @@ ob_start()
                     <th>Nom</th>
                     <th>Fonction</th>
                     <th>Entreprise</th>
-                    <th>Telephone</th>
+                    <th>Téléphone</th>
                     <th>Mail</th>
                     <th>Modification</th>
                     <th>Création</th>
