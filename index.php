@@ -113,7 +113,19 @@ if (empty($_GET['page'])) {
             if (!empty($url[1])) {
                 switch ($url[1]) {
                 case "search": $effectif_controller->afficherRechercheEffectif($url[2]); break;
-                case "create": ;break;
+                case "create":
+                    if (!empty($url[2]))
+                    {  
+                        $effectif_controller->selectionnerOrganismeFormation($url[2]);break;
+                    } elseif (!empty($url[3]))
+                    {
+                                              
+
+                    } elseif (!empty($url[4]))
+                    {
+
+                    }
+                    
                 }
             } else {
                 $effectif_controller->afficherEffectifs(); 

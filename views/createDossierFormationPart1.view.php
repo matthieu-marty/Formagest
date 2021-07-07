@@ -4,11 +4,11 @@ ob_start()
 <div class="step-line">
     <div class="step-card-active">
         <span>1</span>
-        <p>Informations stagiaire</p>
+        <p>Stagiaire</p>
     </div>
     <div class="step-card">
         <span>2</span>
-        <p>Organisme de formation</p>
+        <p>Organisme</p>
     </div>
     <div class="step-card">
         <span>3</span>
@@ -21,7 +21,7 @@ ob_start()
 </div>
 
 
-<h3 class="mt-2">Créer un dossier de formation</h3>
+<h3>Créer un dossier de formation</h3>
 
 
 <h5>Sélectionnez un stagiaire</h5>

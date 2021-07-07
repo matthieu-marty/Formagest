@@ -567,6 +567,7 @@ table.table-details tbody tr th:first-child {
   background-color:white;
   border-radius: 0.3rem;
   padding: 0.75rem;
+  margin-bottom: 2rem;
 }
 .step-card {
   opacity: 0.5;

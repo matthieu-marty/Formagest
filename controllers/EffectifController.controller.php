@@ -1,10 +1,13 @@
 <?php
 require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/EffectifManager.class.php';
+require_once 'models/managers/OFManager.class.php';
 
 class EffectifController
 {
     private $effectif_manager;
+    private $entreprise_manager;
+    private $of_manager;
 
     public function __construct()
     {
@@ -12,6 +15,8 @@ class EffectifController
         $this->effectif_manager->chargementEffectifs();
         $this->entreprise_manager = new EntrepriseManager;
         $this->entreprise_manager->chargementEntreprises();
+        $this->of_manager = new OFManager;
+        $this->of_manager->chargementOfs();
     }
 
     public function enregistrerEffectif($id_entreprise)
@@ -58,7 +63,6 @@ class EffectifController
 
     public function modifierEffectif($id_effectif)
     {
-
         $effectif = $this->effectif_manager->getEffectieById($id_effectif);
         require_once 'views/editEffectif.view.php';
     }
@@ -113,5 +117,11 @@ class EffectifController
         } else {
             $this->afficherEffectifs();
         }
+    }
+
+    public function selectionnerOrganismeFormation($id_effectif)
+    {    $ofs = $this->of_manager->getOfs();
+        $effectif = $this->effectif_manager->getEffectifById($id_effectif);
+        require_once "views/createDossierFormationPart2.view.php";
     }
 }
