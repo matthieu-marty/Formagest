@@ -26,7 +26,7 @@ class FormateurManager extends Model
 
     public function chargementFormateurs()
     {
-        $req = $this->getBDD()->prepare("SELECT * FROM fg_formateur");
+        $req = $this->getBDD()->prepare("SELECT * FROM fg_formateur ORDER BY date_creation DESC");
         $req->execute();
         $formateurs = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();

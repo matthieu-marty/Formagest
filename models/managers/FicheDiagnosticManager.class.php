@@ -18,7 +18,7 @@ class FicheDiagnosticManager extends Model
 
     public function chargementFichesDiagnostic()
     {
-        $req = $this->getBDD()->prepare("SELECT * FROM fg_fiche_diagnostic");
+        $req = $this->getBDD()->prepare("SELECT * FROM fg_fiche_diagnostic ORDER BY date_creation DESC");
         $req->execute();
         $fiches = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();

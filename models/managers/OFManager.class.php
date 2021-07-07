@@ -18,7 +18,7 @@ class OFManager extends Model
 
     public function chargementOfs()
     {
-        $req = $this->getBDD()->prepare("SELECT * FROM fg_organisme_formation");
+        $req = $this->getBDD()->prepare("SELECT * FROM fg_organisme_formation ORDER BY date_creation DESC");
         $req->execute();
         $ofs = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();

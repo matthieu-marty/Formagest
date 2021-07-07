@@ -18,7 +18,7 @@ class EffectifManager extends Model
 
     public function chargementEffectifs()
     {
-        $req = $this->getBDD()->prepare("SELECT * FROM fg_effectif");
+        $req = $this->getBDD()->prepare("SELECT * FROM fg_effectif ORDER BY prenom");
         $req->execute();
         $effectifs = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
