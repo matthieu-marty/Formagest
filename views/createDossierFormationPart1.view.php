@@ -12,10 +12,14 @@ ob_start()
     </div>
     <div class="step-card">
         <span>3</span>
-        <p>Programme</p>
+        <p>Formateur</p>
     </div>
     <div class="step-card">
         <span>4</span>
+        <p>Programme</p>
+    </div>
+    <div class="step-card">
+        <span>5</span>
         <p>Modalités</p>
     </div>
 </div>

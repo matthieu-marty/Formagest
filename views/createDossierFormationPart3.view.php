@@ -10,6 +10,8 @@ ob_start()
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $of->getId() ?>" class="text-grey"><?= $of->getEnseigne()?></a>
+
     </div>
     <div class="step-card">
         <span>3</span>
@@ -28,7 +30,7 @@ ob_start()
 
 <h3>Créer un dossier de formation</h3>
 
-<h5>Sélectionnez un Organisme de formation</h5>
+<h5>Sélectionnez un Formateur</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
@@ -38,7 +40,7 @@ ob_start()
     </div>
 
 </div>
-<?php if (!empty($ofs)) : ?>
+<?php if (!empty($formateurs)) : ?>
     <div class="table-container">
         <table>
             <thead>
@@ -53,15 +55,15 @@ ob_start()
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($ofs as $of) : ?>
+                <?php foreach ($formateurs as $formateur) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/create/<?= $effectif->getId()?>/<?= $of->getId()?>"><?= $of->getNom_Commercial(); ?></a></td>
-                        <td><?= $of->getDiscipline(); ?></td>
-                        <td><?= $of->getVille(); ?></td>
-                        <td><?= $of->getAdresse(); ?></td>
-                        <td><?= $of->getCode_Postal(); ?></td>
-                        <td><?= $of->getDate_Maj(); ?></td>
-                        <td><?= $of->getDate_Creation(); ?></td>
+                        <td><a href="<?= URL ?>organismes-de-formation/read/<?= $formateur->getId() ?>"><?= $formateur->getNom_Commercial(); ?></a></td>
+                        <td><?= $formateur->getDiscipline(); ?></td>
+                        <td><?= $formateur->getVille(); ?></td>
+                        <td><?= $formateur->getAdresse(); ?></td>
+                        <td><?= $formateur->getCode_Postal(); ?></td>
+                        <td><?= $formateur->getDate_Maj(); ?></td>
+                        <td><?= $formateur->getDate_Creation(); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

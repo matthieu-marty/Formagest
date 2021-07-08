@@ -48,7 +48,6 @@ class DossierFormationController {
 
     public function selectionnerFormateur($id_organisme_formation)
     {
-        $effectif = $this->effectif_manager->getEffectifById($id_effectif);
         $of = $this->of_manager->getOfById($id_organisme_formation);
     }
 }

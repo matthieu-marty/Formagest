@@ -30,7 +30,7 @@
   --red: #ff1414;
   --orange: #ff9d00;
   --yellow : #fffb00;
-  --grey: #808080;
+  --grey: #9da1b4;
   --black: #1D2327;
   --white : #FFFFFF;
 
@@ -90,7 +90,7 @@ p {
 .text-green {color: var(--green);}
 .text-red {color: var(--red);}
 .text-orange{color: var(--orange);}
-.text-grey {color: #50575e;}
+.text-grey {color: var(--grey)}
 .text-white {color: #ffffff;}
 .text-black {color: var(--text-color);}
 .text-border {color: var(--border);}
@@ -567,7 +567,7 @@ table.table-details tbody tr th:first-child {
   background-color:white;
   border-radius: 0.3rem;
   padding: 0.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .step-card {
   opacity: 0.5;
@@ -589,10 +589,12 @@ table.table-details tbody tr th:first-child {
 }
 .step-card-active p {
 color: rgb(var(--primary));
+
 }
 .step-card p, .step-card-active p {
   margin-top: 0.5rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 
