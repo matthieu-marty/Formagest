@@ -17,6 +17,8 @@ class DossierFormationController {
         $this->of_manager->chargementOfs();
         $this->formateur_manager = new FormateurManager;
         $this->formateur_manager->chargementFormateurs();
+        $this->programme_manager = new ProgrammeManager;
+        $this->programme_manager->chargementProgrammes();
     }
     // Part 1
     public function afficherEffectifs()
@@ -58,8 +60,9 @@ class DossierFormationController {
     }
 
     // Part 4
-    public function selectionnerProgramme($id_formaateur)
+    public function selectionnerProgramme($id_formateur)
     {   
+        $formateur = $this->formateur_manager->getFormateurById($id_formateur);
         $programmes = $this->programme_manager->getProgrammes();
         require_once 'views/createDossierFormationPart4.view.php';
     }

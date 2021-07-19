@@ -16,4 +16,25 @@ class Programme
         $this->contenu = $contenu;
 
     }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getRef()
+    {
+        return $this->reference;
+    }
+
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    public function getContenu()
+    {
+        return $this->contenu;
+    }
+
 }

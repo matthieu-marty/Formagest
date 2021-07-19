@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION['formateur'] = $formateur->getId();
+$_SESSION['id_formateur'] = $formateur->getId();
+$_SESSION['formateur'] = $formateur->getPrenom() . ' ' . $formateur->getNom();
 
 ob_start()
 ?>
@@ -8,18 +9,18 @@ ob_start()
     <div class="step-card-active">
         <span>1</span>
         <p>Stagiaire</p>
-        <a href="<?= URL ?>entreprises/read/<?= $entreprise->getId() ?>" class="text-grey"><?= $_SESSION['entreprise'] . ' - ' . $_SESSION['stagiaire'] ?></a>
+        <a href="<?= URL ?>entreprises/read/<?= $_SESSION['id_entreprise'] ?>" class="text-grey"><?= $_SESSION['entreprise'] . ' - ' . $_SESSION['stagiaire'] ?></a>
     </div>
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
 
     </div>
     <div class="step-card-active">
         <span>3</span>
         <p>Formateur</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur']?></a>
     </div>
     <div class="step-card-active">
         <span>4</span>
@@ -45,28 +46,22 @@ ob_start()
 
 </div>
 
-<?php if (!empty($formateurs)) : ?>
+<?php if (!empty($programmes)) : ?>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Discipline</th>
-                    <th>Téléphone</th>
-                    <th>Mail</th>
-                    <th>Modification</th>
-                    <th>Création</th>
+                    <th>Ref</th>
+                    <th>Label</th>
+                    <th>Contenu</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($formateurs as $formateur) : ?>
+                <?php foreach ($programmes as $programme) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/modalites/<?= $formateur->getId() ?>"><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></a></td>
-                        <td><?= $formateur->getDiscipline(); ?></td>
-                        <td><?= $formateur->getTelephone(); ?></td>
-                        <td><?= $formateur->getMail(); ?></td>
-                        <td><?= $formateur->getDate_Maj(); ?></td>
-                        <td><?= $formateur->getDate_Creation(); ?></td>
+                        <td><?= $programme->getRef() ?></td>
+                        <td><?= $programme->getLabel() ?></td>
+                        <td><?= $programme->getContenu() ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

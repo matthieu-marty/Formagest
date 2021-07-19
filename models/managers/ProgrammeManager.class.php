@@ -1,5 +1,6 @@
 <?php
-
+require_once 'models/classes/Model.class.php';
+require_once 'models/classes/Programme.class.php';
 class ProgrammeManager extends Model
 {
     private $programmes;
@@ -30,6 +31,5 @@ class ProgrammeManager extends Model
             );
             $this->addProgramme($p);
         }
-
     }
 }
