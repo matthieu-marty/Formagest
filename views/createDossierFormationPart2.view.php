@@ -1,5 +1,9 @@
 <?php
-ob_start()
+session_start();
+$_SESSION['entreprise'] = $entreprise->getId();
+$_SESSION['stagiaire'] = $effectif->getId();
+var_dump($_SESSION);
+ob_start();
 ?>
 <div class="step-line">
     <div class="step-card-active">

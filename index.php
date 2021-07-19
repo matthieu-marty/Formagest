@@ -169,12 +169,20 @@ if (empty($_GET['page'])) {
                     case "search":
                         $dossier_formation_controller->afficherRechercheEffectif($url[2]);
                         break;
-                    case "create":
+                    case "organisme-formation":
                         if (!empty($url[2])) {
                             $dossier_formation_controller->selectionnerOrganismeFormation($url[2]);
-                        } else {
-                           
                         }
+                        break;
+                    case "formateur":
+                        if (!empty($url[2])) {
+                            $dossier_formation_controller->selectionnerFormateur($url[2]);
+                        }
+                        break;
+                    case "programme":;
+                        break;
+                    case "formalites":;
+                        break;
                 }
             } else {
                 $dossier_formation_controller->afficherEffectifs();

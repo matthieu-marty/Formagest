@@ -2,6 +2,7 @@
 require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/EffectifManager.class.php';
 require_once 'models/managers/OFManager.class.php';
+require_once 'models/managers/FormateurManager.class.php';
 
 class DossierFormationController {
 
@@ -13,6 +14,8 @@ class DossierFormationController {
         $this->entreprise_manager->chargementEntreprises();
         $this->of_manager = new OFManager;
         $this->of_manager->chargementOfs();
+        $this->formateur_manager = new FormateurManager;
+        $this->formateur_manager->chargementFormateurs();
     }
 
     public function afficherEffectifs()
