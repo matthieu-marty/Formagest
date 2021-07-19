@@ -219,9 +219,7 @@ if (empty($_GET['page'])) {
         case "test":
             require_once "views/organismeDeFormation.view.php";
             break;
-        case "mobile":
-            require_once "views/templates/mobile.php";
-            break;
+    
         default:
             require_once "views/accueil.view.php";
             break;

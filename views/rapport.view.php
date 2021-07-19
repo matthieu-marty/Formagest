@@ -4,7 +4,7 @@ ob_start()
 
 <h3>Signaler un bug</h3>
 
-<div class="bg-white border p-2 grid gap-1">
+<div class="grid gap-1">
     <div class="col-lg-3 col-md-6 col-sm-12">
         <label for="nom">Mail</label>
         <input class="form form-blue" type="text" name="enseigne" id="nom">
@@ -19,7 +19,6 @@ ob_start()
     <div class="col-12 text-right border-top">
         <a href="#" class="btn btn-primary-action mt-1">Envoyer un ticket</a>
     </div>
-
 
 </div>
 
