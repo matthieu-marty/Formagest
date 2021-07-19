@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION['organisme_formation'] = $of->getId();
+$_SESSION['id_organisme_formation'] = $of->getId();
+$_SESSION['organisme_formation'] =$of->getNom_Commercial();
 
 ob_start()
 ?>
@@ -8,12 +9,12 @@ ob_start()
     <div class="step-card-active">
         <span>1</span>
         <p>Stagiaire</p>
-        <a href="<?= URL ?>entreprises/read/<?= $_SESSION['entreprise'] ?>" class="text-grey"><?= $_SESSION['stagiaire'] . ' - ' . $_SESSION['entreprise'] ?></a>
+        <a href="<?= URL ?>entreprises/read/<?= $_SESSION['id_entreprise'] ?>" class="text-grey"><?= $_SESSION['entreprise'] . ' - ' . $_SESSION['stagiaire'] ?></a>
     </div>
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
 
     </div>
     <div class="step-card-active">

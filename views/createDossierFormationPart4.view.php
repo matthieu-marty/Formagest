@@ -8,7 +8,7 @@ ob_start()
     <div class="step-card-active">
         <span>1</span>
         <p>Stagiaire</p>
-        <a href="<?= URL ?>entreprises/read/<?= $_SESSION['entreprise'] ?>" class="text-grey"><?= $_SESSION['stagiaire'] . ' - ' . $_SESSION['entreprise'] ?></a>
+        <a href="<?= URL ?>entreprises/read/<?= $entreprise->getId() ?>" class="text-grey"><?= $_SESSION['entreprise'] . ' - ' . $_SESSION['stagiaire'] ?></a>
     </div>
     <div class="step-card-active">
         <span>2</span>
@@ -19,8 +19,9 @@ ob_start()
     <div class="step-card-active">
         <span>3</span>
         <p>Formateur</p>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur']?></a>
     </div>
-    <div class="step-card">
+    <div class="step-card-active">
         <span>4</span>
         <p>Programme</p>
     </div>

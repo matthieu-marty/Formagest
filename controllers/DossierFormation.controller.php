@@ -58,8 +58,9 @@ class DossierFormationController {
     }
 
     // Part 4
-    public function selectionnerProgramme()
-    {
-
+    public function selectionnerProgramme($id_formaateur)
+    {   
+        $programmes = $this->programme_manager->getProgrammes();
+        require_once 'views/createDossierFormationPart4.view.php';
     }
 }

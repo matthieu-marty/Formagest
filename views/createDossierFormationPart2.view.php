@@ -1,7 +1,9 @@
 <?php
 session_start();
-$_SESSION['entreprise'] = $entreprise->getId();
-$_SESSION['stagiaire'] = $effectif->getId();
+$_SESSION['id_entreprise'] = $entreprise->getId();
+$_SESSION['entreprise'] = $entreprise->getEnseigne();
+$_SESSION['id_stagiaire'] = $effectif->getId();
+$_SESSION['stagiaire'] = $effectif->getPrenom() . ' ' . $effectif->getNom();
 
 ob_start();
 ?>
@@ -9,7 +11,7 @@ ob_start();
     <div class="step-card-active">
         <span>1</span>
         <p>Stagiaire</p>
-        <a href="<?= URL ?>entreprises/read/<?= $entreprise->getId() ?>" class="text-grey"><?= $entreprise->getEnseigne() . ' - ' . $effectif->getPrenom() . ' ' . $effectif->getNom() ?></a>
+        <a href="<?= URL ?>entreprises/read/<?= $_SESSION['id_entreprise'] ?>" class="text-grey"><?= $_SESSION['entreprise'] . ' - ' . $_SESSION['stagiaire'] ?></a>
     </div>
     <div class="step-card-active">
         <span>2</span>

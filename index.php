@@ -179,7 +179,8 @@ if (empty($_GET['page'])) {
                             $dossier_formation_controller->selectionnerFormateur($url[2]);
                         }
                         break;
-                    case "programme":;
+                    case "programme":
+                        $dossier_formation_controller->selectionnerProgramme($url[2]);
                         break;
                     case "formalites":;
                         break;
