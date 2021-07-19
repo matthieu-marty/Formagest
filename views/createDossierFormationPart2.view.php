@@ -2,7 +2,7 @@
 session_start();
 $_SESSION['entreprise'] = $entreprise->getId();
 $_SESSION['stagiaire'] = $effectif->getId();
-var_dump($_SESSION);
+
 ob_start();
 ?>
 <div class="step-line">
@@ -59,7 +59,7 @@ ob_start();
             <tbody>
                 <?php foreach ($ofs as $of) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/create/<?= $effectif->getId()?>/<?= $of->getId()?>"><?= $of->getNom_Commercial(); ?></a></td>
+                        <td><a href="<?= URL ?>dossier-formation-individuelle/formateur/<?= $of->getId()?>"><?= $of->getNom_Commercial(); ?></a></td>
                         <td><?= $of->getDiscipline(); ?></td>
                         <td><?= $of->getVille(); ?></td>
                         <td><?= $of->getAdresse(); ?></td>

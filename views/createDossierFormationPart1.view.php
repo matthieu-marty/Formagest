@@ -1,5 +1,6 @@
 <?php
-ob_start()
+session_start();
+ob_start();
 ?>
 <div class="step-line">
     <div class="step-card-active">

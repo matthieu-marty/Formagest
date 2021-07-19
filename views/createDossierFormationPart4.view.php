@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['organisme_formation'] = $of->getId();
+$_SESSION['formateur'] = $formateur->getId();
 
 ob_start()
 ?>
@@ -33,7 +33,7 @@ ob_start()
 
 <h3>Créer un dossier de formation</h3>
 
-<h5>Sélectionnez un Formateur</h5>
+<h5>Sélectionnez un Programme</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
@@ -60,7 +60,7 @@ ob_start()
             <tbody>
                 <?php foreach ($formateurs as $formateur) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/programme/<?= $formateur->getId() ?>"><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></a></td>
+                        <td><a href="<?= URL ?>dossier-formation-individuelle/modalites/<?= $formateur->getId() ?>"><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></a></td>
                         <td><?= $formateur->getDiscipline(); ?></td>
                         <td><?= $formateur->getTelephone(); ?></td>
                         <td><?= $formateur->getMail(); ?></td>

@@ -3,6 +3,7 @@ require_once 'models/managers/EntrepriseManager.class.php';
 require_once 'models/managers/EffectifManager.class.php';
 require_once 'models/managers/OFManager.class.php';
 require_once 'models/managers/FormateurManager.class.php';
+require_once 'models/managers/ProgrammeManager.class.php';
 
 class DossierFormationController {
 
@@ -17,7 +18,7 @@ class DossierFormationController {
         $this->formateur_manager = new FormateurManager;
         $this->formateur_manager->chargementFormateurs();
     }
-
+    // Part 1
     public function afficherEffectifs()
     {  
         $effectifs = $this->effectif_manager->getEffectifs();
@@ -41,16 +42,24 @@ class DossierFormationController {
             $this->afficherEffectifs();
         }
     }
-
+    // Part 2
     public function selectionnerOrganismeFormation($id_effectif)
     {   $ofs = $this->of_manager->getOfs();
         $effectif = $this->effectif_manager->getEffectifById($id_effectif);
         $entreprise = $this->entreprise_manager->getEntrepriseById($effectif->getId_Entreprise());
         require_once "views/createDossierFormationPart2.view.php";
     }
-
+    // Part 3
     public function selectionnerFormateur($id_organisme_formation)
     {
         $of = $this->of_manager->getOfById($id_organisme_formation);
+        $formateurs = $this->formateur_manager->getFormateursByOf($of->getId());
+        require_once "views/createDossierFormationPart3.view.php";
+    }
+
+    // Part 4
+    public function selectionnerProgramme()
+    {
+
     }
 }
