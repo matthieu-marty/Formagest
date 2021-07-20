@@ -364,7 +364,7 @@ class FicheDiagnostic
     {
         return $this->logiciel_comptable;
     }
-    public function getNiveauAnglais()
+    public function getNiveau_anglais()
     {
         return $this->niveau_anglais;
     }

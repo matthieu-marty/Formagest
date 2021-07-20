@@ -251,22 +251,22 @@ ob_start()
 <h4>Langues étrangères</h4>
 <div class="card grid gap-1 mb-2">
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_Excel() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_anglais() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
         <h6 for="niveau_anglais"><img src="https://img.icons8.com/color/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_Excel() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_espagnol() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
         <h6 for="niveau_espagnol"><img src="https://img.icons8.com/color/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_Excel() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_italien() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
         <h6 for="niveau_italien"><img src="https://img.icons8.com/color/26/000000/italy-circular.png" style="vertical-align:top;" /> Italien</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_Excel() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_allemand() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
         <h6 for="niveau_allemand"><img src="https://img.icons8.com/color/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</h6>
     </div>
 
