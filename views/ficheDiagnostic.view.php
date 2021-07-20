@@ -135,33 +135,40 @@ ob_start()
 </div>
 
 <h4>Réseaux sociaux</h4>
-<div class="card grid gap-1 mb-2">
-    <div class="col-lg-6 col-md-8 col-sm-12">
-        <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Page facebook</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getPage_facebook() ?></p>
-    </div>
-    <div class="col-lg-2 col-md-2 col-sm-6">
-        <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Abonnés</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getAbonnes_facebook() ?></p>
-    </div>
-    <div class="col-lg-2 col-md-2 col-sm-6">
-        <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getPublicite_facebook() ?></p>
+<div class="grid gap-2 mb-2">
+    <div class="col-lg-6 col-md-12 col-sm-12 grid gap-1 card">
+        <div class="col-lg- col-md-8 col-sm-12">
+            <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Page facebook</h6>
+            <a href="<?= $fiche_diagnostic->getPage_facebook() ?>" target="_blank">Visiter la page</a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-6">
+            <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Publicité</h6>
+            <p class="text-grey"><?= $fiche_diagnostic->getPublicite_facebook() ?></p>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-12">
+            <h6><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Page Instagram</h6>
+            <a href="<?= $fiche_diagnostic->getPage_instagram() ?>" target="_blank">Visiter la page</a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6">
+            <h6><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</h6>
+            <p class="text-grey"><?= $fiche_diagnostic->getPublicite_instagram() ?></p>
+        </div>
     </div>
 
-    <div class="col-lg-6 col-md-8 col-sm-12">
-        <h6><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Page Instagram</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getPage_instagram() ?></p>
+    <div class="card col-lg-3 col-md-6 col-sm-12">
+        <h6><img src="https://img.icons8.com/color/26/000000/facebook-new.png" style="vertical-align:top;" /> Abonnés</h6>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getAbonnes_facebook() ?></p>
     </div>
-    <div class="col-lg-2 col-md-2 col-sm-6">
+
+    <div class="card col-lg-3 col-md-6 col-sm-12">
         <h6><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Abonnés</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getAbonnes_instagram() ?></p>
+        <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getAbonnes_instagram() ?></p>
     </div>
-    <div class="col-lg-2 col-md-2 col-sm-6">
-        <h6><img src="https://img.icons8.com/color/26/000000/instagram-new.png" style="vertical-align:top;" /> Publicité</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getPublicite_instagram() ?></p>
-    </div>
+
 </div>
+
 
 <h4>Informatique & Bureautique</h4>
 <div class="card grid gap-1 mb-2">
@@ -191,9 +198,9 @@ ob_start()
 <div class="card grid gap-1 mb-2">
     <div class="col-lg-2 col-md-2 col-sm-6">
         <h6>Site web</h6>
-        <p class="text-grey"><?= $fiche_diagnostic->getNiveau_Excel() ?></p>
+        <p class="text-grey"><?= $fiche_diagnostic->getSite_web() ?></p>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-12">
+    <div class="col-lg-2 col-md-4 col-sm-6">
         <h6>Date création</h6>
         <p class="text-grey"><?= $fiche_diagnostic->getDate_creation_site_web() ?></p>
     </div>
@@ -243,7 +250,7 @@ ob_start()
         <p class="text-grey"><?= $fiche_diagnostic->getCabinet_comptable() ?></p>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-12">
-        <h6 for="logiciel_comptable">Logiciel comptable</h6>
+        <h6>Logiciel comptable</h6>
         <p class="text-grey"><?= $fiche_diagnostic->getLogiciel_comptable() ?></p>
     </div>
 </div>
@@ -252,22 +259,22 @@ ob_start()
 <div class="card grid gap-1 mb-2">
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_anglais() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
-        <h6 for="niveau_anglais"><img src="https://img.icons8.com/color/26/000000/great-britain-circular.png" style="vertical-align:top;" /> Anglais</h6>
+        <h6>Anglais</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_espagnol() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
-        <h6 for="niveau_espagnol"><img src="https://img.icons8.com/color/26/000000/spain-circular.png" style="vertical-align:top;" /> Espagnol</h6>
+        <h6>Espagnol</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_italien() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
-        <h6 for="niveau_italien"><img src="https://img.icons8.com/color/26/000000/italy-circular.png" style="vertical-align:top;" /> Italien</h6>
+        <h6>Italien</h6>
     </div>
 
     <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p style="font-size: 4rem; font-weight:200;"><?= $fiche_diagnostic->getNiveau_allemand() ?><span style="color: var(--grey); font-size:1.5rem;">/10</span></p>
-        <h6 for="niveau_allemand"><img src="https://img.icons8.com/color/26/000000/germany-circular.png" style="vertical-align:top;" /> Allemand</h6>
+        <h6>Allemand</h6>
     </div>
 
 </div>
