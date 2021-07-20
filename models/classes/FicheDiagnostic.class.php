@@ -90,7 +90,7 @@ class FicheDiagnostic
         $publicite_facebook,
         $page_instagram,
         $abonnes_instagram,
-        $publicte_instagram,
+        $publicite_instagram,
         $niveau_windows,
         $niveau_mail,
         $niveau_word,
@@ -146,7 +146,7 @@ class FicheDiagnostic
         $this->publicite_facebook = $publicite_facebook;
         $this->page_instagram = $page_instagram;
         $this->abonnes_instagram = $abonnes_instagram;
-        $this->publicte_instagram = $publicte_instagram;
+        $this->publicite_instagram = $publicite_instagram;
         $this->niveau_windows = $niveau_windows;
         $this->niveau_mail = $niveau_mail;
         $this->niveau_word = $niveau_word;
@@ -296,7 +296,7 @@ class FicheDiagnostic
     {
         return $this->abonnes_instagram;
     }
-    public function getPublicte_instagram()
+    public function getPublicite_instagram()
     {
         return $this->publicite_instagram;
     }
