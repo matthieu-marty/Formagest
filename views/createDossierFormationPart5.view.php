@@ -1,11 +1,9 @@
 <?php
 session_start();
-$_SESSION['id_entreprise'] = $entreprise->getId();
-$_SESSION['entreprise'] = $entreprise->getEnseigne();
-$_SESSION['id_stagiaire'] = $effectif->getId();
-$_SESSION['stagiaire'] = $effectif->getPrenom() . ' ' . $effectif->getNom();
+$_SESSION['id_programme'] = $programme->getId();
+$_SESSION['programme'] = $programme->getReference() . ' - ' . $programme->getLabel();
 
-ob_start();
+ob_start()
 ?>
 <div class="step-line">
     <div class="step-card-active">
@@ -16,12 +14,15 @@ ob_start();
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
+
     </div>
-    <div class="step-card">
+    <div class="step-card-active">
         <span>3</span>
         <p>Formateur</p>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur']?></a>
     </div>
-    <div class="step-card">
+    <div class="step-card-active">
         <span>4</span>
         <p>Programme</p>
     </div>
@@ -38,7 +39,7 @@ ob_start();
 
 <h3>Créer un dossier de formation</h3>
 
-<h5>2. Sélectionnez un Organisme de formation</h5>
+<h5>4. Sélectionnez un Programme</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
@@ -48,30 +49,23 @@ ob_start();
     </div>
 
 </div>
-<?php if (!empty($ofs)) : ?>
+
+<?php if (!empty($programmes)) : ?>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Discipline</th>
-                    <th>Ville</th>
-                    <th>Adresse</th>
-                    <th>Code Postal</th>
-                    <th>Modification</th>
-                    <th>Création</th>
+                    <th>Ref</th>
+                    <th>Label</th>
+                    <th>Contenu</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($ofs as $of) : ?>
+                <?php foreach ($programmes as $programme) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/formateur/<?= $of->getId()?>"><?= $of->getNom_Commercial(); ?></a></td>
-                        <td><?= $of->getDiscipline(); ?></td>
-                        <td><?= $of->getVille(); ?></td>
-                        <td><?= $of->getAdresse(); ?></td>
-                        <td><?= $of->getCode_Postal(); ?></td>
-                        <td><?= $of->getDate_Maj(); ?></td>
-                        <td><?= $of->getDate_Creation(); ?></td>
+                        <td><a href="<?= URL ?><?= $programme->getId() ?>"><?= $programme->getRef() ?></a></td>
+                        <td><?= $programme->getLabel() ?></td>
+                        <td><?= $programme->getContenu() ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -92,8 +86,9 @@ ob_start();
         document.location.href = url + search;
     }
 </script>
+
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Montage dossier : " . $effectif->getPrenom() . ' ' . $effectif->getNom();
+$title = "FORMAGEST | Sélection d'un formateur";
 require_once 'views/templates/default.php';
 ?>

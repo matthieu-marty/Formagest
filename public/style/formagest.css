@@ -227,7 +227,6 @@ a:hover {text-decoration: underline;}
 * SM SCREEN
 */
 @media (max-width: 576px){
-  .d-sm-none {display: none;}
   .col-sm-1 {grid-column-end: span 1;}
   .col-sm-2 {grid-column-end: span 2;}
   .col-sm-3 {grid-column-end: span 3;}
@@ -261,7 +260,6 @@ a:hover {text-decoration: underline;}
   .col-md-10 {grid-column-end: span 10;}
   .col-md-11 {grid-column-end: span 11;}
   .col-md-12 {grid-column-end: span 12;}
-
   .table-container {max-height: 60vh;}
 
 }
@@ -282,7 +280,6 @@ a:hover {text-decoration: underline;}
   .col-lg-10 {grid-column-end: span 10;}
   .col-lg-11 {grid-column-end: span 11;}
   .col-lg-12 {grid-column-end: span 12;}
-
   .table-container {max-height: 75vh;}
 }
 /*
@@ -558,6 +555,7 @@ table.table-details tbody tr th:first-child {
     display: grid;
     grid-template-columns: 1fr;
   }
+
 }
 
 .step-line {

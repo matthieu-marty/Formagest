@@ -6,15 +6,9 @@ ob_start()
 
 <div class="grid gap-2">
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Monter un dossier</h3>
+        <h3>Montage dossiers</h3>
         <img src="https://img.icons8.com/color-glass/100/000000/add-list.png" class="d-block mb-2" />
-        <a href="<?= URL ?>dossier-formation-individuelle" class="btn btn-primary-action">Individuel</a>
-    </div>
-
-    <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Monter un collectif</h3>
-        <img src="https://img.icons8.com/color-glass/100/000000/conference-call.png" class="d-block mb-2" />
-        <a href="#" class="btn btn-primary-action">Collectif</a>
+        <a href="<?= URL ?>dossier-formation-individuelle" class="btn btn-primary-action">Créer un nouveau dossier</a>
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">

@@ -66,4 +66,11 @@ class DossierFormationController {
         $programmes = $this->programme_manager->getProgrammes();
         require_once 'views/createDossierFormationPart4.view.php';
     }
+
+    // Part 5
+    public function selectionnerLogistique($id_programme)
+    {
+        $programme = $this->programme_manager->getProgrammeById($id_programme);
+        require_once 'views/createDossierFormationPart5.view.php';
+    }
 }

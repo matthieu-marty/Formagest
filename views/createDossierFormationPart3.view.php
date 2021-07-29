@@ -27,12 +27,16 @@ ob_start()
     </div>
     <div class="step-card">
         <span>5</span>
-        <p>Modalités</p>
+        <p>Logistique</p>
+    </div>
+    <div class="step-card">
+        <span>6</span>
+        <p>Financement</p>
     </div>
 </div>
 
 
-<h3>Créer un dossier de formation</h3>
+<h3>3. Créer un dossier de formation</h3>
 
 <h5>Sélectionnez un Formateur</h5>
 <div class="grid gap-1 mb-1">

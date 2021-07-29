@@ -28,14 +28,18 @@ ob_start()
     </div>
     <div class="step-card">
         <span>5</span>
-        <p>Modalités</p>
+        <p>Logistique</p>
+    </div>
+    <div class="step-card">
+        <span>6</span>
+        <p>Financement</p>
     </div>
 </div>
 
 
 <h3>Créer un dossier de formation</h3>
 
-<h5>Sélectionnez un Programme</h5>
+<h5>4. Sélectionnez un Programme</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
@@ -59,7 +63,7 @@ ob_start()
             <tbody>
                 <?php foreach ($programmes as $programme) : ?>
                     <tr>
-                        <td><?= $programme->getRef() ?></td>
+                        <td><a href="<?= URL ?><?= $programme->getId() ?>"><?= $programme->getRef() ?></a></td>
                         <td><?= $programme->getLabel() ?></td>
                         <td><?= $programme->getContenu() ?></td>
                     </tr>

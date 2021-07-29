@@ -182,6 +182,9 @@ if (empty($_GET['page'])) {
                     case "programme":
                         $dossier_formation_controller->selectionnerProgramme($url[2]);
                         break;
+                    case "logistique":
+                        $dossier_formation_controller->selectionnerLogistique($urel[2]);
+                        break;
                     case "formalites":;
                         break;
                 }
