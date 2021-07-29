@@ -42,55 +42,19 @@ ob_start()
 <h3>Créer un dossier de formation</h3>
 
 <h5>5. Sélectionnez les modalités logistiques</h5>
-<div class="grid gap-1 mb-1">
-    <div class="col-lg-2 col-md-6 col-sm-12">
-        <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
-    </div>
-    <div class="col-lg-8 col-md-6 col-sm-12">
-        <a class="btn btn-primary-action" style="cursor:pointer;" onclick="recherche()">Rechercher</a>
-    </div>
 
-</div>
+<p>$_SESSION</p>
+<pre>
+    <?= var_dump($_SESSION) ?>
+</pre>
 
-<?php if (!empty($programmes)) : ?>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Ref</th>
-                    <th>Label</th>
-                    <th>Contenu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($programmes as $programme) : ?>
-                    <tr>
-                        <td><a href="<?= URL ?><?= $programme->getId() ?>"><?= $programme->getRef() ?></a></td>
-                        <td><?= $programme->getLabel() ?></td>
-                        <td><?= $programme->getContenu() ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-<?php else : ?>
-    <p class="p-2 text-grey border-dashed text-center text-bold">Aucun résultats</p>
-    </div>
-<?php endif; ?>
-
-
-
-<!-- Recherche enseigne -->
-<script type="text/javascript">
-    function recherche() {
-        var search = document.getElementById("search").value;
-        var url = "<?= URL ?>dossier-formation-individuelle/create/1/search/";
-        document.location.href = url + search;
-    }
-</script>
+<p>$programme</p>
+<pre>
+    <?= var_dump($programme) ?>
+</pre>
 
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Sélection d'un formateur";
+$title = "FORMAGEST | Montage dossier : Sélection des modalités logistiques";
 require_once 'views/templates/default.php';
 ?>

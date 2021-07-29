@@ -65,7 +65,7 @@ ob_start();
             <tbody>
                 <?php foreach ($ofs as $of) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/formateur/<?= $of->getId()?>"><?= $of->getNom_Commercial(); ?></a></td>
+                        <td><a href="<?= URL ?>montage-dossier/formateur/<?= $of->getId() ?>"><?= $of->getNom_Commercial(); ?></a></td>
                         <td><?= $of->getDiscipline(); ?></td>
                         <td><?= $of->getVille(); ?></td>
                         <td><?= $of->getAdresse(); ?></td>
@@ -88,12 +88,12 @@ ob_start();
 <script type="text/javascript">
     function recherche() {
         var search = document.getElementById("search").value;
-        var url = "<?= URL ?>dossier-formation-individuelle/create/1/search/";
+        var url = "<?= URL ?>montage-dossier/create/1/search/";
         document.location.href = url + search;
     }
 </script>
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Montage dossier : " . $effectif->getPrenom() . ' ' . $effectif->getNom();
+$title = "FORMAGEST | Montage dossier : Sélection d'un organisme de formation";
 require_once 'views/templates/default.php';
 ?>

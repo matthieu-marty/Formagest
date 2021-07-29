@@ -22,7 +22,7 @@ class Programme
         return $this->id;
     }
 
-    public function getRef()
+    public function getReference()
     {
         return $this->reference;
     }

@@ -160,7 +160,7 @@ if (empty($_GET['page'])) {
             /**
              * DOSSIERS DE FORMATION
              */
-        case "dossier-formation-individuelle":
+        case "montage-dossier":
             require_once "controllers/DossierFormation.controller.php";
             $dossier_formation_controller = new DossierFormationController;
 
@@ -183,7 +183,7 @@ if (empty($_GET['page'])) {
                         $dossier_formation_controller->selectionnerProgramme($url[2]);
                         break;
                     case "logistique":
-                        $dossier_formation_controller->selectionnerLogistique($urel[2]);
+                        $dossier_formation_controller->selectionnerLogistique($url[2]);
                         break;
                     case "formalites":;
                         break;
@@ -222,7 +222,7 @@ if (empty($_GET['page'])) {
         case "test":
             require_once "views/organismeDeFormation.view.php";
             break;
-    
+
         default:
             require_once "views/accueil.view.php";
             break;

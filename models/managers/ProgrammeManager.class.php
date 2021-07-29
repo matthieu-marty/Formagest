@@ -32,4 +32,13 @@ class ProgrammeManager extends Model
             $this->addProgramme($p);
         }
     }
+
+    public function getProgrammeById($id_programme)
+    {
+        foreach ($this->programmes as $programme) {
+            if ($programme->getId() === $id_programme) {
+                return $programme;
+            }
+        }
+    }
 }

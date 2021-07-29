@@ -14,13 +14,13 @@ ob_start()
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation'] ?></a>
 
     </div>
     <div class="step-card-active">
         <span>3</span>
         <p>Formateur</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['formateur'] ?></a>
     </div>
     <div class="step-card-active">
         <span>4</span>
@@ -63,7 +63,7 @@ ob_start()
             <tbody>
                 <?php foreach ($programmes as $programme) : ?>
                     <tr>
-                        <td><a href="<?= URL ?><?= $programme->getId() ?>"><?= $programme->getRef() ?></a></td>
+                        <td><a href="<?= URL ?>montage-dossier/logistique/<?= $programme->getId() ?>"><?= $programme->getRef() ?></a></td>
                         <td><?= $programme->getLabel() ?></td>
                         <td><?= $programme->getContenu() ?></td>
                     </tr>
@@ -82,13 +82,13 @@ ob_start()
 <script type="text/javascript">
     function recherche() {
         var search = document.getElementById("search").value;
-        var url = "<?= URL ?>dossier-formation-individuelle/create/1/search/";
+        var url = "<?= URL ?>montage-dossier/create/1/search/";
         document.location.href = url + search;
     }
 </script>
 
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Sélection d'un formateur";
+$title = "FORMAGEST | Montage dossier : Sélection d'un Programme";
 require_once 'views/templates/default.php';
 ?>

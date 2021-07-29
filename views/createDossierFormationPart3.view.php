@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['id_organisme_formation'] = $of->getId();
-$_SESSION['organisme_formation'] =$of->getNom_Commercial();
+$_SESSION['organisme_formation'] = $of->getNom_Commercial();
 
 ob_start()
 ?>
@@ -14,7 +14,7 @@ ob_start()
     <div class="step-card-active">
         <span>2</span>
         <p>Organisme</p>
-        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation']?></a>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_organisme_formation'] ?>" class="text-grey"><?= $_SESSION['organisme_formation'] ?></a>
 
     </div>
     <div class="step-card-active">
@@ -65,7 +65,7 @@ ob_start()
             <tbody>
                 <?php foreach ($formateurs as $formateur) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/programme/<?= $formateur->getId() ?>"><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></a></td>
+                        <td><a href="<?= URL ?>montage-dossier/programme/<?= $formateur->getId() ?>"><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></a></td>
                         <td><?= $formateur->getDiscipline(); ?></td>
                         <td><?= $formateur->getTelephone(); ?></td>
                         <td><?= $formateur->getMail(); ?></td>
@@ -87,13 +87,13 @@ ob_start()
 <script type="text/javascript">
     function recherche() {
         var search = document.getElementById("search").value;
-        var url = "<?= URL ?>dossier-formation-individuelle/create/1/search/";
+        var url = "<?= URL ?>montage-dossier/create/1/search/";
         document.location.href = url + search;
     }
 </script>
 
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Sélection d'un formateur";
+$title = "FORMAGEST | Montage dossier :Sélection d'un formateur";
 require_once 'views/templates/default.php';
 ?>

@@ -64,7 +64,7 @@ ob_start();
             <tbody>
                 <?php foreach ($effectifs as $effectif) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>dossier-formation-individuelle/organisme-formation/<?= $effectif->getId(); ?>"><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></a></td>
+                        <td><a href="<?= URL ?>montage-dossier/organisme-formation/<?= $effectif->getId(); ?>"><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></a></td>
                         <td><?= $effectif->getFonction(); ?></td>
                         <td>
                             <?php
@@ -95,14 +95,14 @@ ob_start();
     function recherche() {
         var search = document.getElementById("search").value;
         if (search !== null) {
-            var url = "<?= URL ?>dossier-formation-individuelle/search/";
+            var url = "<?= URL ?>dossier-formation/search/";
             document.location.href = url + search;
         }
     }
 </script>
 <?php
 $content = ob_get_clean();
-$title = "FORMAGEST | Créer un dossier de formation";
+$title = "FORMAGEST | Montage dossier : Sélection d'un stagiaire";
 require_once 'views/templates/default.php';
 
 ?>
