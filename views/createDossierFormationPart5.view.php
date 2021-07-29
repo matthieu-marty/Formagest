@@ -25,8 +25,10 @@ ob_start()
     <div class="step-card-active">
         <span>4</span>
         <p>Programme</p>
+        <a href="<?= URL ?>organismes-de-formation/read/<?= $_SESSION['id_programme'] ?>" class="text-grey"><?= $_SESSION['programme']?></a>
+
     </div>
-    <div class="step-card">
+    <div class="step-card-active">
         <span>5</span>
         <p>Logistique</p>
     </div>
@@ -39,7 +41,7 @@ ob_start()
 
 <h3>Créer un dossier de formation</h3>
 
-<h5>4. Sélectionnez un Programme</h5>
+<h5>5. Sélectionnez les modalités logistiques</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">
