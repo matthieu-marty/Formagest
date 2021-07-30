@@ -1,9 +1,9 @@
 <?php
-require_once 'models/managers/opcaManager.class.php';
+require_once 'models/managers/OpcaManager.class.php';
 
 class OpcaController
 {
-    private $Opca_manager;
+    private $opca_manager;
 
     public function __construct()
     {

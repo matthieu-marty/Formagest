@@ -158,6 +158,35 @@ if (empty($_GET['page'])) {
             }
             break;
 
+            /**
+             * OPCAS
+             */
+        case "opcas":
+            require_once "controllers/OpcaController.controller.php";
+            $opca_controller = new OpcaController;
+            if (!empty($url[1])) {
+                switch ($url[1]) {
+                    case "delete":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "create":;
+                        break;
+                    case "save":;
+                        break;
+                    case "read":;
+                        break;
+                    case "update":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "search":;
+                        break;
+                }
+            } else {
+                $opca_controller->AfficherOpcas();
+            }
+            break;
 
 
             /**
