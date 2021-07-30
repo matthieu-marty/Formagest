@@ -48,7 +48,7 @@ ob_start()
 
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/module.png" class="d-block" />
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbModule() ?></span>
         </div>
         <a href="<?= URL ?>modules" class="btn btn-primary-action">Voir plus</a>
     </div>
@@ -73,7 +73,7 @@ ob_start()
         <h3>Salles</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/point-objects.png" class="d-block" />
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbSalle() ?></span>
         </div>
         <a href="<?= URL ?>salles" class="btn btn-primary-action">Voir plus</a>
     </div>
