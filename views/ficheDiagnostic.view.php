@@ -2,10 +2,10 @@
 ob_start()
 ?>
 
-<h3 class="mb-2">Fiche diagnostic</h3>
+<h3>Fiche diagnostic</h3>
+<p class="text-border"><a href="<?= URL ?>entreprises/read/<?= $fiche_diagnostic->getId_entreprise() ?>">Retour</a></p>
+
 <h4>Projet de formation</h4>
-
-
 <div class="card grid gap-1 mb-2">
     <div class="col-lg-2 col-md-3 col-sm-6">
         <h6>Communication</h6>
