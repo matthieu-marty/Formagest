@@ -95,7 +95,7 @@ ob_start();
     function recherche() {
         var search = document.getElementById("search").value;
         if (search !== null) {
-            var url = "<?= URL ?>dossier-formation/search/";
+            var url = "<?= URL ?>montage-dossier/search/";
             document.location.href = url + search;
         }
     }

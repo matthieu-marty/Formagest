@@ -2,7 +2,7 @@
 ob_start();
 ?>
 <h3> Entreprises</h3>
-<p class="text-border"><a href="<?= URL ?>entreprises/create">Ajouter</a></p>
+<p class="text-border"><a href="<?= URL ?>back-office">Retour</a> | <a href="<?= URL ?>entreprises/create">Ajouter</a></p>
 
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
