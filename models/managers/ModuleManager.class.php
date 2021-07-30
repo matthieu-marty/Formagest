@@ -1,16 +1,15 @@
 <?php
-
 require_once 'models/classes/Model.class.php';
 require_once 'models/classes/Module.class.php';
 
-class ModuleManager
+class ModuleManager extends Model
 {
 
     private $modules;
 
     public function addModule($module)
     {
-        $this->module[] = $module;
+        $this->modules[] = $module;
     }
 
     public function getModules()
@@ -33,20 +32,21 @@ class ModuleManager
         $req->execute();
         $modules = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
+        
 
         foreach ($modules as $module) {
             $m = new Module(
-                $module['id'];
-                $module['label'];
-                $module['descritpion'];
-                $module['volume_horaire'];
-                $module['date_creation'];
-                $module['date_modification'];
+                $module['id'],
+                $module['label'],
+                $module['description'],
+                $module['volume_horaire'],
+                $module['date_creation'],
+                $module['date_modification'],
             );
             $this->addModule($m);
         }
 
     }
 
-    
+
 }

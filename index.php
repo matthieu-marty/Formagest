@@ -97,6 +97,30 @@ if (empty($_GET['page'])) {
                 $organisme_formation_controller->AfficherOfs();
             }
             break;
+            /**
+             * MODULES
+             */
+        case "modules":
+            require_once "controllers/ModuleController.controller.php";
+            $module_controller = new ModuleController;
+            if (!empty($url[1])) {
+                switch ($url[1]) {
+                    case "delete":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "create":;
+                        break;
+                    case "save":;
+                        break;
+                    case "read": ; break;
+                }
+            } else {
+                $module_controller->AfficherModules();
+            }
+            break;
+
+
 
             /**
              * FORMATEURS
@@ -194,12 +218,15 @@ if (empty($_GET['page'])) {
             break;
 
 
-
-        case  "back-office": 
+            /**
+             * Back Office
+             */
+        case  "back-office":
             require_once 'models/classes/Stat.class.php';
             $stat = new Stat;
             require_once "views/backOffice.view.php";
             break;
+
         case "dossiers-en-cours":
             require_once "views/dossiersEnCours.view.php";
             break;
