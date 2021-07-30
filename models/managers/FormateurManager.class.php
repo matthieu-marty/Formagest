@@ -129,7 +129,7 @@ class FormateurManager extends Model
             'date_maj' => $date_maj
         ];
         $req = $this->getBDD()->prepare(
-        "UPDATE fg_formateur
+            "UPDATE fg_formateur
         SET
         date_creation = :date_creation,
         nom = :nom,
