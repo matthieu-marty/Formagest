@@ -97,6 +97,8 @@ if (empty($_GET['page'])) {
                 $organisme_formation_controller->AfficherOfs();
             }
             break;
+
+
             /**
              * MODULES
              */
@@ -113,10 +115,46 @@ if (empty($_GET['page'])) {
                         break;
                     case "save":;
                         break;
-                    case "read": ; break;
+                    case "read":;
+                        break;
+                    case "update":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "search":;
                 }
             } else {
                 $module_controller->AfficherModules();
+            }
+            break;
+
+            /**
+             * SALLES
+             */
+        case "salles":
+            require_once "controllers/SallesController.controller.php";
+            $salle_controller = new SalleController;
+            if (!empty($url[1])) {
+                switch ($url[1]) {
+                    case "delete":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "create":;
+                        break;
+                    case "save":;
+                        break;
+                    case "read":;
+                        break;
+                    case "update":;
+                        break;
+                    case "edit":;
+                        break;
+                    case "search":;
+                        break;
+                }
+            } else {
+                $salle_controller->AfficherSalles();
             }
             break;
 

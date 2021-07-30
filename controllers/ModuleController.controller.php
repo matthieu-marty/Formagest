@@ -14,7 +14,6 @@ class ModuleController
     public function afficherModules()
     {
         $modules = $this->module_manager->getModules();
-        
         require_once 'views/modules.view.php';
     }
 }

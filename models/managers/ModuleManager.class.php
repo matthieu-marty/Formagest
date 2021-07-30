@@ -32,7 +32,7 @@ class ModuleManager extends Model
         $req->execute();
         $modules = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
-        
+
 
         foreach ($modules as $module) {
             $m = new Module(
@@ -45,8 +45,5 @@ class ModuleManager extends Model
             );
             $this->addModule($m);
         }
-
     }
-
-
 }
