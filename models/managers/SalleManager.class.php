@@ -27,7 +27,7 @@ class SalleManager extends Model
 
     public function chargementSalles()
     {
-        $req = $this->getBDD()->prepare("SELECT * FROM fg_sale ORDER BY date_creation DESC");
+        $req = $this->getBDD()->prepare("SELECT * FROM fg_salle ORDER BY date_creation DESC");
         $req->execute();
         $salles = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();

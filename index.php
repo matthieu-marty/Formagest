@@ -132,7 +132,7 @@ if (empty($_GET['page'])) {
              * SALLES
              */
         case "salles":
-            require_once "controllers/SallesController.controller.php";
+            require_once "controllers/SalleController.controller.php";
             $salle_controller = new SalleController;
             if (!empty($url[1])) {
                 switch ($url[1]) {

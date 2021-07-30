@@ -1,5 +1,5 @@
 <?php
-require_once 'models/managers/ModuleManager.class.php';
+require_once 'models/managers/SalleManager.class.php';
 
 class SalleController
 {

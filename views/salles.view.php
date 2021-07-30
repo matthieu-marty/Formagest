@@ -21,6 +21,9 @@ ob_start()
             <thead>
                 <tr>
                     <th>Label</th>
+                    <th>Adresse</th>
+                    <th>Code postal</th>
+                    <th>Ville</th>
                     <th>Modification</th>
                     <th>Création</th>
                 </tr>
@@ -30,6 +33,9 @@ ob_start()
                 <?php foreach ($salles as $salle) : ?>
                     <tr>
                         <td><a href="<?= URL ?>salles/read/<?= $salle->getId(); ?>"><?= $salle->getLabel(); ?></a></td>
+                        <td><?= $salle->getAdresse(); ?></td>
+                        <td><?= $salle->getCode_Postal(); ?></td>
+                        <td><?= $salle->getVille(); ?></td>
                         <td><?= $salle->getDate_Modification(); ?></td>
                         <td><?= $salle->getDate_Creation(); ?></td>
                     </tr>

@@ -75,7 +75,7 @@ ob_start()
             <img src="https://img.icons8.com/color-glass/100/000000/point-objects.png" class="d-block" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
         </div>
-        <a href="#" class="btn btn-primary-action">Voir plus</a>
+        <a href="<?= URL ?>salles" class="btn btn-primary-action">Voir plus</a>
     </div>
 
 </div>
