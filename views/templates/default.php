@@ -36,9 +36,7 @@
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span> Tableau suivi</a>
             <a class="sidebar-link" href="<?= URL ?>dossiers-de-formation"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Dossiers</a>
-            <a class="sidebar-link" href="<?= URL ?>entreprises"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Entreprises</a>
-            <a class="sidebar-link" href="<?= URL ?>organismes-de-formation"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> Organismes</a>
-            <a class="sidebar-link" href="<?= URL ?>opcas"><span class="iconify" data-icon="fluent:database-20-filled" data-inline="false"></span> OPCAs</a>
+            <a class="sidebar-link" href="<?= URL ?>back-office"><span class="iconify" data-icon="fluent:gantt-chart-24-filled" data-inline="false"></span> Back Office</a>
         </div>
 
         <!-- MOBILE MENU -->

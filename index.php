@@ -195,7 +195,11 @@ if (empty($_GET['page'])) {
 
 
 
-
+        case  "back-office": 
+            require_once 'models/classes/Stat.class.php';
+            $stat = new Stat;
+            require_once "views/backOffice.view.php";
+            break;
         case "dossiers-en-cours":
             require_once "views/dossiersEnCours.view.php";
             break;
