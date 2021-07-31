@@ -47,4 +47,25 @@ class ModuleManager extends Model
             $this->addModule($m);
         }
     }
+
+    public function enregistrerModuleDB($label, $objectif_pedagogique, $description)
+    {
+        if (!empty($label)) {
+            $date = getdate()['year'] . '-' . getdate()['mon'] . '-' . getdate()['mday'];
+            $data = [
+                'label' => $label,
+                'objectif_pedagogique' => $objectif_pedagogique,
+                'description' => $description,
+                'date_modification' => $date,
+                'date_creation' => $date
+            ];
+            $req = $this->getBDD()->prepare(
+                "INSERT INTO 
+                fg_module (label, objectif_pedagogique, description, date_modification, date_creation)
+                VALUES (:label, :objectif_pedagogique, :description, :date_modification, :date_creation)"
+            );
+            $req->execute($data);
+            $req->closeCursor();
+        }
+    }
 }

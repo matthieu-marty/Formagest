@@ -21,4 +21,16 @@ class ModuleController
     {
         require_once 'views/createModule.view.php';
     }
+
+    public function enregistrerModule()
+    {
+        $this->module_manager->enregistrerModuleDB(
+            $_POST['label'],
+            $_POST['objectif_pedagogique'],
+            $_POST['description']
+
+        );
+        header('location:' . URL . 'modules');
+    }
+
 }

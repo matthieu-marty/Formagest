@@ -36,7 +36,7 @@
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>
             <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span> Tableau suivi</a>
             <a class="sidebar-link" href="<?= URL ?>dossiers-de-formation"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Dossiers</a>
-            <a class="sidebar-link" href="<?= URL ?>back-office"><span class="iconify" data-icon="fluent:gauge-24-filled" data-inline="false"></span> Back Office</a>
+            <a class="sidebar-link" href="<?= URL ?>back-office"><span class="iconify" data-icon="fluent:database-24-filled" data-inline="false"></span> Back Office</a>
         </div>
 
         <!-- MOBILE MENU -->

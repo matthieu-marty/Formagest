@@ -73,25 +73,25 @@ if (empty($_GET['page'])) {
                 switch ($url[1]) {
                     case "read":
                         $organisme_formation_controller->afficherOf($url[2]);
-                        break;               //OK
+                        break;
                     case "delete":
                         $organisme_formation_controller->supprimerOf($url[2]);
-                        break;            //OK
+                        break;
                     case "edit":
                         $organisme_formation_controller->modifierOf($url[2]);
-                        break;               //OK
+                        break;
                     case "create":
                         $organisme_formation_controller->creerOf();
-                        break;                       //OK
+                        break;
                     case "save":
                         $organisme_formation_controller->enregistrerOf();
-                        break;                   //OK
+                        break;
                     case "search":
                         $organisme_formation_controller->afficherRechercheOf($url[2]);
-                        break;    //OK
+                        break;
                     case "update":
                         $organisme_formation_controller->actualiserOf($url[2]);
-                        break;           //OK
+                        break;
                 }
             } else {
                 $organisme_formation_controller->AfficherOfs();
@@ -114,7 +114,8 @@ if (empty($_GET['page'])) {
                     case "create":
                         $module_controller->creerModule();
                         break;
-                    case "save":;
+                    case "save":
+                        $module_controller->enregistrerModule();
                         break;
                     case "read":;
                         break;
