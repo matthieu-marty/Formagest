@@ -39,6 +39,7 @@ class ModuleManager extends Model
                 $module['id'],
                 $module['label'],
                 $module['description'],
+                $module['objectif_pedagogique'],
                 $module['volume_horaire'],
                 $module['date_creation'],
                 $module['date_modification'],

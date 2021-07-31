@@ -21,6 +21,7 @@ ob_start()
             <thead>
                 <tr>
                     <th>Label</th>
+                    <th>Objectif pedagogique</th>
                     <th>Modification</th>
                     <th>Création</th>
                 </tr>
@@ -30,6 +31,7 @@ ob_start()
                 <?php foreach ($modules as $module) : ?>
                     <tr>
                         <td><a href="<?= URL ?>modules/read/<?= $module->getId(); ?>"><?= $module->getLabel(); ?></a></td>
+                        <td><?= $module->getObjectif_Pedagogique() ?></td>
                         <td><?= $module->getDate_Modification(); ?></td>
                         <td><?= $module->getDate_Creation(); ?></td>
                     </tr>

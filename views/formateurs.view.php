@@ -2,6 +2,7 @@
 ob_start();
 ?>
 <h3>Formateurs</h3>
+<p class="text-border"><a href="<?= URL ?>back-office">Retour</a></p>
 
 <div class="table-container">
     <table>

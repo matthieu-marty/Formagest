@@ -16,4 +16,9 @@ class ModuleController
         $modules = $this->module_manager->getModules();
         require_once 'views/modules.view.php';
     }
+
+    public function creerModule()
+    {
+        require_once 'views/createModule.view.php';
+    }
 }

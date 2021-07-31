@@ -111,7 +111,8 @@ if (empty($_GET['page'])) {
                         break;
                     case "edit":;
                         break;
-                    case "create":;
+                    case "create":
+                        $module_controller->creerModule();
                         break;
                     case "save":;
                         break;
