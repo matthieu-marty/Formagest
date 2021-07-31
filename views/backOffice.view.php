@@ -7,7 +7,7 @@ ob_start()
 
 <div class="grid gap-2 mb-2">
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Entreprises ✔</h3>
+        <h3>Entreprises</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/company.png" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbEntreprise() ?></span>
@@ -16,7 +16,7 @@ ob_start()
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Organismes de formation ✔</h3>
+        <h3>Organismes de formation</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/school.png" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbOrganismeFormation() ?></span>
@@ -25,7 +25,7 @@ ob_start()
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>OPCAs ✔</h3>
+        <h3>OPCAs</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/money-transfer.png" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbOpca() ?></span>
@@ -44,7 +44,7 @@ ob_start()
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Modules ✔</h3>
+        <h3>Modules</h3>
 
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/module.png" class="d-block" />
@@ -61,7 +61,7 @@ ob_start()
         <a href="#" class="btn btn-primary-action">Voir plus</a>
     </div>
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Formateurs ✔</h3>
+        <h3>Formateurs</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/training.png" class="d-block" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbFormateur() ?></span>
@@ -70,7 +70,7 @@ ob_start()
     </div>
 
     <div class="card border-blue-hover col-lg-4 col-md-6 col-sm-12">
-        <h3>Salles ✔</h3>
+        <h3>Salles</h3>
         <div class="flex-row mb-2">
             <img src="https://img.icons8.com/color-glass/100/000000/point-objects.png" class="d-block" />
             <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbSalle() ?></span>

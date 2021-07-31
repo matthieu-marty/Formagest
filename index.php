@@ -112,12 +112,13 @@ if (empty($_GET['page'])) {
                     case "edit":;
                         break;
                     case "create":
-                        $module_controller->creerModule();
+                        $module_controller->creerModule(); //OK
                         break;
                     case "save":
-                        $module_controller->enregistrerModule();
+                        $module_controller->enregistrerModule(); //OK
                         break;
-                    case "read":;
+                    case "read":
+                        $module_controller->afficherModule($url[2]);
                         break;
                     case "update":;
                         break;

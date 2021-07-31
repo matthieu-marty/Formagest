@@ -33,4 +33,10 @@ class ModuleController
         header('location:' . URL . 'modules');
     }
 
+    public function AfficherModule($id_module)
+    {
+        $module = $this->module_manager->getModuleById($id_module);
+        require_once 'views/module.view.php';
+    }
+
 }

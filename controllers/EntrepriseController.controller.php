@@ -45,7 +45,7 @@ class EntrepriseController
             }
             require_once 'views/entreprises.view.php';
         } else {
-           $this->afficherEntreprises();
+            $this->afficherEntreprises();
         }
     }
 
