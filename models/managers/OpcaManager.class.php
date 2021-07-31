@@ -32,15 +32,7 @@ class OpcaManager extends Model
         $req->closeCursor();
 
         foreach ($opcas as $opca) {
-            $o = new Opca(
-                $opca['id'],
-                $opca['nom'],
-                $opca['adresse'],
-                $opca['code_postal'],
-                $opca['ville'],
-                $opca['date_modification'],
-                $opca['date_creation'],
-            );
+            $o = new Opca($opca['id'], $opca['nom'], $opca['adresse'], $opca['code_postal'], $opca['ville'], $opca['date_modification'], $opca['date_creation']);
             $this->addOpca($o);
         }
     }

@@ -10,7 +10,7 @@ class Opca
     private $date_modification;
     private $date_creation;
 
-    public function __constuct($id, $nom, $adresse, $code_postal, $ville, $date_modification, $date_creation)
+    public function __construct($id, $nom, $adresse, $code_postal, $ville, $date_modification, $date_creation)
     {
         $this->id = $id;
         $this->nom = $nom;
@@ -47,10 +47,6 @@ class Opca
         return $this->ville;
     }
 
-    public function getImg()
-    {
-        return $this->img;
-    }
 
     public function getDate_Modification()
     {
