@@ -43,7 +43,6 @@ class ModuleController
     {
         $module = $this->module_manager->getModuleById($id_module);
         require_once 'views/editModule.view.php';
-    
     }
 
     public function actualiserModule($id_module)
@@ -54,12 +53,20 @@ class ModuleController
             $_POST['objectf_pedagogique'],
             $_POST['description'],
         );
-        if ($res === true)
-        {
-            header('location:' . URL .'modules/read/' . $id_module);
+        if ($res === true) {
+            header('location:' . URL . 'modules/read/' . $id_module);
         } else {
             header('location:' . URL . 'erreur');
         }
     }
 
+    public function supprimerModule($id_module)
+    {
+        $res = $this->module_manager->supprimerModuleDB($id_module);
+        if ($res === true) {
+            header('location:' . URL . 'modules');
+        } else {
+            header('location' . URL . 'erreur');
+        }
+    }
 }

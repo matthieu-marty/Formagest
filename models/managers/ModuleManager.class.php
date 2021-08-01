@@ -92,4 +92,13 @@ class ModuleManager extends Model
         $req->closeCursor();
         return $res;
     }
+
+    public function supprimerModuleDB($id_module)
+    {
+        $data = ['id_module' => $id_module];
+        $req = $this->getBDD()->prepare("DELETE FROM fg_module WHERE id = :id_module");
+        $res = $req->execute($data);
+        $req->closeCursor();
+        return $res;
+    }
 }

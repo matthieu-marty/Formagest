@@ -82,7 +82,6 @@ class EntrepriseManager extends Model
         $res = $req->execute($data);
         $req->closeCursor();
         return $res;
-        // OK
     }
 
     public function actualiserEntrepriseDB($id_entreprise, $enseigne, $siret, $code_naf, $forme_juridique, $activite, $adresse, $code_postal, $date_creation, $ville, $telephone, $mail)
@@ -104,7 +103,7 @@ class EntrepriseManager extends Model
             'date_maj' => $date_maj,
         ];
         $req = $this->getBDD()->prepare(
-        "UPDATE fg_entreprise
+            "UPDATE fg_entreprise
         SET
         enseigne = :enseigne,
         siret = :siret,

@@ -107,7 +107,8 @@ if (empty($_GET['page'])) {
             $module_controller = new ModuleController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "delete":;
+                    case "delete":
+                        $module_controller->supprimerModule($url[2]);
                         break;
                     case "create":
                         $module_controller->creerModule(); //OK

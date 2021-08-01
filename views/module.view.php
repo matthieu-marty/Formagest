@@ -3,7 +3,7 @@ ob_start()
 ?>
 
 <h3><?= $module->getLabel() ?></h3>
-<p class="text-border"><a href="<?= URL ?>modules">Retour</a> | <a href="<?= URL ?>modules/edit/<?= $module->getId() ?>">Modifier</a> | <a class="text-red" href="<?= URL ?>modules/delete/<?= $module->getId() ?>">Supprimer</a></p>
+<p class="text-border"><a href="<?= URL ?>modules">Retour</a> | <a href="<?= URL ?>modules/edit/<?= $module->getId() ?>">Modifier</a> | <a class="text-red" href="<?= URL ?>modules/delete/<?= $module->getId() ?>" onclick="return confirm ('Supprimer <?= $module->getLabel() ?> ?')">Supprimer</a></p>
 
 <h5>Label</h5>
 <div class="card mb-2">
