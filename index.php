@@ -109,8 +109,6 @@ if (empty($_GET['page'])) {
                 switch ($url[1]) {
                     case "delete":;
                         break;
-                    case "edit":;
-                        break;
                     case "create":
                         $module_controller->creerModule(); //OK
                         break;
@@ -120,11 +118,14 @@ if (empty($_GET['page'])) {
                     case "read":
                         $module_controller->afficherModule($url[2]);
                         break;
-                    case "update":;
+                    case "update":
+                        $module_controller->actualiserModule($url[2]);
                         break;
-                    case "edit":;
+                    case "edit":
+                        $module_controller->modifierModule($url[2]);
                         break;
                     case "search":;
+                        break;
                 }
             } else {
                 $module_controller->AfficherModules();
@@ -150,8 +151,6 @@ if (empty($_GET['page'])) {
                     case "read":;
                         break;
                     case "update":;
-                        break;
-                    case "edit":;
                         break;
                     case "search":;
                         break;
@@ -180,8 +179,6 @@ if (empty($_GET['page'])) {
                     case "read":;
                         break;
                     case "update":;
-                        break;
-                    case "edit":;
                         break;
                     case "search":;
                         break;

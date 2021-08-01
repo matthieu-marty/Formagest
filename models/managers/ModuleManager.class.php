@@ -68,4 +68,28 @@ class ModuleManager extends Model
             $req->closeCursor();
         }
     }
+
+    public function actualiserModuleDB($id_module, $label, $objectif_pedagogique, $description)
+    {
+        $date_maj = getdate()['year'] . '-' . getdate()['mon'] . '-' . getdate()['mday'];
+        $data = [
+            'id_module' => $id_module,
+            'label' => $label,
+            'objectif_pedagogique' => $objectif_pedagogique,
+            'description' => $description,
+            'date_modification' => $date_maj,
+        ];
+        $req = $this->getBDD()->prepare(
+            "UPDATE fg_module
+            SET
+            label = :label,
+            objectif_pedagogique = :objectif_pedagogique,
+            description = :description,
+            date_modification = :date_modification
+            WHERE id = :id_module"
+        );
+        $res = $req->execute($data);
+        $req->closeCursor();
+        return $res;
+    }
 }
