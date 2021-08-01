@@ -28,7 +28,6 @@ class ModuleController
             $_POST['label'],
             $_POST['objectif_pedagogique'],
             $_POST['description']
-
         );
         header('location:' . URL . 'modules');
     }
@@ -50,7 +49,7 @@ class ModuleController
         $res = $this->module_manager->actualiserModuleDB(
             $id_module,
             $_POST['label'],
-            $_POST['objectf_pedagogique'],
+            $_POST['objectif_pedagogique'],
             $_POST['description'],
         );
         if ($res === true) {
