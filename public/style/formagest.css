@@ -496,9 +496,9 @@ table.table-details tbody tr th:first-child {
   display: flex;
   flex-direction: column;
   background-color: var(--menu-background);
-  height: calc(100vh - 35px);
+  height: calc(100vh);
   position:sticky;
-  top:35px;
+  top:0px;
   padding-top: 4rem;
   box-shadow: 0  0 12px var(--shadow);
 }
