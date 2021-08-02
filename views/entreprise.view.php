@@ -2,15 +2,13 @@
 ob_start()
 ?>
 <h3><?= $entreprise->getEnseigne(); ?></h3>
-
-<a href="<?= URL ?>entreprises"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
-<a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
-<a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
-
 <!-- FICHE ENTREPRISE -->
 <div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
+        <a href="<?= URL ?>entreprises"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+        <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+        <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
         <div class="card mb-1">
             <div class="flex-row">
                 <span class="iconify icon-h4" data-icon="fluent:building-24-regular" data-inline="false"></span>
@@ -79,7 +77,7 @@ ob_start()
             </table>
         </div>
         <h5>Fiches diagnostic</h5>
-        <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
         <?php if (!empty($fiches_diagnostic)) : ?>
             <div class="grid gap-1">
                 <?php foreach ($fiches_diagnostic as $fiche) : ?>
@@ -96,7 +94,7 @@ ob_start()
     <!-- EFFECTIFS -->
     <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Effectifs</h5>
-        <p class="text-border"><a href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
+        <a href="<?= URL ?>effectifs/create/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
 
         <div class="grid gap-2">
 
@@ -109,7 +107,7 @@ ob_start()
                         </div>
 
 
-                        <table class="table-details">
+                        <table class="table-details mb-1">
                             <tbody>
                                 <tr>
                                     <th>Nom</th>
@@ -157,7 +155,10 @@ ob_start()
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="text-border text-right mt-1 mb-0"><a href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>">Modifier</a> | <a href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')" class="text-red">Supprimer</a></p>
+                        <div class="text-right">
+                            <a href="<?= URL ?>effectifs/edit/<?= $effectif->getId(); ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+                            <a href="<?= URL ?>effectifs/delete/<?= $effectif->getId(); ?>" onclick="return confirm ('Supprimer <?= $effectif->getNom() . $effectif->getPrenom() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>

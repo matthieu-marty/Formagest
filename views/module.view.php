@@ -3,7 +3,9 @@ ob_start()
 ?>
 
 <h3><?= $module->getLabel() ?></h3>
-<p class="text-border"><a href="<?= URL ?>modules">Retour</a> | <a href="<?= URL ?>modules/edit/<?= $module->getId() ?>">Modifier</a> | <a class="text-red" href="<?= URL ?>modules/delete/<?= $module->getId() ?>" onclick="return confirm ('Supprimer <?= $module->getLabel() ?> ?')">Supprimer</a></p>
+<a href="<?= URL ?>modules"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+<a href="<?= URL ?>modules/edit/<?= $module->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+<a class="text-red" href="<?= URL ?>modules/delete/<?= $module->getId() ?>" onclick="return confirm ('Supprimer <?= $module->getLabel() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
 
 <h5>Label</h5>
 <div class="card mb-2">

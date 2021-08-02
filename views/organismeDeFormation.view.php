@@ -8,11 +8,12 @@ ob_start()
 <div class="grid gap-2 ">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
-        <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="text-red">Supprimer</a></p>
-
+        <a href="<?= URL ?>organismes-de-formation"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+        <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+        <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
         <div class="card mb-1">
             <div class="flex-row">
-            <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-24-regular" data-inline="false"></span>
+                <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-24-regular" data-inline="false"></span>
                 <h4><?= $of->getNom_Commercial(); ?></h4>
             </div>
 
@@ -90,7 +91,7 @@ ob_start()
     <!-- Formateurs -->
     <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Formateurs</h5>
-        <p class="text-border"><a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>">Ajouter</a></p>
+        <a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
 
         <div class="grid gap-1">
 
@@ -103,7 +104,7 @@ ob_start()
                         </div>
 
                         <div>
-                            <table class="table-details">
+                            <table class="table-details mb-1">
                                 <tbody>
                                     <tr>
                                         <th>Nom</th>
@@ -159,7 +160,11 @@ ob_start()
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-border text-right mt-1 mb-0"><a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>">Modifier</a> | <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="text-red">Supprimer</a></p>
+                            <div class="text-right">
+                                <a href="<?= URL ?>formateurs/edit/<?= $formateur->getId(); ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+                                <a href="<?= URL ?>formateurs/delete/<?= $formateur->getId(); ?>" onclick="return confirm ('Supprimer <?= $formateur->getNom() . $formateur->getPrenom() ?> ?')" class="text-red"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
+                            </div>
+
                         </div>
                     </div>
                 <?php endforeach; ?>
