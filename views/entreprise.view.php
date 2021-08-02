@@ -11,7 +11,7 @@ ob_start()
         <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
         <div class="card mb-1">
             <div class="flex-row">
-                <span class="iconify icon-h4" data-icon="fluent:building-24-regular" data-inline="false"></span>
+                <span class="iconify icon-h4" data-icon="fluent:building-20-regular" data-inline="false"></span>
                 <h4><?= $entreprise->getEnseigne(); ?></h4>
             </div>
 
@@ -102,7 +102,7 @@ ob_start()
                 <?php foreach ($effectifs_entreprise as $effectif) : ?>
                     <div class="col-lg-6 col-md-12 col-sm-12 card">
                         <div class="flex-row">
-                            <span class="iconify icon-h4" data-icon="fluent:person-12-regular" data-inline="false"></span>
+                            <span class="iconify icon-h4" data-icon="fluent:person-20-regular" data-inline="false"></span>
                             <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
                         </div>
 

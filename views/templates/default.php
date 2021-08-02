@@ -15,7 +15,7 @@
 
 
     <!-- TOPBAR -->
-    <div class="topbar">
+    <!-- <div class="topbar">
         <img src="<?= URL ?>public/logo/logo-white.svg" alt="logo" height="25">
         <span>FORMAGEST</span>
         <div style="display: flex; flex-direction: row-reverse;width: 100%;">
@@ -24,7 +24,7 @@
             <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:person-circle-20-filled" data-inline="false"></span></a>
             <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:alert-24-filled" data-inline="false"></span></a>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -33,10 +33,24 @@
 
         <!-- SIDEBAR-->
         <div class="sidebar">
-            <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span> Accueil</a>
-            <a class="sidebar-link" href="<?= URL ?>accueil"><span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span> Tableau suivi</a>
-            <a class="sidebar-link" href="<?= URL ?>dossiers-de-formation"><span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span> Dossiers</a>
-            <a class="sidebar-link" href="<?= URL ?>back-office"><span class="iconify" data-icon="fluent:database-24-filled" data-inline="false"></span> Back Office</a>
+            <img src="<?= URL ?>public/logo/logo-blue.svg" class="sidebar-logo">
+            <h1 class="sidebar-title">FormaGest</h1>
+            <a class="sidebar-link" href="<?= URL ?>accueil">
+                <span class="iconify" data-icon="fluent:home-48-filled" data-inline="false"></span>
+                <p>Accueil</p>
+            </a>
+            <a class="sidebar-link" href="<?= URL ?>accueil">
+                <span class="iconify" data-icon="fluent:board-28-filled" data-inline="false"></span>
+                <p>Tableau suivi</p>
+            </a>
+            <a class="sidebar-link" href="<?= URL ?>dossiers-de-formation">
+                <span class="iconify" data-icon="fluent:folder-28-filled" data-inline="false"></span>
+                <p>Dossiers</p>
+            </a>
+            <a class="sidebar-link" href="<?= URL ?>back-office">
+            <span class="iconify" data-icon="fluent:database-24-filled" data-inline="false"></span>
+            <p>Backoffice</p>
+        </a>
         </div>
 
         <!-- MOBILE MENU -->
@@ -63,7 +77,7 @@
         </div>
 
         <!-- PAGE-->
-        <div style="padding-top:3.5rem; padding-left:0.5rem; padding-right: 0.5rem; padding-bottom: 0.5rem;">
+        <div style="padding: 0.5rem;">
             <!-- CONTENT -->
             <?= $content ?>
         </div>

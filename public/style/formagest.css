@@ -208,7 +208,7 @@ a.card:hover {
   background-color: rgba(var(--primary), 0.05);
   color: rgba(var(--primary));
   padding: 0.5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   font-size: 3rem;
   margin-right: 1rem;
   margin-top: -0.5rem;
@@ -488,7 +488,7 @@ table.table-details tbody tr th:first-child {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 150px 1fr;
   gap: 1rem;
 }
 
@@ -499,32 +499,54 @@ table.table-details tbody tr th:first-child {
   height: calc(100vh);
   position:sticky;
   top:0px;
-  padding-top: 4rem;
-  box-shadow: 0  0 12px var(--shadow);
+  padding-top: 1.5rem;
+}
+.sidebar-logo {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  height: 3rem;
+  
+}
+.sidebar-title {
+  font-size:1.5rem;
+  text-align: center;
+  color: rgb(var(--primary));
+  margin-bottom : 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .sidebar-link {
   text-decoration: none;
   padding-top: 0.25rem;
-  padding-bottom:0.25rem;
-  padding-left: 0.25rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
-  color: #b3b1db;
   font-weight: 500;
+  text-align:center;
+  text-decoration: none;
 }
-.sidebar-link:hover {
+.sidebar-link:hover, .sidebar-link:hover p {
   color: rgb(var(--primary));
   text-decoration: none;
 }
 
 .sidebar .iconify {
-  vertical-align: middle; 
-  font-size:1.5rem;
-  margin-right: 0.25rem;
-  margin-left: 0.25rem;
+  display: block;
+  padding: 1rem;
+  background-color: rgb(var(--primary), 0.05);
+  font-size: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(var(--primary));
+  border-radius: 1rem;
+}
+.sidebar-link:hover .iconify {
+  background-color: rgb(var(--primary));
+  color: white;
+  box-shadow: 0  0 3px rgb(var(--primary));
 }
 
-
+/* 
 .topbar {
   color: white;
   background-color: rgb(var(--primary));
@@ -559,7 +581,7 @@ table.table-details tbody tr th:first-child {
 }
 .topbar-link:hover {
   transform: scale(1.2);
-}
+} */
 
 /*
 * MOBILE LAYOUT

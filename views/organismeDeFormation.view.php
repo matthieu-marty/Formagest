@@ -8,12 +8,12 @@ ob_start()
 <div class="grid gap-2 ">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
-        <a href="<?= URL ?>organismes-de-formation"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+        <a href="<?= URL ?>organismes-de-formation"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-20-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
         <div class="card mb-1">
             <div class="flex-row">
-                <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-24-regular" data-inline="false"></span>
+                <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-20-regular" data-inline="false"></span>
                 <h4><?= $of->getNom_Commercial(); ?></h4>
             </div>
 
@@ -91,7 +91,7 @@ ob_start()
     <!-- Formateurs -->
     <div class="col-lg-8 col-md-6 col-sm-12">
         <h5>Formateurs</h5>
-        <a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
+        <a href="<?= URL ?>formateurs/create/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-20-filled" data-inline="false"></span></a>
 
         <div class="grid gap-1">
 
@@ -99,7 +99,7 @@ ob_start()
                 <?php foreach ($formateurs as $formateur) : ?>
                     <div class="col-lg-6 col-md-12 col-sm-12 card">
                         <div class="flex-row">
-                            <span class="iconify icon-h4" data-icon="fluent:person-12-regular" data-inline="false"></span>
+                            <span class="iconify icon-h4" data-icon="fluent:person-20-regular" data-inline="false"></span>
                             <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
                         </div>
 
