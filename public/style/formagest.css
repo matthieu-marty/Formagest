@@ -195,10 +195,7 @@ a.card:hover {
 .bg-white {background-color:var(--white);}
 .bg-yellow {background-color: var(--yellow)}
 
-.iconify {
-  position:relative;
-  z-index:1;
-}
+
 
 .icon {
   background-color: rgba(var(--primary), 0.05);
@@ -502,7 +499,7 @@ table.table-details tbody tr th:first-child {
   height: calc(100vh - 35px);
   position:sticky;
   top:35px;
-  padding-top: 2rem;
+  padding-top: 4rem;
   box-shadow: 0  0 12px var(--shadow);
 }
 

@@ -63,7 +63,7 @@
         </div>
 
         <!-- PAGE-->
-        <div style="padding: 3.5rem 1rem 1rem 1rem;">
+        <div style="padding-top:3.5rem; padding-left:0.5rem; padding-right: 0.5rem; padding-bottom: 0.5rem;">
             <!-- CONTENT -->
             <?= $content ?>
         </div>
