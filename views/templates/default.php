@@ -63,7 +63,7 @@
         </div>
 
         <!-- PAGE-->
-        <div class="p-1">
+        <div style="padding: 3.5rem 1rem 1rem 1rem;">
             <!-- CONTENT -->
             <?= $content ?>
         </div>

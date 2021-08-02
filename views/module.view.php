@@ -7,7 +7,10 @@ ob_start()
 
 <h5>Label</h5>
 <div class="card mb-2">
-    <h4 class="mb-0"> <?= $module->getLabel() ?></h4>
+    <div class="flex-row">
+        <span class="iconify icon-h4" data-icon="fluent:learning-app-24-regular" data-inline="false"></span>
+        <h4 class="mb-0"> <?= $module->getLabel() ?></h4>
+    </div>
 </div>
 
 <h5>Objectif pédagogique</h5>

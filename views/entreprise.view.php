@@ -3,14 +3,20 @@ ob_start()
 ?>
 <h3><?= $entreprise->getEnseigne(); ?></h3>
 
+<a href="<?= URL ?>entreprises"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+<a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
+<a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
+
 <!-- FICHE ENTREPRISE -->
 <div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Entreprise</h5>
-        <p class="text-border"><a href="<?= URL ?>entreprises">Retour</a> | <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>">Modifier</a> | <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')" class="text-red">Supprimer</a></p>
-
         <div class="card mb-1">
-            <h4><?= $entreprise->getEnseigne(); ?></h4>
+            <div class="flex-row">
+                <span class="iconify icon-h4" data-icon="fluent:building-24-regular" data-inline="false"></span>
+                <h4><?= $entreprise->getEnseigne(); ?></h4>
+            </div>
+
             <table class="table-details">
                 <tbody>
                     <tr>
@@ -75,22 +81,17 @@ ob_start()
         <h5>Fiches diagnostic</h5>
         <p class="text-border"><a href="<?= URL ?>fiche-diagnostic/create/<?= $entreprise->getId() ?>">Ajouter</a></p>
         <?php if (!empty($fiches_diagnostic)) : ?>
-            <div class="card grid col-12">
-                <table class="col-12 table-details">
-                    <tbody>
-                        <?php foreach ($fiches_diagnostic as $fiche) : ?>
-                            <tr>
-                                <th style="width:50px;"><img src="https://img.icons8.com/color-glass/40/000000/document-1.png"/></th>
-                                <th><a href="<?= URL ?>fiche-diagnostic/read/<?= $fiche->getId(); ?>"><?= $fiche->getDate_creation() ?></a></th>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+            <div class="grid gap-1">
+                <?php foreach ($fiches_diagnostic as $fiche) : ?>
+                    <a href="<?= URL ?>fiche-diagnostic/read/<?= $fiche->getId(); ?>" class="card col-lg-4 col-md-6 col-sm-6">
+                        <p class="text-center mb-0"><span class="iconify icon" data-icon="fluent:document-bullet-list-20-regular" data-inline="false"></span></p>
+                        <p class="text-center text-bold mb-0"><?= $fiche->getDate_creation() ?></p>
+                    </a>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
+            <?php endif; ?>
             </div>
-        <?php else : ?>
-            <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
-        <?php endif; ?>
-
     </div>
     <!-- EFFECTIFS -->
     <div class="col-lg-8 col-md-6 col-sm-12">
@@ -102,8 +103,11 @@ ob_start()
             <?php if (!empty($effectifs_entreprise)) : ?>
                 <?php foreach ($effectifs_entreprise as $effectif) : ?>
                     <div class="col-lg-6 col-md-12 col-sm-12 card">
+                        <div class="flex-row">
+                            <span class="iconify icon-h4" data-icon="fluent:person-12-regular" data-inline="false"></span>
+                            <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
+                        </div>
 
-                        <h4><?= $effectif->getPrenom() . ' ' . $effectif->getNom(); ?></h4>
 
                         <table class="table-details">
                             <tbody>

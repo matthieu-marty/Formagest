@@ -195,6 +195,50 @@ a.card:hover {
 .bg-white {background-color:var(--white);}
 .bg-yellow {background-color: var(--yellow)}
 
+.iconify {
+  position:relative;
+  z-index:1;
+}
+
+.icon {
+  background-color: rgba(var(--primary), 0.05);
+  color: rgba(var(--primary));
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 5.5rem;
+}
+.icon-h4 {
+  background-color: rgba(var(--primary), 0.05);
+  color: rgba(var(--primary));
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 3rem;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+}
+
+.action-icon {
+  font-size: 2.5rem;
+  background-color: white;
+  box-shadow: 0 0 12px var(--shadow);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+.action-icon-primary:hover {
+  background-color: rgb(var(--primary));
+  color: white;
+  box-shadow: 0  0 3px rgb(var(--primary));
+}
+.action-icon-red {
+  color: var(--red);
+}
+.action-icon-red:hover{
+  background-color: var(--red);
+  color: white;
+  box-shadow: 0  0 3px var(--red);
+}
+
 /*
 * FLEXBOX
 */
@@ -489,9 +533,11 @@ table.table-details tbody tr th:first-child {
   background-color: rgb(var(--primary));
   display:flex;
   flex-direction:row;
-  position:sticky; 
+  position:fixed; 
   top:0;
   box-shadow: 0px 0px 12px var(--shadow);
+  width:100%;
+  z-index: 9999999999;
 }
 .topbar img {
   padding-right: 0.5rem; 
@@ -569,10 +615,12 @@ table.table-details tbody tr th:first-child {
 */
 .mobile {
   background-color:#FFFFFF;
-  position:sticky; 
+  position:fixed; 
   top:0;
   display: none;
   box-shadow: 0  0 12px var(--shadow);
+  z-index: 9999999999;
+  width:100%;
 }
 @media (max-width: 1025px) {
   .sidebar, .topbar {

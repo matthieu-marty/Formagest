@@ -11,8 +11,11 @@ ob_start()
         <p class="text-border"><a href="<?= URL ?>organismes-de-formation">Retour</a> | <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>">Modifier</a> | <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')" class="text-red">Supprimer</a></p>
 
         <div class="card mb-1">
+            <div class="flex-row">
+            <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-24-regular" data-inline="false"></span>
+                <h4><?= $of->getNom_Commercial(); ?></h4>
+            </div>
 
-            <h4><?= $of->getNom_Commercial(); ?></h4>
             <table class="table-details">
                 <tbody>
                     <tr>
@@ -94,7 +97,11 @@ ob_start()
             <?php if (!empty($formateurs)) : ?>
                 <?php foreach ($formateurs as $formateur) : ?>
                     <div class="col-lg-6 col-md-12 col-sm-12 card">
-                        <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
+                        <div class="flex-row">
+                            <span class="iconify icon-h4" data-icon="fluent:person-12-regular" data-inline="false"></span>
+                            <h4><?= $formateur->getPrenom() . ' ' . $formateur->getNom(); ?></h4>
+                        </div>
+
                         <div>
                             <table class="table-details">
                                 <tbody>
