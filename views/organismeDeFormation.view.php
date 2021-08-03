@@ -5,13 +5,13 @@ ob_start()
 <h3><?= $of->getNom_Commercial(); ?></h3>
 
 <!-- FICHE ORGNISME FORMATION -->
-<div class="grid gap-2 ">
+<div class="grid gap-2">
     <div class="col-lg-4 col-md-6 col-sm-12">
         <h5>Organisme</h5>
         <a href="<?= URL ?>organismes-de-formation"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-20-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>organismes-de-formation/edit/<?= $of->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>organismes-de-formation/delete/<?= $of->getId() ?>" onclick="return confirm ('Supprimer <?= $of->getNom_Commercial() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
-        <div class="card mb-1">
+        <div class="card mb-2">
             <div class="flex-row">
                 <span class="iconify icon-h4" data-icon="fluent:building-retail-toolbox-20-regular" data-inline="false"></span>
                 <h4><?= $of->getNom_Commercial(); ?></h4>
@@ -60,8 +60,12 @@ ob_start()
 
         </div>
 
-        <h5>Coordonnées</h5>
+
         <div class="card mb-1">
+            <div class="flex-row">
+                <span class="iconify icon-h4" data-icon="fluent:chat-20-regular" data-inline="false"></span>
+                <h4>Coordonnées</h4>
+            </div>
             <table class="table-details">
                 <tbody>
                     <tr>

@@ -9,7 +9,7 @@ ob_start()
         <a href="<?= URL ?>entreprises"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>entreprises/edit/<?= $entreprise->getId() ?>"><span class="iconify action-icon action-icon-primary" data-icon="fluent:edit-16-regular" data-inline="false"></span></a>
         <a href="<?= URL ?>entreprises/delete/<?= $entreprise->getId() ?>" onclick="return confirm ('Supprimer <?= $entreprise->getEnseigne() ?> ?')"><span class="iconify action-icon action-icon-red" data-icon="fluent:delete-24-regular" data-inline="false"></span></a>
-        <div class="card mb-1">
+        <div class="card mb-2">
             <div class="flex-row">
                 <span class="iconify icon-h4" data-icon="fluent:building-20-regular" data-inline="false"></span>
                 <h4><?= $entreprise->getEnseigne(); ?></h4>
@@ -49,8 +49,13 @@ ob_start()
             </table>
         </div>
 
-        <h5>Coordonnées</h5>
+
         <div class="card mb-1">
+            <div class="flex-row">
+                <span class="iconify icon-h4" data-icon="fluent:chat-20-regular" data-inline="false"></span>
+                <h4>Coordonnées</h4>
+            </div>
+
             <table class="table-details">
                 <tbody>
                     <tr>

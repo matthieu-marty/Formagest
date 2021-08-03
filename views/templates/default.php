@@ -49,7 +49,7 @@
             </a>
             <a class="sidebar-link" href="<?= URL ?>back-office">
             <span class="iconify" data-icon="fluent:database-24-filled" data-inline="false"></span>
-            <p>Backoffice</p>
+            <p>Back Office</p>
         </a>
         </div>
 
