@@ -177,7 +177,8 @@ if (empty($_GET['page'])) {
                         break;
                     case "save":;
                         break;
-                    case "read":;
+                    case "read":
+                        $opca_controller->afficherOpca($url[2]);
                         break;
                     case "update":;
                         break;

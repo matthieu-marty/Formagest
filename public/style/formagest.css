@@ -42,6 +42,7 @@
 
   --border: #C3C4C7;
   --shadow: #b3b1db60;
+  --shadow-blue: #1279FF;
   --body-background: rgba(var(--primary), 0.05);/*#f4f8fd*/
   --menu-background: #FFFFFF;
   /* --menu-background: #1D2327; */
@@ -151,6 +152,12 @@ a.card:hover {
   text-decoration: none;
   border: 2px solid rgb(var(--primary));
   box-shadow: 0  0 3px rgb(var(--primary));
+
+  /* background-color: white;
+  padding: 1.75rem;
+  text-decoration: none;
+  border: 2px solid rgb(var(--primary));
+  box-shadow: 0  0 3px rgb(var(--primary)); */
 }
 
 .btn {

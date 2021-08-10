@@ -16,4 +16,11 @@ class OpcaController
         $opcas = $this->opca_manager->getOpcas();
         require_once 'views/opcas.view.php';
     }
+
+    public function afficherOpca($id_opca)
+    {
+        $opca = $this->opca_manager->getOpcaById($id_opca);
+        require_once 'views/opca.view.php';
+    }
+    
 }
