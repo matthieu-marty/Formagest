@@ -149,7 +149,8 @@ if (empty($_GET['page'])) {
                         break;
                     case "save":;
                         break;
-                    case "read":;
+                    case "read":
+                        $salle_controller->afficherSalle($url[2]);
                         break;
                     case "update":;
                         break;

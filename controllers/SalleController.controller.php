@@ -16,4 +16,10 @@ class SalleController
         $salles = $this->salle_manager->getSalles();
         require_once 'views/salles.view.php';
     }
+
+    public function afficherSalle($id_salle)
+    {
+        $salle = $this->salle_manager->getSalleById($id_salle);
+        require_once 'views/salle.view.php';
+    }
 }
