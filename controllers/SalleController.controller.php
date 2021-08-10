@@ -22,4 +22,14 @@ class SalleController
         $salle = $this->salle_manager->getSalleById($id_salle);
         require_once 'views/salle.view.php';
     }
+
+    public function supprimerSalle($id_salle)
+    {
+        $res = $this->salle_manager->supprimerSalleDB($id_salle);
+        if ($res === true) {
+            header('location:' . URL . 'salles');
+        } else {
+            header('location:' . URL . 'erreur');
+        }
+    }
 }

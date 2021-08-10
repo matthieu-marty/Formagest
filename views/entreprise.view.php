@@ -91,10 +91,11 @@ ob_start()
                         <p class="text-center text-bold mb-0"><?= $fiche->getDate_creation() ?></p>
                     </a>
                 <?php endforeach; ?>
-            <?php else : ?>
-                <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
-            <?php endif; ?>
             </div>
+        <?php else : ?>
+            <p class="p-2 border-dashed text-grey col-12 text-center text-bold">Section vide</p>
+        <?php endif; ?>
+
     </div>
     <!-- EFFECTIFS -->
     <div class="col-lg-8 col-md-6 col-sm-12">

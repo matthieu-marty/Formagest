@@ -45,4 +45,13 @@ class SalleManager extends Model
             $this->addSalle($s);
         }
     }
+
+    public function supprimerSalleDB($id_salle) {
+
+        $data = ['id_salle' => $id_salle,];
+        $req = $this->getBDD()->prepare("DELETE FROM fg_salle WHERE id = :id_salle");
+        $res = $req->execute($data);
+        $req->closeCursor();
+        return $res;
+    }
 }

@@ -141,7 +141,8 @@ if (empty($_GET['page'])) {
             $salle_controller = new SalleController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "delete":;
+                    case "delete":
+                        $salle_controller->supprimerSalle($url[2]);
                         break;
                     case "edit":;
                         break;
