@@ -19,7 +19,7 @@ ob_start();
         <tbody>
             <?php foreach ($formateurs as $formateur) : ?>
                 <tr>
-                    <td><a href="#"><?= $formateur->getNom() . ' ' . $formateur->getPrenom(); ?></a></td>
+                    <td><a href="<?= URL ?>organismes-de-formation/read/<?= $formateur->getId_Organisme_Formation() ?>"><?= $formateur->getNom() . ' ' . $formateur->getPrenom(); ?></a></td>
                     <td><?= $formateur->getVille(); ?></td>
                     <td><?= $formateur->getAdresse(); ?></td>
                     <td><?= $formateur->getCode_Postal(); ?></td>

@@ -117,13 +117,13 @@ if (empty($_GET['page'])) {
                         $module_controller->enregistrerModule(); //OK
                         break;
                     case "read":
-                        $module_controller->afficherModule($url[2]);
+                        $module_controller->afficherModule($url[2]); //OK
                         break;
                     case "update":
-                        $module_controller->actualiserModule($url[2]);
+                        $module_controller->actualiserModule($url[2]); //OK
                         break;
                     case "edit":
-                        $module_controller->modifierModule($url[2]);
+                        $module_controller->modifierModule($url[2]); //OK
                         break;
                     case "search":;
                         break;
@@ -150,7 +150,7 @@ if (empty($_GET['page'])) {
                     case "save":;
                         break;
                     case "read":
-                        $salle_controller->afficherSalle($url[2]);
+                        $salle_controller->afficherSalle($url[2]); //OK
                         break;
                     case "update":;
                         break;
@@ -179,7 +179,7 @@ if (empty($_GET['page'])) {
                     case "save":;
                         break;
                     case "read":
-                        $opca_controller->afficherOpca($url[2]);
+                        $opca_controller->afficherOpca($url[2]); //OK
                         break;
                     case "update":;
                         break;
