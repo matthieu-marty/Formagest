@@ -2,24 +2,23 @@
 
 class Module
 {
-
     private $id;
     private $label;
-    private $description;
-    private $objectif_pedagogique;
-    private $volume_horaire;
+    private $id_objectif_pedagogique_1;
+    private $id_objectif_pedagogique_2;
+    private $id_objectif_pedagogique_3;
+    private $id_objectif_pedagogique_4;
     private $date_creation;
-    private $date_modification;
 
-    public function __construct($id, $label, $description, $objectif_pedagogique, $volume_horaire, $date_creation, $date_modification)
+    public function __construct($id, $label, $id_objectif_pedagogique_1, $id_objectif_pedagogique_2, $id_objectif_pedagogique_3, $id_objectif_pedagogique_4, $date_creation)
     {
         $this->id = $id;
         $this->label = $label;
-        $this->description = $description;
-        $this->objectif_pedagogique = $objectif_pedagogique;
-        $this->volume_horaire = $volume_horaire;
+        $this->id_objectif_pedagogique_1 = $id_objectif_pedagogique_1;
+        $this->id_objectif_pedagogique_2 = $id_objectif_pedagogique_2;
+        $this->id_objectif_pedagogique_3 = $id_objectif_pedagogique_3;
+        $this->id_objectif_pedagogique_4 = $id_objectif_pedagogique_4;
         $this->date_creation = $date_creation;
-        $this->date_modification = $date_modification;
     }
 
     public function getId()
@@ -32,29 +31,28 @@ class Module
         return $this->label;
     }
 
-    public function getDescription()
+    public function getId_Objectif_Pedagogique_1()
     {
-        return $this->description;
+        return $this->objectif_pedagogique_1;
     }
 
-
-    public function getobjectif_Pedagogique()
+    public function getId_Objectif_Pedagogique_2()
     {
-        return $this->objectif_pedagogique;
+        return $this->objectif_pedagogique_2;
     }
 
-    public function getVolume_Horaire()
+    public function getId_Objectif_Pedagogique_3()
     {
-        return $this->volume_horaire;
+        return $this->objectif_pedagogique_3;
     }
 
-    public function getDate_creation()
+    public function getId_Objectif_Pedagogique_4()
+    {
+        return $this->objectif_pedagogique_4;
+    }
+
+    public function getDate_Creation()
     {
         return $this->date_creation;
-    }
-
-    public function getDate_Modification()
-    {
-        return $this->date_modification;
     }
 }

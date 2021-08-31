@@ -108,30 +108,46 @@ if (empty($_GET['page'])) {
             if (!empty($url[1])) {
                 switch ($url[1]) {
                     case "delete":
-                        $module_controller->supprimerModule($url[2]);
+                        //$module_controller->supprimerModule($url[2]);
                         break;
                     case "create":
-                        $module_controller->creerModule(); //OK
+                        //$module_controller->creerModule(); //OK
                         break;
                     case "save":
-                        $module_controller->enregistrerModule(); //OK
+                        //$module_controller->enregistrerModule(); //OK
                         break;
                     case "read":
-                        $module_controller->afficherModule($url[2]); //OK
+                        //$module_controller->afficherModule($url[2]); //OK
                         break;
                     case "update":
-                        $module_controller->actualiserModule($url[2]); //OK
+                        //$module_controller->actualiserModule($url[2]); //OK
                         break;
                     case "edit":
-                        $module_controller->modifierModule($url[2]); //OK
+                        //$module_controller->modifierModule($url[2]); //OK
                         break;
                     case "search":;
                         break;
                 }
             } else {
-                $module_controller->AfficherModules();
+                //$module_controller->AfficherModules();
             }
             break;
+
+
+            /**
+             * OBJECTIFS PEDAGOGIQUES
+             */
+        case "objectifs-pedagogiques":
+            require_once "controllers/ObjectifPedagogique.controller.php";
+            $objectif_pedagogique_controller = new ObjectifPedagogiqueController;
+            if(!empty($url[1])){
+                switch ($url[1]) {
+                    case "read":;
+                    break;
+                }
+            } else {
+                $objectif_pedagogique_contoller->afficherObjectifs_Pedagogiques();
+            }
 
             /**
              * SALLES
