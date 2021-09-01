@@ -1,5 +1,4 @@
 <?php
-
 ob_start()
 ?>
 
@@ -60,7 +59,7 @@ ob_start()
         <h4>Programmes</h4>
         <div class="flex-row">
             <span class="iconify icon" data-icon="fluent:learning-app-20-regular" data-inline="false"></span>
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbProgramme() ?></span>
         </div>
     </a>
 
@@ -68,25 +67,12 @@ ob_start()
         <h4>Modules</h4>
         <div class="flex-row">
         <span class="iconify icon" data-icon="fluent:puzzle-piece-20-regular" data-inline="false"></span>
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
+            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);"><?= $stat->getNbModule() ?></span>
         </div>
     </a>
 
-    <a href="#" class="card col-lg-4 col-md-6 col-sm-12">
-        <h4>Objectifs Pédagogiques</h4>
-        <div class="flex-row">
-            <span class="iconify icon" data-icon="fluent:target-arrow-20-regular" data-inline="false"></span>
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
-        </div>
-    </a>
 
-    <a href="#" class="card col-lg-4 col-md-6 col-sm-12">
-        <h4>Objectifs Partiels</h4>
-        <div class="flex-row">
-        <span class="iconify icon " data-icon="fluent:tag-multiple-20-regular" data-inline="false"></span>
-            <span style="font-size: 4rem; font-weight:200;padding-left:1.5rem;margin-left: 1.5rem; border-left: 2px solid var(--border);">X</span>
-        </div>
-    </a>
+    
 
 
 </div>
