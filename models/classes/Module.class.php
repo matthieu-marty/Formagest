@@ -135,7 +135,7 @@ class Module
         $this->label = $label;
         $this->date_creation = $date_creation;
 
-        $this->objectif_pedagogique_1 = $$this->objectif_partiel_1 = $objectif_partiel_1;
+        $this->objectif_pedagogique_1 = $objectif_partiel_1 = $objectif_partiel_1;
         $this->contenu_sequence_1 = $contenu_sequence_1;
         $this->methode_pedagogique_1 = $methode_pedagogique_1;
         $this->technique_pedagogique_1 = $technique_pedagogique_1;
