@@ -129,7 +129,7 @@ class Module
         $methode_pedagogique_8,
         $technique_pedagogique_8,
         $outils_supports_8,
-        $evaluation_8,
+        $evaluation_8
     ) {
         $this->id = $id;
         $this->label = $label;
@@ -203,211 +203,211 @@ class Module
         return $this->date_creation;
     }
 
-    public function getobjectif_pedagogique_1()
+    public function getObjectif_Pedagogique_1()
     {
         return $this->objectif_pedagogique_1;
     }
-    public function getobjectif_partiel_1()
+    public function getObjectif_Partiel_1()
     {
         return $this->objectif_partiel_1;
     }
-    public function getcontenu_sequence_1()
+    public function getContenu_Sequence_1()
     {
         return $this->contenu_sequence_1;
     }
-    public function getmethode_pedagogique_1()
+    public function getMethode_Pedagogique_1()
     {
         return $this->methode_pedagogique_1;
     }
-    public function gettechnique_pedagogique_1()
+    public function getTechnique_Pedagogique_1()
     {
         return $this->technique_pedagogique_1;
     }
-    public function getoutils_supports_1()
+    public function getOutils_Supports_1()
     {
         return $this->outils_supports_1;
     }
-    public function getevaluation_1()
+    public function getEvaluation_1()
     {
         return $this->evaluation_1;
     }
-    public function getobjectif_partiel_2()
+    public function getObjectif_Partiel_2()
     {
         return $this->objectif_partiel_2;
     }
-    public function getcontenu_sequence_2()
+    public function getContenu_Sequence_2()
     {
         return $this->contenu_sequence_2;
     }
-    public function getmethode_pedagogique_2()
+    public function getMethode_Pedagogique_2()
     {
         return $this->methode_pedagogique_2;
     }
-    public function gettechnique_pedagogique_2()
+    public function getTechnique_Pedagogique_2()
     {
         return $this->technique_pedagogique_2;
     }
-    public function getoutils_supports_2()
+    public function getOutils_Supports_2()
     {
         return $this->outils_supports_2;
     }
-    public function getevaluation_2()
+    public function getEvaluation_2()
     {
         return $this->evaluation_2;
     }
-    public function getobjectif_pedagogique_2()
+    public function getObjectif_Pedagogique_2()
     {
         return $this->objectif_pedagogique_2;
     }
-    public function getobjectif_partiel_3()
+    public function getObjectif_Partiel_3()
     {
         return $this->objectif_partiel_3;
     }
-    public function getcontenu_sequence_3()
+    public function getContenu_Sequence_3()
     {
         return $this->contenu_sequence_3;
     }
-    public function getmethode_pedagogique_3()
+    public function getMethode_Pedagogique_3()
     {
         return $this->methode_pedagogique_3;
     }
-    public function gettechnique_pedagogique_3()
+    public function getTechnique_Pedagogique_3()
     {
         return $this->technique_pedagogique_3;
     }
-    public function getoutils_supports_3()
+    public function getOutils_Supports_3()
     {
         return $this->outils_supports_3;
     }
-    public function getevaluation_3()
+    public function getEvaluation_3()
     {
         return $this->evaluation_3;
     }
-    public function getobjectif_partiel_4()
+    public function getObjectif_Partiel_4()
     {
         return $this->objectif_partiel_4;
     }
-    public function getcontenu_sequence_4()
+    public function getContenu_Sequence_4()
     {
         return $this->contenu_sequence_4;
     }
-    public function getmethode_pedagogique_4()
+    public function getMethode_Pedagogique_4()
     {
         return $this->methode_pedagogique_4;
     }
-    public function gettechnique_pedagogique_4()
+    public function getTechnique_Pedagogique_4()
     {
         return $this->technique_pedagogique_4;
     }
-    public function getoutils_supports_4()
+    public function getOutils_Supports_4()
     {
         return $this->outils_supports_4;
     }
-    public function getevaluation_4()
+    public function getEvaluation_4()
     {
         return $this->evaluation_4;
     }
-    public function getobjectif_pedagogique_3()
+    public function getObjectif_Pedagogique_3()
     {
         return $this->objectif_pedagogique_3;
     }
-    public function getobjectif_partiel_5()
+    public function getObjectif_Partiel_5()
     {
         return $this->objectif_partiel_5;
     }
-    public function getcontenu_sequence_5()
+    public function getContenu_Sequence_5()
     {
         return $this->contenu_sequence_5;
     }
-    public function getmethode_pedagogique_5()
+    public function getMethode_Pedagogique_5()
     {
         return $this->methode_pedagogique_5;
     }
-    public function gettechnique_pedagogique_5()
+    public function getTechnique_Pedagogique_5()
     {
         return $this->technique_pedagogique_5;
     }
-    public function getoutils_supports_5()
+    public function getOutils_Supports_5()
     {
         return $this->outils_supports_5;
     }
-    public function getevaluation_5()
+    public function getEvaluation_5()
     {
         return $this->evaluation_5;
     }
-    public function getobjectif_partiel_6()
+    public function getObjectif_Partiel_6()
     {
         return $this->objectif_partiel_6;
     }
-    public function getcontenu_sequence_6()
+    public function getContenu_Sequence_6()
     {
         return $this->contenu_sequence_6;
     }
-    public function getmethode_pedagogique_6()
+    public function getMethode_Pedagogique_6()
     {
         return $this->methode_pedagogique_6;
     }
-    public function gettechnique_pedagogique_6()
+    public function getTechnique_Pedagogique_6()
     {
         return $this->technique_pedagogique_6;
     }
-    public function getoutils_supports_6()
+    public function getOutils_Supports_6()
     {
         return $this->outils_supports_6;
     }
-    public function getevaluation_6()
+    public function getEvaluation_6()
     {
         return $this->evaluation_6;
     }
-    public function getobjectif_pedagogique_4()
+    public function getObjectif_Pedagogique_4()
     {
         return $this->objectif_pedagogique_4;
     }
-    public function getobjectif_partiel_7()
+    public function getObjectif_Partiel_7()
     {
         return $this->objectif_partiel_7;
     }
-    public function getcontenu_sequence_7()
+    public function getContenu_Sequence_7()
     {
         return $this->contenu_sequence_7;
     }
-    public function getmethode_pedagogique_7()
+    public function getMethode_Pedagogique_7()
     {
         return $this->methode_pedagogique_7;
     }
-    public function gettechnique_pedagogique_7()
+    public function getTechnique_Pedagogique_7()
     {
         return $this->technique_pedagogique_7;
     }
-    public function getoutils_supports_7()
+    public function getOutils_Supports_7()
     {
         return $this->outils_supports_7;
     }
-    public function getevaluation_7()
+    public function getEvaluation_7()
     {
         return $this->evaluation_7;
     }
-    public function getobjectif_partiel_8()
+    public function getObjectif_Partiel_8()
     {
         return $this->objectif_partiel_8;
     }
-    public function getcontenu_sequence_8()
+    public function getContenu_Sequence_8()
     {
         return $this->contenu_sequence_8;
     }
-    public function getmethode_pedagogique_8()
+    public function getMethode_Pedagogique_8()
     {
         return $this->methode_pedagogique_8;
     }
-    public function gettechnique_pedagogique_8()
+    public function getTechnique_Pedagogique_8()
     {
         return $this->technique_pedagogique_8;
     }
-    public function getoutils_supports_8()
+    public function getOutils_Supports_8()
     {
         return $this->outils_supports_8;
     }
-    public function getevaluation_8()
+    public function getEvaluation_8()
     {
         return $this->evaluation_8;
     }

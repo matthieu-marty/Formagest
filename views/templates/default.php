@@ -13,21 +13,6 @@
 
 <body>
 
-
-    <!-- TOPBAR -->
-    <!-- <div class="topbar">
-        <img src="<?= URL ?>public/logo/logo-white.svg" alt="logo" height="25">
-        <span>FORMAGEST</span>
-        <div style="display: flex; flex-direction: row-reverse;width: 100%;">
-            <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:door-16-filled" data-inline="false"></span></a>
-            <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:settings-28-filled" data-inline="false"></span></a>
-            <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:person-circle-20-filled" data-inline="false"></span></a>
-            <a href="#" class="topbar-link"><span class="iconify" data-icon="fluent:alert-24-filled" data-inline="false"></span></a>
-        </div>
-    </div> -->
-
-
-
     <!-- DASHBOARD WRAPPER-->
     <div class="dashboard-grid">
 

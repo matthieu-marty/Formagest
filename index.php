@@ -129,7 +129,7 @@ if (empty($_GET['page'])) {
                         break;
                 }
             } else {
-                //$module_controller->AfficherModules();
+                $module_controller->AfficherModules();
             }
             break;
 

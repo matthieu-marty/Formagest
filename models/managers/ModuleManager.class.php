@@ -4,11 +4,11 @@ require_once 'models/classes/Module.class.php';
 
 class ModuleManager extends Model
 {
-    private $module;
+    private $modules;
 
     public function addModule($module)
     {
-        $this->module[] = $module;
+        $this->modules[] = $module;
     }
 
     public function getModules()

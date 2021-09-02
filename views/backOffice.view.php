@@ -63,7 +63,7 @@ ob_start()
         </div>
     </a>
 
-    <a href="#" class="card col-lg-4 col-md-6 col-sm-12">
+    <a href="<?= URL ?>modules" class="card col-lg-4 col-md-6 col-sm-12">
         <h4>Modules</h4>
         <div class="flex-row">
         <span class="iconify icon" data-icon="fluent:puzzle-piece-20-regular" data-inline="false"></span>
