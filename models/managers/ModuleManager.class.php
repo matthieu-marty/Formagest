@@ -16,6 +16,15 @@ class ModuleManager extends Model
         return $this->modules;
     }
 
+    public function getModuleById($id_module)
+    {
+        foreach ($this->modules as $module) {
+            if ($module->getId() === $id_module) {
+                return $module;
+            }
+        }
+    }
+
     public function chargementModules()
     {
         $req = $this->getBDD()->prepare("SELECT * FROM fg_module ORDER BY label ASC");

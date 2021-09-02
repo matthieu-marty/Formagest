@@ -117,7 +117,7 @@ if (empty($_GET['page'])) {
                         //$module_controller->enregistrerModule(); //OK
                         break;
                     case "read":
-                        //$module_controller->afficherModule($url[2]); //OK
+                        $module_controller->afficherModule($url[2]); //OK
                         break;
                     case "update":
                         //$module_controller->actualiserModule($url[2]); //OK

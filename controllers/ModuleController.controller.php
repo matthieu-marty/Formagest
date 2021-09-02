@@ -17,4 +17,10 @@ class ModuleController
         $modules = $this->module_manager->getModules();
         require_once 'views/modules.view.php';
     }
+
+    public function afficherModule($id_module)
+    {
+        $module = $this->module_manager->getModuleById($id_module);
+        require_once 'views/module.view.php';
+    }
 }

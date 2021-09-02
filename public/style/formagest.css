@@ -415,14 +415,14 @@ table {
 th {
   text-align: left;
   padding: 0.5rem 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 td {
   padding: 0.5rem 1rem;
   vertical-align: middle; 
 }
 
-tr:nth-child(even) {
+.table-container tr:nth-child(even), .table-details tr:nth-child(even)  {
   background-color: #F6F7F7;
 }
 .table-lg{
@@ -456,6 +456,22 @@ tr:nth-child(even) {
   font-weight: 500;
 }
 
+/**
+* TABLE CONTAINER
+*/
+.table-container th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+}
+.table-container td {
+  padding: 0.5rem 1rem;
+  vertical-align: middle; 
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
 .table-container {
   overflow: scroll;
   max-width: calc(100vw - 1rem);
@@ -480,6 +496,9 @@ tr:nth-child(even) {
 table.table-details tbody tr th:first-child {
   font-weight: 500;
 }
+.table-details th {
+  font-weight: 400;
+}
 .table-details {
   overflow: hidden;
 }
@@ -487,6 +506,25 @@ table.table-details tbody tr th:first-child {
   padding: 0.25rem;
 }
 
+
+/**
+* MODULE TABLE CONTAINER
+*/
+.module-table {
+  text-align: left;
+  font-weight: 400;
+  box-shadow: 0  0 12px var(--shadow);
+}
+.module-table td {
+  padding: 0.5rem 1rem;
+}
+.module-table th {
+  background-color: rgb(var(--primary));
+  color: #ffffff;
+  border: 1px solid rgb(var(--primary));
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
 
 
 /*
