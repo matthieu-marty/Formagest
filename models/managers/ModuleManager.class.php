@@ -16,7 +16,7 @@ class ModuleManager extends Model
         return $this->modules;
     }
 
-    public function chargementModule()
+    public function chargementModules()
     {
         $req = $this->getBDD()->prepare("SELECT * FROM fg_module ORDER BY label ASC");
         $req->execute();

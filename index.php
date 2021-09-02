@@ -133,39 +133,6 @@ if (empty($_GET['page'])) {
             }
             break;
 
-
-            /**
-             * OBJECTIFS PEDAGOGIQUES
-             */
-        case "objectifs-pedagogiques":
-            require_once "controllers/ObjectifPedagogique.controller.php";
-            $objectif_pedagogique_controller = new ObjectifPedagogiqueController;
-            if (!empty($url[1])) {
-                switch ($url[1]) {
-                    case "read":;
-                        break;
-                }
-            } else {
-                $objectif_pedagogique_controller->afficherObjectifsPedagogiques();
-            }
-            break;
-
-            /**
-             * OBJECTIFS PARTIELS
-             */
-        case "objectifs-partiels":
-            require_once "controllers/ObjectifPartiel.controller.php";
-            $objectif_partiel_controller = new ObjectifPartielController;
-            if (!empty($url[1])) {
-                switch ($url[2]) {
-                    case "read":;
-                        break;
-                }
-            } else {
-                $objectif_partiel_controller->afficherObjectifsPartiels();
-            }
-            break;
-
             /**
              * SALLES
              */
