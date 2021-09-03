@@ -2,8 +2,8 @@
 ob_start()
 ?>
 
-<h3 class="mb-2"><?= $module->getLabel() ?></h3>
-
+<h3><?= $module->getLabel() ?></h3>
+<a href="<?= URL ?>back-office"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
 
 <div class="table-container-lg">
     <table>

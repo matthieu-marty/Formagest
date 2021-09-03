@@ -322,7 +322,7 @@ if (empty($_GET['page'])) {
             require_once "views/rapport.view.php";
             break;
         case "test":
-            require_once "views/organismeDeFormation.view.php";
+            require_once "views/createModule.view.php";
             break;
 
         default:
@@ -330,5 +330,3 @@ if (empty($_GET['page'])) {
             break;
     }
 }
-
-// test changement token

@@ -385,6 +385,7 @@ a.card:hover {
   border: 2px solid transparent;
   background: white;
   box-shadow: 0  0 12px var(--shadow);
+  resize:none;
 }
 .textarea-disabled {
   width: 100%;

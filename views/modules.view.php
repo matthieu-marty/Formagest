@@ -3,7 +3,7 @@ ob_start();
 ?>
 <h3> Modules</h3>
 <a href="<?= URL ?>back-office"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
-<a href="<?= URL ?>modules/create"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
+<a href="<?= URL ?>test"><span class="iconify action-icon action-icon-primary" data-icon="fluent:add-16-filled" data-inline="false"></span></a>
 
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
