@@ -17,7 +17,7 @@ ob_start()
 </div>
 
 <?php if (!empty($salles)) : ?>
-    <div class="table-container-md">
+    <div class="table-container-md striped">
         <table>
             <thead>
                 <tr>

@@ -15,7 +15,7 @@ ob_start();
 </div>
 
 <?php if (!empty($modules)) : ?>
-    <div class="table-container-md">
+    <div class="table-container-md striped">
         <table>
             <thead>
                 <tr>
