@@ -49,7 +49,7 @@ ob_start();
 
 </div>
 <?php if (!empty($ofs)) : ?>
-    <div class="table-container">
+    <div class="table-container-md">
         <table>
             <thead>
                 <tr>

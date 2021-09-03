@@ -47,7 +47,7 @@ ob_start();
 
 
 <?php if (!empty($effectifs)) : ?>
-    <div class="table-container">
+    <div class="table-container-md">
         <table>
             <thead>
                 <tr>

@@ -17,7 +17,7 @@ ob_start()
 </div>
 
 <?php if (!empty($opcas)) : ?>
-    <div class="table-container">
+    <div class="table-container-md">
         <table>
             <thead>
                 <tr>

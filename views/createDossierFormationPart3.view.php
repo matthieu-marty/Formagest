@@ -50,7 +50,7 @@ ob_start()
 </div>
 
 <?php if (!empty($formateurs)) : ?>
-    <div class="table-container">
+    <div class="table-container-md">
         <table>
             <thead>
                 <tr>
