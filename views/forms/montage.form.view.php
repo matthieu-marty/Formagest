@@ -149,7 +149,7 @@ ob_start()
         <textarea id="Commentaires" name="commentaire" class="form" rows="6"></textarea>
     </div>
 
-    <div class="border-top text-right">
+    <div class=" text-right">
         <button type="submit" class="btn btn-primary-action btn-primary-action-blue mt-1">Enregistrer</button>
     </div>
 

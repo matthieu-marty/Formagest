@@ -3,10 +3,12 @@ ob_start()
 ?>
 
 <h3><?= $module->getLabel() ?></h3>
-<a href="<?= URL ?>back-office"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
+<a href="<?= URL ?>modules"><span class="iconify action-icon action-icon-primary" data-icon="fluent:backspace-24-regular" data-inline="false"></span></a>
 
 <div class="table-container-lg">
     <table>
+
+
         <thead>
             <tr>
                 <th>Durée</th>
@@ -70,7 +72,7 @@ ob_start()
                 <td><?= $module->getEvaluation_4() ?></td>
             </tr>
             <!-- INRODUCTION SESSION 2 -->
-            <tr style="background-color: rgba(var(--primary), 0.05); color: rgb(var(--primary));border-top: 2px solid rgb(var(--primary));">
+            <tr style="background-color: rgba(var(--primary), 0.05); color: rgb(var(--primary));: 2px solid rgb(var(--primary));">
                 <td>X</td>
                 <td>Identifier les différents éléments qui seront vus pedant le module</td>
                 <td>Appréhender les éléments connus pour déterminer les éléments à apprendre</td>

@@ -344,7 +344,7 @@ ob_start()
         </div>
 
     </div>
-    <div class="border-top text-right">
+    <div class=" text-right">
         <button type="submit" class="btn btn-primary-action mt-1">Enregistrer</button>
     </div>
 </form>
