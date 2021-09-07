@@ -1,0 +1,103 @@
+/** Page**/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    font-family: "calibri";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 0.5cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+    border: 5px solid #ff0000;
+    outline: 0.5cm #FFEAEA solid;
+    height: 286mm;
+    /* Permet au texte de ne jamais dépasser de la page */
+    overflow: hidden;
+}
+
+
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+    .subpage {
+        border: none;
+        outline: none;
+    }
+}
+
+
+/** Elements **/ 
+p {
+    margin: 0 0 2pt 0;
+    font-size: 9pt;
+}
+P.title {
+    font-weight: 700;
+    font-size: 12pt;
+}
+
+p.details {
+    font-size: 8pt;
+    font-weight: 600;
+}
+
+.header {
+    background-color: #00af26;
+    color: #FFFFFF;
+    padding: 0.2cm;
+}
+
+p.article {
+    font-weight: 700;
+    font-size: 11pt;
+    border : 2pt solid #000000;
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 6px;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+p.bold {
+    font-weight: 700;
+    margin-top:  12pt;
+}
+
+
+/** Layout **/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.c1-6 { grid-column-end: span 1;}
+.c2-6 {grid-column-end: span 2;}
+.c3-6 {grid-column-end: span 3;}
+.c4-6 {grid-column-end: span 4;}
+.c5-6 {grid-column-end: span 5;}
+.c6-6 {grid-column-end: span 6;}
+
+.mt-1{margin-top: 10pt;}
+
