@@ -326,6 +326,7 @@ if (empty($_GET['page'])) {
             //require_once "views/prints/devisDeFormation.print.php";
             //require_once "views/prints/factureDeFormation.print.php";
             //require_once "views/prints/attestationAssiduite.print.php";
+            require_once "views/prints/attestationDeStage.print.php";
             break;
 
         default:
