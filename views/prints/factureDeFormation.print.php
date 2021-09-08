@@ -75,13 +75,13 @@ ob_start()
 
         <div class="grid mt-2">
             <p class="c2-6">
-                Stagiaire: [STAGIAIRE]
+                Stagiaire : <span class="bold">[STAGIAIRE]</span>
             </p>
             <p class="c2-6">
-                Date debut de stage: [DATE]
+                Date debut de stage : <span class="bold">[DATE]</span>
             </p>
             <p class="c2-6">
-                Date fin de stage : [DATE]
+                Date fin de stage :  <span class="bold">[DATE]</span>
             <p>
 
         </div>
@@ -159,7 +159,7 @@ ob_start()
         </div>
 
         <p class="details-italic mt-3">
-            * Conformément à l'article L. 44-6 du code du commerce, les pénalités de retards, au taux annuel de 3%, et une indemnité de 40€ 
+            * Conformément à l'article L. 44-6 du code du commerce, les pénalités de retards, au taux annuel de 3%, et une indemnité de 40€
             sont dues à défaut de règlement le jour suivant la date de paiement figurant sur la facture.
 
         </p>

@@ -74,13 +74,13 @@ ob_start()
 
         <div class="grid mt-2">
             <p class="c2-6">
-                Stagiaire: [STAGIAIRE]
+                Stagiaire : <span class="bold">[STAGIAIRE]</span>
             </p>
             <p class="c2-6">
-                Date debut de stage: [DATE]
+                Date debut de stage : <span class="bold">[DATE]</span>
             </p>
             <p class="c2-6">
-                Date fin de stage : [DATE]
+                Date fin de stage : <span class="bold">[DATE]</span>
             <p>
 
         </div>

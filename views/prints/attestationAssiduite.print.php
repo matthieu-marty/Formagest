@@ -71,7 +71,7 @@ ob_start()
                 <p>Certifié exact par</p>
                 <p class="bold">[FORMATEUR]</p>
                 <p class="to-complete mt-2">Le ........ / ........ / .................</p>
-                <p class="to-complete mt-2">à .................................</p>
+                <p class="to-complete mt-2">à ..................................................................</p>
             </div>
             <div class="c3-6">
                 <p>Cachet et signature de l'organisme de formation</p>
