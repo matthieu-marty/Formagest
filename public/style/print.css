@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F7F7F7;
+    background-color:rgba(20, 121, 255, 0.05);
     font-family: "calibri";
 }
 * {
@@ -89,7 +89,12 @@ p.details-italic {
     border: 1px solid #000000;
     padding: 6pt;
     margin: 2pt;
-    height: 200pt;
+    height: 120pt;
+}
+.to-complete-box {
+    border: 1px solid #000000;
+    height: 35px;
+
 }
 
 p.article {
@@ -131,13 +136,14 @@ th {
     background-color: rgba(20,121,255,0.2);
     text-align: left;
     font-weight: 400;
-    padding: 5pt 10pt;
+    padding: 1px 8px;
     font-size: 9pt;
 }
 td {
     font-weight: 700;
-    padding: 10pt 10pt;
+    padding: 8px;
     font-size: 11pt;
+    height: 35px;
 }
 
 
@@ -146,6 +152,7 @@ td {
 .mt-1{margin-top: 10pt;}
 .mt-2{margin-top: 20pt;}
 .mt-3{margin-top: 40pt;}
+.p-1{padding: 10pt;}
 .text-right {text-align: end;}
 .text-center {text-align: center;}
 
