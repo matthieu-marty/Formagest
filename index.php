@@ -322,7 +322,8 @@ if (empty($_GET['page'])) {
             require_once "views/rapport.view.php";
             break;
         case "test":
-            require_once "views/prints/conventionDeFormation.print.php";
+            //require_once "views/prints/conventionDeFormation.print.php";
+            require_once "views/prints/devisDeFormation.print.php";
             break;
 
         default:

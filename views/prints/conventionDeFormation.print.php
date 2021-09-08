@@ -17,7 +17,7 @@ ob_start()
             </div>
             <div class="c2-6">
                 <p>Entre les soussignés</p>
-                <p class="bold">[FORMATEUR]</p>
+                <p class="bold mt-1">[FORMATEUR]</p>
                 <p>[ADRESSE_FORMATEUR]</p>
                 <p>Siret: [SIRET]</p>
                 <p>Numéro Déc. Activité [NUM_ACTIVITE]</p>
@@ -26,7 +26,7 @@ ob_start()
             </div>
             <div class="c3-6">
                 <p>et</p>
-                <p class="bold">[ENTREPRISE]</p>
+                <p class="bold mt-1">[ENTREPRISE]</p>
                 <p>[ADRESSE_ENTREPRISE]</p>
                 <p>[SIRET]</p>
                 <p>Représenté par : [STAGIAIRE]</p>
@@ -39,16 +39,16 @@ ob_start()
         <p>En éxecution de la présente convention, [FORMATEUR] s'engage à organiser l'action de formation dans les conditions citées ci-dessous et dans les articles suivants.</p>
 
         <div class="grid">
-            <p class="c2-6 bold">Programme de formation : </p>
+            <p class="c2-6 bold mt-1">Programme de formation : </p>
             <p class="c4-6 mt-1">[TITRE DE LA FORMATION]</p>
-            <p class="c3-6 bold">Stagiaires : [STAGIAIRE]</p>
-            <p class="c3-6 bold">Déroulement : [PRESENTIEL / DISTANCIEL]</p>
+            <p class="c3-6 bold mt-1">Stagiaires : [STAGIAIRE]</p>
+            <p class="c3-6 bold mt-1">Déroulement : [PRESENTIEL / DISTANCIEL]</p>
         </div>
-        <p class="bold">Nature et caractéristiques de l'action de formaiton :</p>
+        <p class="bold mt-1">Nature et caractéristiques de l'action de formaiton :</p>
         <p>L'action de formation entre dans la catégorie des actions acquisition, d'entretien ou de perfectionnement des connaissances prévues par l'article L6313-1 du COde du Travail.</p>
 
         <div class="grid mt-1">
-            <p class="c2-6 bold">Période et durée de la formation :</p>
+            <p class="c2-6 bold mt-1">Période et durée de la formation :</p>
             <div class="c2-6">
                 <p>La formation aura lieu entre le</p>
                 <p>Elle se déroulera sur une durée de </p>
@@ -58,8 +58,8 @@ ob_start()
                 <p>[HEURE] heures</p>
             </div>
         </div>
-        <p class="bold">Nom du ou des intervenants : [FORMATEUR]</p>
-        <p class="bold">Nom du responsable pédagogique : [FORMATEUR]</p>
+        <p class="bold mt-1">Nom du ou des intervenants : [FORMATEUR]</p>
+        <p class="bold mt-1">Nom du responsable pédagogique : [FORMATEUR]</p>
         <p class="mt-1">Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
         <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
         <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
@@ -78,13 +78,13 @@ ob_start()
         </div>
 
         <p class="article">Article - 1 Descriptif de l'action (suite)</p>
-        <p class="bold">Modalité de déroulement de la formation</p>
+        <p class="bold mt-1">Modalité de déroulement de la formation</p>
         <p>La méthode est basée sur une alternance de théorie,
             d'exercices pratiques et de démonstrations tenant
             compte des connaissances de chaque stagiaire, de leur
             rythme et des exigences de leur poste de travail.</p>
 
-        <p class="bold">Nature de la sanction de l'action de formation :</p>
+        <p class="bold mt-1">Nature de la sanction de l'action de formation :</p>
         <p>A la fin de la formation, il sera remis au stagiaire une attestation de stage.
             Les modalités d'évaluation des acquis se basent sur le contrôle continu des éléments vus
             tout au long de la formation (Quiz et QCM, jeu de rôle...). Une attestation des résultats de cette évaluation,
@@ -105,7 +105,7 @@ ob_start()
         <p>Frais de formation : coût unitaire H.T. [COUT] x [Q_STAGIAIRE] stagiaire(s) = [TOTAL] € H.T.</p>
         <p>[FORMATEUR] n'est pas assujeti à la TVA selon l'article 261-4-4 du [TOTAL] TTC</p>
 
-        <p class="bold">S'engage à payer la prestation selon les modalités de paiement suivantes :</p>
+        <p class="bold mt-1">S'engage à payer la prestation selon les modalités de paiement suivantes :</p>
         <p>A moins d'une subrogation accordée par l'OPCA, [ENTREPRISE] effectue son règlement total à la remise de la facture par chèque à l'ordre de [FORMATEUR].
             Les délais d'encaissements des règlements peuvent courir jusqu'à 60 jours fin de mois à compter de la date d'émission de la facture.
             Si d’un commun accord entre les parties, le paiement de la prestation est échelonné un échéancier sera joint en annexe à la présente convention.
@@ -113,7 +113,7 @@ ob_start()
             et reprendra l'ensemble des paiements effectués et/ou restants.</p>
 
         <p class="article">Article 4 - Interruption de stage</p>
-        <p class="bold">Annulation de l'inscription ou cessation anticipée à l'iniative du participant</p>
+        <p class="bold mt-1">Annulation de l'inscription ou cessation anticipée à l'iniative du participant</p>
         <p>Les dates de formation sont fixées conjointement par [FORMATEUR] et[ENTREPRISE] lors de la signature de la Convention de formation professionnelle.
             Toute annulation émanant d’un Participant doit faire l’objet d’un écrit (recommandé avec accusé de réception ou courriel) auprès de [FORMATEUR] .</p>
 
@@ -127,7 +127,7 @@ ob_start()
             formation et si le report sur une autre session est possible, il et limité à une seule fois dans l’année en
             cours ; ceci étant, cet accord devra faire l’objet d’un écrit signé des deux parties et joint en annexe à la convention initiale.</p>
 
-        <p class="bold">Annulation de l'inscription ou cessation anticipée à l'iniative de</p>
+        <p class="bold mt-1">Annulation de l'inscription ou cessation anticipée à l'iniative de</p>
         <p> Dans le cas où le nombre de participants serait insuffisant pour assurer le déroulement d’une formation, se réserve la possibilité
             d’annuler une session une semaine avant son échéance, sans dédommagement ni pénalité.
         </p>
@@ -140,7 +140,7 @@ ob_start()
             <p class="title">CONVENTION DE FORMATION</h3>
             <p class="title">Entre [FORMATEUR] et [STAGIAIRE]</h4>
             <p class="details">Client: [REF_CLIENT] - Ref: [TC433-21A11]</p>
-            <p class="details text-right">Page 2/3</p>
+            <p class="details text-right">Page 3/3</p>
         </div>
 
         <p class="article">Article 5 - Différents éventuels</p>
@@ -152,7 +152,7 @@ ob_start()
         <p>Par la signature de la présente convention, [ENTREPRISE] et [FORMATEUR] attestent sur l’honneur que ses stagiaires ont été informés des
             conditions d’accès et prérequis à la formation mentionnées à l’article 2 de la présente convention.</p>
 
-        <p class="bold">Le stagiaire atteste également qu'il lui a été remis, avant son inscription définitive :</p>
+        <p class="bold mt-1">Le stagiaire atteste également qu'il lui a été remis, avant son inscription définitive :</p>
         <p>- Les tarifs et conditions générales de vente</p>
         <p>- Le programme et les objectifs de la formation</p>
         <p>- Les horaires prévus</p>
@@ -188,13 +188,13 @@ ob_start()
         </div>
         <div class="grid">
             <div class="c3-6 ">
-                <p class="bold text-center">Pour</p>
+                <p class="bold mt-1 text-center">Pour</p>
                 <p class="text-center">Le(la) responsable</p>
                 <p class="text-center">[STAGIAIRE]</p>
 
             </div>
             <div class="c3-6 text-center">
-                <p class="bold text-center">Pour</p>
+                <p class="bold mt-1 text-center">Pour</p>
                 <p class="text-center">Le(la) responsable</p>
                 <p class="text-center">[FORMATEUR]</p>
             </div>
