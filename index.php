@@ -324,7 +324,8 @@ if (empty($_GET['page'])) {
         case "test":
             //require_once "views/prints/conventionDeFormation.print.php";
             //require_once "views/prints/devisDeFormation.print.php";
-            require_once "views/prints/factureDeFormation.print.php";
+            //require_once "views/prints/factureDeFormation.print.php";
+            require_once "views/prints/attestationAssiduite.print.php";
             break;
 
         default:

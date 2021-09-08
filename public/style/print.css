@@ -7,7 +7,6 @@ body {
 }
 * {
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 .page {
     width: 21cm;
@@ -15,7 +14,7 @@ body {
     padding: 0.5cm;
     margin: 1cm auto;
     border: 1px #D3D3D3 solid;
-    background: white;
+    background:  #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .subpage {
@@ -24,6 +23,7 @@ body {
     height: 286mm;
     /* Permet au texte de ne jamais dépasser de la page */
     overflow: hidden;
+    background-color: #FFFFFF;
 }
 
 
@@ -56,10 +56,10 @@ p {
     font-size: 9pt;
     text-align: justify;
 }
-P.to-complete {
+p.to-complete {
     font-size: 11pt;
 }
-P.title {
+p.title {
     font-weight: 700;
     font-size: 12pt;
 }
@@ -94,7 +94,10 @@ p.details-italic {
 .to-complete-box {
     border: 1px solid #000000;
     height: 35px;
-
+}
+.to-complete-box-lg {
+    border: 1px solid #000000;
+    height: 120pt;
 }
 
 p.article {
@@ -107,7 +110,7 @@ p.article {
     margin-top: 12pt;
     margin-bottom: 6pt;
 }
-p.bold {
+p.bold, span.bold {
     font-weight: 700;
 }
 
