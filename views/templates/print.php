@@ -14,6 +14,7 @@
 
     <?= $content ?>
 
+    <button class="to-print" onclick="window.print();">Imprimer</button>
 </body>
 
 </html>

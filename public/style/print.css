@@ -45,6 +45,9 @@ body {
         border: none;
         outline: none;
     }
+    .to-print {
+        display: none;
+    }
 }
 
 
@@ -108,8 +111,17 @@ p.article {
     margin-top: 12pt;
     margin-bottom: 6pt;
 }
-p.bold, span.bold {
+.bold {
     font-weight: 700;
+}
+
+.checkbox {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -141,10 +153,13 @@ th {
     font-size: 9pt;
 }
 td {
-    font-weight: 700;
     padding: 8px;
     font-size: 11pt;
     height: 35px;
+}
+
+.td-lg {
+    padding: 20px;
 }
 
 
@@ -153,7 +168,35 @@ td {
 .mt-1{margin-top: 10pt;}
 .mt-2{margin-top: 20pt;}
 .mt-3{margin-top: 40pt;}
+.mt-4{margin-top: 80pt;}
 .p-1{padding: 10pt;}
 .text-right {text-align: end;}
 .text-center {text-align: center;}
+
+
+/** TO PRINT FLOATING BUTTON **/
+.to-print {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    background-color: white;
+    box-shadow: 0 0 12px var(--shadow);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+.to-print:hover {
+    background-color: rgb(20, 121, 255);
+    color: #FFFFFF;
+    box-shadow: 0  0 3px rgb(10, 121, 255);
+}
+
+
 

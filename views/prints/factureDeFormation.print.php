@@ -95,11 +95,11 @@ ob_start()
                 <th width="33.2%">Total TTC</th>
             </tr>
             <tr>
-                <td>[QT]</td>
-                <td>[TAUX]</td>
-                <td>[TOTAL]</td>
-                <td>[TVA]</td>
-                <td>[TTC]</td>
+                <td class="bold">[QT]</td>
+                <td class="bold">[TAUX]</td>
+                <td class="bold">[TOTAL]</td>
+                <td class="bold">[TVA]</td>
+                <td class="bold">[TTC]</td>
             </tr>
         </table>
 
