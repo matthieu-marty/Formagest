@@ -175,27 +175,43 @@ td {
 
 
 /** TO PRINT FLOATING BUTTON **/
-.to-print {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.btn-fixed {
+    color: rgb(20,121,255);
     position: fixed;
-    right: 100px;
-    bottom: 100px;
     background-color: white;
     box-shadow: 0 0 12px var(--shadow);
     border-radius: 0.3rem;
     padding: 0.5rem;
-    font-size: 1.5rem;
-    border-radius: 0.3rem;
+    font-size: 3rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
     font-weight: 500;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     outline: none;
-  }
-.to-print:hover {
+}
+
+.btn-fixed:hover {
     background-color: rgb(20, 121, 255);
     color: #FFFFFF;
-    box-shadow: 0  0 3px rgb(10, 121, 255);
+    box-shadow: 0  0 5px rgb(10, 121, 255);
+}
+
+.to-print {
+    right: 50px;
+    top: 50px;
+}
+
+.go-back {
+    left: 50px;
+    top: 50px;
+}
+
+.scroll-to-top {
+    right: 50px;
+    bottom : 50px;
 }
 
 

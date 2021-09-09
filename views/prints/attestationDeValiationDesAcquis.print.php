@@ -5,7 +5,7 @@ ob_start()
 <div class="page">
     <div class="subpage">
         <div class="header">
-            <p class="title">ATTESTATION DE VALIDATION DES ACQUIS</p>
+            <p class="title">ATTESTATION DE VALIDATION DES ACQUIS </p>
             <p class="details">Client: [CLIENT] - Ref: [DOSSIER]</p>
         </div>
 
@@ -57,7 +57,7 @@ ob_start()
                 <th colspan="5" class="text-center bold">ATTESTATION DES ACQUIS DE LA FORMATION</th>
             </tr>
             <tr>
-                <th width="70%" class="bold td-lg">OBJECTIF PEDAGOGIQUES DE LA FORMATION</th>
+                <th width="70%" class="bold td-lg">OBJECTIFS PEDAGOGIQUES DE LA FORMATION</th>
                 <th width="7.5%" class="bold text-center">1</th>
                 <th width="7.5%" class="bold text-center">2</th>
                 <th width="7.5%" class="bold text-center">3</th>
@@ -93,7 +93,7 @@ ob_start()
             </tr>
         </table>
 
-        <p class="details mt-3">Zone de commentaires et d'appréciation du formateur</p>
+        <p class="mt-3">Zone de commentaires et d'appréciation du formateur</p>
         <p class="to-complete-box-lg"></p>
 
         <div class="grid mt-3">

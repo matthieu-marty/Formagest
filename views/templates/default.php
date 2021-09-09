@@ -44,7 +44,7 @@
             <input type="checkbox" id="display-menu" name="display-menu">
             <a href="<?= URL ?>accueil" style="text-decoration:none; font-weight:bold; color:var(--blue); margin-left: 1rem; font-size:1.5rem;line-height:2rem; vertical-align:middle;">Formagest</a>
             <div class="mobile-menu">
-                <div class="text-center" style=": 1px solid var(--border);border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;padding-top: 0.5rem;">
+                <div class="text-center" style="border: 1px solid var(--border);border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;padding-top: 0.5rem;">
                     <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:alert-24-filled" data-inline="false"></a>
                     <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:person-circle-20-filled" data-inline="false"></span></a></a>
                     <a href="#" class="mobile-link"><span class="iconify" data-icon="fluent:settings-28-filled" data-inline="false"></span></a>
