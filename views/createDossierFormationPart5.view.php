@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['id_programme'] = $programme->getId();
-$_SESSION['programme'] = $programme->getReference() . ' - ' . $programme->getLabel();
+$_SESSION['programme'] = $programme->getLabel();
 
 ob_start()
 ?>

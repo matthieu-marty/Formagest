@@ -25,9 +25,12 @@ class ProgrammeManager extends Model
         foreach ($programmes as $programme) {
             $p = new Programme(
                 $programme['id'],
-                $programme['reference'],
                 $programme['label'],
-                $programme['contenu'],
+                $programme['id_module_1'],
+                $programme['id_module_2'],
+                $programme['id_module_3'],
+                $programme['id_module_4'],
+                $programme['date_creation'],
             );
             $this->addProgramme($p);
         }

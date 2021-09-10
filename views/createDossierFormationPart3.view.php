@@ -36,9 +36,9 @@ ob_start()
 </div>
 
 
-<h3>3. Créer un dossier de formation</h3>
+<h3>Créer un dossier de formation</h3>
 
-<h5>Sélectionnez un Formateur</h5>
+<h5>3. Sélectionnez un Formateur</h5>
 <div class="grid gap-1 mb-1">
     <div class="col-lg-2 col-md-6 col-sm-12">
         <input class="form form-blue" type="text" name="search" id="search" autocomplete="off">

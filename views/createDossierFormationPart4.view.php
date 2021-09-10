@@ -63,9 +63,9 @@ ob_start()
             <tbody>
                 <?php foreach ($programmes as $programme) : ?>
                     <tr>
-                        <td><a href="<?= URL ?>montage-dossier/logistique/<?= $programme->getId() ?>"><?= $programme->getReference() ?></a></td>
+                        <td><a href="<?= URL ?>montage-dossier/logistique/<?= $programme->getId() ?>"><?= $programme->getLabel() ?></a></td>
                         <td><?= $programme->getLabel() ?></td>
-                        <td><?= $programme->getContenu() ?></td>
+                        <td><?= $programme->getDate_Creation() ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

@@ -55,7 +55,7 @@ ob_start()
         </div>
     </a>
 
-    <a href="#" class="card col-lg-4 col-md-6 col-sm-12">
+    <a href="<?= URL ?>programmes" class="card col-lg-4 col-md-6 col-sm-12">
         <h4>Programmes</h4>
         <div class="flex-row">
             <span class="iconify icon" data-icon="fluent:learning-app-20-regular" data-inline="false"></span>

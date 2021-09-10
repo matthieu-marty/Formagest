@@ -133,6 +133,19 @@ if (empty($_GET['page'])) {
             }
             break;
 
+        case "programmes" :
+            require_once "controllers/ProgrammeController.controller.php";
+            $programme_controller = new ProgrammeController;
+            if (!empty($url[1])) {
+                switch ($url[1]) {
+                    case "read" :
+                        $programme_controller->afficherProgramme($url[2]);
+                        break;
+                }
+
+            } else {
+                $programme_controller->AfficherProgrammes();
+            }
             /**
              * SALLES
              */
@@ -322,13 +335,14 @@ if (empty($_GET['page'])) {
             require_once "views/rapport.view.php";
             break;
         case "test":
-            //require_once "views/prints/conventionDeFormation.print.php";
+            require_once "views/prints/conventionDeFormation.print.php";
             //require_once "views/prints/devisDeFormation.print.php";
             //require_once "views/prints/factureDeFormation.print.php";
             //require_once "views/prints/attestationAssiduite.print.php";
             //require_once "views/prints/attestationDeStage.print.php";
             //require_once "views/prints/recepisseDeDocumentsDeFormation.php";
-            require_once "views/prints/attestationDeValiationDesAcquis.print.php";
+            //require_once "views/prints/attestationDeValiationDesAcquis.print.php";
+            //require_once "views/dossier.view.php";
             break;
 
         default:

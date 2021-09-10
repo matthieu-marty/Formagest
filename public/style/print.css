@@ -45,7 +45,7 @@ body {
         border: none;
         outline: none;
     }
-    .to-print {
+    .btn-fixed {
         display: none;
     }
 }

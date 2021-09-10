@@ -41,8 +41,8 @@ ob_start()
         <div class="grid">
             <p class="c2-6 bold mt-1">Programme de formation : </p>
             <p class="c4-6 mt-1">[TITRE DE LA FORMATION]</p>
-            <p class="c3-6 bold mt-1">Stagiaires : [STAGIAIRE]</p>
-            <p class="c3-6 bold mt-1">Déroulement : [PRESENTIEL / DISTANCIEL]</p>
+            <p class="c3-6 mt-1"> <span class="bold">Stagiaire : </span>[STAGIAIRE]</p>
+            <p class="c3-6 mt-1"> <span class="bold">Déroulement : </span>[PRESENTIEL / DISTANCIEL]</p>
         </div>
         <p class="bold mt-1">Nature et caractéristiques de l'action de formaiton :</p>
         <p>L'action de formation entre dans la catégorie des actions acquisition, d'entretien ou de perfectionnement des connaissances prévues par l'article L6313-1 du COde du Travail.</p>
@@ -54,17 +54,17 @@ ob_start()
                 <p>Elle se déroulera sur une durée de </p>
             </div>
             <div class="c2-6">
-                <p>[DATE] et le [DATE]</p>
-                <p>[HEURE] heures</p>
+                <p><span class="bold">[DATE]</span> et le <span class="bold">[DATE]</span></p>
+                <p><span class="bold">[HEURE]</span> heures</p>
             </div>
         </div>
-        <p class="bold mt-1">Nom du ou des intervenants : [FORMATEUR]</p>
-        <p class="bold mt-1">Nom du responsable pédagogique : [FORMATEUR]</p>
-        <p class="mt-1">Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
-        <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
-        <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
-        <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
-        <p>Le [DATE] de [HEURE] à [HEURE] / [SALLE]</p>
+        <p class="mt-1"> <span class="bold">Nom du ou des intervenants : </span>[FORMATEUR]</p>
+        <p class="mt-1"> <span class="bold">Nom du responsable pédagogique : </span>[FORMATEUR]</p>
+        <p>Le <span class="bold mt-1">[DATE]</span> de <span class="bold">[HEURE]</span> à <span class="bold">[HEURE]</span> / <span class="bold">[SALLE]</span></p>
+        <p>Le <span class="bold">[DATE]</span> de <span class="bold">[HEURE]</span> à <span class="bold">[HEURE]</span> / <span class="bold">[SALLE]</span></p>
+        <p>Le <span class="bold">[DATE]</span> de <span class="bold">[HEURE]</span> à <span class="bold">[HEURE]</span> / <span class="bold">[SALLE]</span></p>
+        <p>Le <span class="bold">[DATE]</span> de <span class="bold">[HEURE]</span> à <span class="bold">[HEURE]</span> / <span class="bold">[SALLE]</span></p>
+        <p>Le <span class="bold">[DATE]</span> de <span class="bold">[HEURE]</span> à <span class="bold">[HEURE]</span> / <span class="bold">[SALLE]</span></p>
     </div>
 </div>
 

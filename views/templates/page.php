@@ -2,7 +2,7 @@
 ob_start()
 ?>
 
-<h3 class="mb-2">Titre</h3>
+<h3>Titre</h3>
 
 
 
