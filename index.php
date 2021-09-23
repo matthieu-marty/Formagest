@@ -1,6 +1,8 @@
 <?php
-define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http" . "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]")));
+define("URL", str_replace("index.php", "", (isset($_SERVER["HTTPS"]) ? "https" : "http" . '://' . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"])));
 
+echo('SERVER HTTP HOST : ' . $_SERVER['HTTP_HOST'] ."</br>");
+echo('URL : ' . URL);
 if (empty($_GET['page'])) {
     require_once "views/accueil.view.php";
 } else {
