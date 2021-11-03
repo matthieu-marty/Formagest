@@ -57,7 +57,6 @@ class OFManager extends Model
     public function enregistrerOfDB($nom_commercial, $siret, $code_ape, $numero_declaration, $discipline, $numero_qualiopi, $tva, $adresse, $code_postal, $ville, $telephone, $mail, $date_creation)
     {
         if (!empty($nom_commercial) && !empty($date_creation)) {
-
             $data = [
                 'nom_commercial' => $nom_commercial,
                 'siret' => $siret,
@@ -79,8 +78,6 @@ class OFManager extends Model
             $req->closeCursor();
         }
     }
-
-
 
     public function supprimerOfDB($id_of)
     {

@@ -1,8 +1,7 @@
 <?php
 define("URL", str_replace("index.php", "", (isset($_SERVER["HTTPS"]) ? "https" : "http" . '://' . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"])));
+// define("URL", "https://" . $_SERVER['HTTP_HOST'] . str_replace("index.php","",$_SERVER['PHP_SELF']));
 
-echo('SERVER HTTP HOST : ' . $_SERVER['HTTP_HOST'] ."</br>");
-echo('URL : ' . URL);
 if (empty($_GET['page'])) {
     require_once "views/accueil.view.php";
 } else {
@@ -17,27 +16,13 @@ if (empty($_GET['page'])) {
             $entreprise_controller = new EntrepriseController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "search":
-                        $entreprise_controller->afficherRechercheEntreprise($url[2]);
-                        break;     //OK
-                    case "create":
-                        $entreprise_controller->creerEntreprise();
-                        break;                        //OK
-                    case "save":
-                        $entreprise_controller->enregistrerEntreprise();
-                        break;                    //OK
-                    case "read":
-                        $entreprise_controller->afficherEntreprise($url[2]);
-                        break;                //OK
-                    case "delete":
-                        $entreprise_controller->supprimerEntreprise($url[2]);
-                        break;             //OK
-                    case "edit":
-                        $entreprise_controller->modifierEntreprise($url[2]);
-                        break;                //OK
-                    case "update":
-                        $entreprise_controller->actualiserEntreprise($url[2]);
-                        break;            //OK
+                    case "search": $entreprise_controller->afficherRechercheEntreprise($url[2]);break;
+                    case "create": $entreprise_controller->creerEntreprise(); break;
+                    case "save": $entreprise_controller->enregistrerEntreprise(); break;
+                    case "read": $entreprise_controller->afficherEntreprise($url[2]); break;
+                    case "delete": $entreprise_controller->supprimerEntreprise($url[2]); break;
+                    case "edit": $entreprise_controller->modifierEntreprise($url[2]); break;
+                    case "update": $entreprise_controller->actualiserEntreprise($url[2]); break;
                 }
             } else {
                 $entreprise_controller->afficherEntreprises();
@@ -52,15 +37,9 @@ if (empty($_GET['page'])) {
             $fiches_diagnostic_controller = new FicheDiagnosticController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "create":
-                        $fiches_diagnostic_controller->creerFicheDiagnostic($url[2]);
-                        break;         //OK
-                    case "save":
-                        $fiches_diagnostic_controller->enregistrerFicheDiagnostic($url[2]);
-                        break;     //OK
-                    case "read":
-                        $fiches_diagnostic_controller->afficherFicheDiagnostic($url[2]);
-                        break;        //OK
+                    case "create": $fiches_diagnostic_controller->creerFicheDiagnostic($url[2]); break;
+                    case "save": $fiches_diagnostic_controller->enregistrerFicheDiagnostic($url[2]); break;
+                    case "read": $fiches_diagnostic_controller->afficherFicheDiagnostic($url[2]); break;
                 }
             }
             break;
@@ -73,27 +52,13 @@ if (empty($_GET['page'])) {
             $organisme_formation_controller = new OrganismeFormationController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "read":
-                        $organisme_formation_controller->afficherOf($url[2]);
-                        break;
-                    case "delete":
-                        $organisme_formation_controller->supprimerOf($url[2]);
-                        break;
-                    case "edit":
-                        $organisme_formation_controller->modifierOf($url[2]);
-                        break;
-                    case "create":
-                        $organisme_formation_controller->creerOf();
-                        break;
-                    case "save":
-                        $organisme_formation_controller->enregistrerOf();
-                        break;
-                    case "search":
-                        $organisme_formation_controller->afficherRechercheOf($url[2]);
-                        break;
-                    case "update":
-                        $organisme_formation_controller->actualiserOf($url[2]);
-                        break;
+                    case "read": $organisme_formation_controller->afficherOf($url[2]); break;
+                    case "delete": $organisme_formation_controller->supprimerOf($url[2]); break;
+                    case "edit": $organisme_formation_controller->modifierOf($url[2]); break;
+                    case "create": $organisme_formation_controller->creerOf(); break;
+                    case "save": $organisme_formation_controller->enregistrerOf(); break;
+                    case "search": $organisme_formation_controller->afficherRechercheOf($url[2]); break;
+                    case "update": $organisme_formation_controller->actualiserOf($url[2]); break;
                 }
             } else {
                 $organisme_formation_controller->AfficherOfs();
@@ -113,10 +78,10 @@ if (empty($_GET['page'])) {
                         //$module_controller->supprimerModule($url[2]);
                         break;
                     case "create":
-                        //$module_controller->creerModule(); //OK
+                        $module_controller->creerModule(); //OK
                         break;
                     case "save":
-                        //$module_controller->enregistrerModule(); //OK
+                        $module_controller->enregistrerModule(); //OK
                         break;
                     case "read":
                         $module_controller->afficherModule($url[2]); //OK
@@ -216,21 +181,11 @@ if (empty($_GET['page'])) {
             $formateur_controller = new FormateurController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "delete":
-                        $formateur_controller->supprimerFormateur($url[2]);
-                        break;   //OK
-                    case "edit":
-                        $formateur_controller->modifierFormateur($url[2]);
-                        break;      //OK
-                    case "update":
-                        $formateur_controller->actualiserFormateur($url[2]);
-                        break; //OK
-                    case "create":
-                        $formateur_controller->creerFormateur($url[2]);
-                        break;       //OK
-                    case "save":
-                        $formateur_controller->enregistrerFormateur($url[2]);
-                        break;   //OK
+                    case "delete": $formateur_controller->supprimerFormateur($url[2]); break;
+                    case "edit": $formateur_controller->modifierFormateur($url[2]); break;
+                    case "update": $formateur_controller->actualiserFormateur($url[2]); break;
+                    case "create": $formateur_controller->creerFormateur($url[2]); break;
+                    case "save": $formateur_controller->enregistrerFormateur($url[2]); break;
                 }
             } else {
                 $formateur_controller->AfficherFormateurs();
@@ -245,22 +200,11 @@ if (empty($_GET['page'])) {
             $effectif_controller = new EffectifController;
             if (!empty($url[1])) {
                 switch ($url[1]) {
-                    case "delete":
-                        $effectif_controller->supprimerEffectif($url[2]);
-                        break;      //OK
-                    case "edit":
-                        $effectif_controller->modifierEffectif($url[2]);
-                        break;         //OK
-                    case "create":
-                        $effectif_controller->creerEffectif($url[2]);
-                        break;          //OK
-                    case "save":
-                        $effectif_controller->enregistrerEffectif($url[2]);
-                        break;      //OK
-                    case "update":
-                        $effectif_controller->actualiserEffectif($url[2]);
-                        break;     //OK
-
+                    case "delete": $effectif_controller->supprimerEffectif($url[2]); break;
+                    case "edit": $effectif_controller->modifierEffectif($url[2]); break;
+                    case "create": $effectif_controller->creerEffectif($url[2]); break;
+                    case "save": $effectif_controller->enregistrerEffectif($url[2]); break;
+                    case "update": $effectif_controller->actualiserEffectif($url[2]); break;
                 }
             } else {
                 $entreprise_controller->afficherEntreprises();
@@ -295,7 +239,7 @@ if (empty($_GET['page'])) {
                     case "logistique":
                         $dossier_formation_controller->selectionnerLogistique($url[2]);
                         break;
-                    case "formalites":;
+                    case "financement":;
                         break;
                 }
             } else {
